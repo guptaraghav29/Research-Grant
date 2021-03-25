@@ -25,6 +25,11 @@ function Navigation(props) {
                                 </Link>
                             </li>
                             <li>
+                                <Link href="/FreeSpace">
+                                    <a> Free Space </a>
+                                </Link>
+                            </li>
+                            <li>
                                 <Link href="/Quiz">
                                     <a> Quiz </a>
                                 </Link>
