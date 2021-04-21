@@ -1,80 +1,166 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import Navigation from './Navigation';
-import React, { Component } from 'react';
-import { Stage, Layer, Line, Rect, Circle, Text } from 'react-konva';
-import Konva from 'konva';
+import React, { Fragment, Component, useState, useRef } from 'react';
+import { Stage, Layer, Line, Rect, Circle, Text, Arrow, Shape, Image, Transformer } from 'react-konva';
+import useImage from 'use-image';
+import { Html } from 'react-konva-utils';
 
-var oneCar_ ;
+function downloadURI(uri, name) {
+    var link = document.createElement('a');
+    link.download = name;
+    link.href = uri;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
 
-// const graph = dynamic(() => import('./desmos'))
+const URLImage = ({ image }) => {
+    const [img] = useImage(image.src);
+    return (
+        <Image
+            image={img}
+            x={image.x}
+            y={image.y}
+            // I will use offset to set origin to the center of the image
+            offsetX={img ? img.width / 2 : 0}
+            offsetY={img ? img.height / 2 : 0}
+        />
+    );
+};
+
+
 export default function Interactive() {
+
+    //react data
+    const dragUrl = React.useRef();
+    const stageRef = React.useRef();
+    const [images, setImages] = React.useState([]);
+    const nameForm = useRef(null);
+
+
+    //saving image
+    const handleExport = () => {
+        const uri = stageRef.current.toDataURL();
+        downloadURI(uri, 'stage.png');
+        console.log(uri);
+    }
+
+    //getting random number
+    const getRandomNumber = () => {
+        return Math.floor(Math.random() * (40 - 1 + 1)) + 1;
+    };
+
+    //form handling
+    const handleClickEvent = () => {
+        const form = nameForm.current;
+        var answer = Number(form['R1'].value) + Number(form['R2'].value);
+        console.log("value" + form['input'].value);
+        if (form['input'].value == answer) {
+            document.getElementById("result").innerHTML = "Correct answer!"
+        }
+        else {
+            document.getElementById("result").innerHTML = "Incorrect answer! Please try again."
+        }
+    }
+
     return (
         <div>
             <Head>
-                <title>Circuits </title>
+                <title> Circuits </title>
             </Head>
             <Navigation></Navigation>
-            <h1> Interactive </h1>
-            <iframe src="https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc_en.html" width="800" height="600" scrolling="no" allowfullscreen></iframe>
-            <Stage width={global.innerWidth} height={global.innerHeight} style={{ textAlign: 'center'}}>
-                <Layer>
-                    {/* cd <Text text="Some text on canvas" fontSize={20} /> */}
-                    <Rect
-                        x={global.innerWidth / 3}
-                        y={200}
-                        width={100}
-                        height={100}
-                        draggable
-                        fill="red"
-                        shadowBlur={10}
-                    />
-                    <Circle
-                        x={global.innerWidth / 2}
-                        y={250} radius={50}
-                        fill="green"
-                        draggable
-                    />
-                    <Line
-                        x={global.innerWidth / 1.75}
-                        y={200}
-                        points={[0, 0, 100, 0, 100, 100]}
-                        tension={0.5}
-                        closed
-                        draggable
-                        stroke="black"
-                        fillLinearGradientStartPoint={{ x: -50, y: -50 }}
-                        fillLinearGradientEndPoint={{ x: 50, y: 50 }}
-                        fillLinearGradientColorStops={[0, 'red', 1, 'yellow']}
-                    />
-                    <Line
-                        x={global.innerWidth / 7}
-                        y={50}
-                        points={[100, 0, 100, 400]}
-                        stroke="black"
-                    />
-                    <Line
-                        x={global.innerWidth / 1.4}
-                        y={50}
-                        points={[100, 0, 100, 400]}
-                        stroke="black"
-                    />
-                    <Line
-                        x={global.innerWidth / 1.4}
-                        y={50}
-                        points={[100, 0, -723, 0]}
-                        stroke="black"
-                    />
-                     <Line
-                        x={global.innerWidth / 1.4}
-                        y={50}
-                        points={[100, 400, -723, 400]}
-                        stroke="black"
-                    />
-                </Layer>
-            </Stage>
-            {/* https://phet.colorado.edu/en/simulation/circuit-construction-kit-dc */}
-            
+            <h1> Simple Circuit Interactive </h1>
+            <p>Calculate the current in the following circuit given the resistances: </p>
+
+            <Fragment>
+                <form ref={nameForm}>
+                    <input label={"Resistor"} readOnly placeholder={'R1'} name={'R1'} value={getRandomNumber()} />
+                    <input readOnly placeholder={'R2'} name={'R2'} value={getRandomNumber()} />
+                    <input placeholder={'Input Answer'} name={'input'} />
+                    <br></br>
+                    <button type="button" onClick={handleClickEvent}>Check Answer</button>
+                    <button type="button" onClick={handleExport}>Save Image</button>
+                    <p id="result"> Input an answer - this line will update depending on your answer. </p>
+                </form>
+                <p>Drag a piece a battery, bulb, or resistor onto to the stage to create a circuit. </p>
+
+                <table class="center">
+                    <tr style={{ backgroundColor: "#FF033E" }}>
+                        <th >
+                            <img
+                                class="resistor"
+                                alt="resistor"
+                                src="images/resistor.png"
+                                // width="300px"
+                                draggable="true"
+                                onDragStart={(e) => {
+                                    dragUrl.current = e.target.src;
+                                }}
+                            />
+                        </th>
+                        <th style={{ backgroundColor: "#fdff00" }}>
+                            <img
+
+                                alt="bulb"
+                                class="bulb"
+                                src="images/bulb.png"
+                                // width="200px"
+                                draggable="true"
+                                onDragStart={(e) => {
+                                    dragUrl.current = e.target.src;
+                                }}
+                            />
+                        </th>
+                        <th style={{ backgroundColor: "#4FFFB0" }}>
+                            <img
+                                alt="battery"
+                                class="battery"
+                                src="images/battery.png"
+                                // width="200px"
+                                draggable="true"
+                                onDragStart={(e) => {
+                                    dragUrl.current = e.target.src;
+                                }}
+                            />
+                        </th>
+                    </tr>
+                </table>
+
+                <div
+                    onDrop={(e) => {
+                        e.preventDefault();
+                        // register event position
+                        stageRef.current.setPointersPositions(e);
+                        // add image
+                        setImages(
+                            images.concat([
+                                {
+                                    ...stageRef.current.getPointerPosition(),
+                                    src: dragUrl.current,
+                                },
+                            ])
+                        );
+                    }}
+                    onDragOver={(e) => e.preventDefault()}
+                >
+                    <Stage width={global.innerWidth} height={global.innerHeight / 1.5} style={{ textAlign: 'center' }} ref={stageRef}>
+                        <Layer>
+                            {/* voltage */}
+                            {images.map((image) => {
+                                return <URLImage draggable image={image} />;
+                            })}
+                            <Rect
+                                x={200}
+                                y={50}
+                                width={1050}
+                                height={400}
+                                stroke="black"
+                                shadowBlur={1}
+                            />
+                        </Layer>
+                    </Stage>
+                </div>
+            </Fragment>
         </div>
     )
 }
