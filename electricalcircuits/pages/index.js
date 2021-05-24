@@ -2,6 +2,7 @@ import Navigation from './Navigation';
 import React from 'react';
 import Lesson from './Lesson';
 import Interactive from './Interactive';
+import Statics from './Statics';
 import FreeSpace from './FreeSpace';
 import Quiz from './Quiz';
 import { Router, Route, Switch } from "react-router-dom";
@@ -18,6 +19,8 @@ export default function Home() {
           <Route path="/" exact component={() => <Interactive />} />
           <Route path="/Lesson" exact component={() => <Lesson />} />
           <Route path="/Interactive" exact component={() => <Interactive />} />
+          <Route path="/Statics" exact component={() => <Statics />} />
+          <Route path="/Statics2" exact component={() => <Statics2 />} />
           <Route path="/FreeSpace" exact component={() => <FreeSpace />} />
           <Route path="/Quiz" exact component={() => <Quiz />} />
         </Switch>

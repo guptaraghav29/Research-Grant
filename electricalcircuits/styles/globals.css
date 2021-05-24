@@ -25,6 +25,11 @@ h1 {
     font-size: 40px;
 }
 
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
 
 /* TABLE */
 
@@ -60,12 +65,14 @@ input {
 .center {
     margin-left: auto;
     margin-right: auto;
+    display: block;
 }
 
 th {
     height: 10px;
     width: 200px;
 }
+
 
 /* NAV */
 

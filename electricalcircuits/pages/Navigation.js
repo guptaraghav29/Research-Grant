@@ -1,6 +1,6 @@
 import React from "react";
 import Link from 'next/link'
-import { withRouter } from "react-router-dom";
+// import { withRouter } from "react-router-dom";
 
 function Navigation(props) {
     return (
@@ -9,7 +9,7 @@ function Navigation(props) {
                 <div class="container">
                     <div id="leftBar">
                         <Link href="/">
-                            <a> <b> Electrical Circuits </b> </a>
+                            <a> <b> Online Interactives </b> </a>
                         </Link>
                     </div>
                     <div>
@@ -21,7 +21,17 @@ function Navigation(props) {
                             </li>
                             <li>
                                 <Link href="/Interactive">
-                                    <a> Interactive </a>
+                                    <a> Circuits </a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/Statics">
+                                    <a> Method of Joints </a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/Statics2">
+                                    <a> Method of Sections </a>
                                 </Link>
                             </li>
                             <li>
