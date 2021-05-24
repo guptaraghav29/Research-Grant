@@ -28,46 +28,47 @@ import Navigation from './Navigation';
 // };
 
 
-// export default function Interactive() {
+export default function Interactive() {
 
-//     //react data
-//     const dragUrl = React.useRef();
-//     const stageRef = React.useRef();
-//     const [images, setImages] = React.useState([]);
-//     const nameForm = useRef(null);
+    //     //react data
+    //     const dragUrl = React.useRef();
+    //     const stageRef = React.useRef();
+    //     const [images, setImages] = React.useState([]);
+    //     const nameForm = useRef(null);
 
 
-//     //saving image
-//     const handleExport = () => {
-//         const uri = stageRef.current.toDataURL();
-//         downloadURI(uri, 'stage.png');
-//         console.log(uri);
-//     }
+    //     //saving image
+    //     const handleExport = () => {
+    //         const uri = stageRef.current.toDataURL();
+    //         downloadURI(uri, 'stage.png');
+    //         console.log(uri);
+    //     }
 
-//     //getting random number
-//     const getRandomNumber = () => {
-//         return Math.floor(Math.random() * (40 - 1 + 1)) + 1;
-//     };
+    //     //getting random number
+    //     const getRandomNumber = () => {
+    //         return Math.floor(Math.random() * (40 - 1 + 1)) + 1;
+    //     };
 
-//     //form handling
-//     const handleClickEvent = () => {
-//         const form = nameForm.current;
-//         var answer = Number(form['R1'].value) + Number(form['R2'].value);
-//         console.log("value" + form['input'].value);
-//         if (form['input'].value == answer) {
-//             document.getElementById("result").innerHTML = "Correct answer!"
-//         }
-//         else {
-//             document.getElementById("result").innerHTML = "Incorrect answer! Please try again."
-//         }
-//     }
+    //     //form handling
+    //     const handleClickEvent = () => {
+    //         const form = nameForm.current;
+    //         var answer = Number(form['R1'].value) + Number(form['R2'].value);
+    //         console.log("value" + form['input'].value);
+    //         if (form['input'].value == answer) {
+    //             document.getElementById("result").innerHTML = "Correct answer!"
+    //         }
+    //         else {
+    //             document.getElementById("result").innerHTML = "Incorrect answer! Please try again."
+    //         }
+    //     }
 
-return (
-    <div>
-        <Head>
-            <title> Circuits </title>
-        </Head>
-        <Navigation></Navigation>
-        <h1> Simple Circuit Interactive </h1>
-    </div>
-)
+    return (
+        <div>
+            <Head>
+                <title> Circuits </title>
+            </Head>
+            <Navigation></Navigation>
+            <h1> Simple Circuit Interactive </h1>
+        </div>
+    )
+}
