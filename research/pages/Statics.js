@@ -149,19 +149,15 @@ export default function Statics() {
                         <button type="button" onClick={handleClickEvent1}>Check Answer</button>
                         <p id="result1"> Input an answer - this line will update depending on your answer. </p>
                         <br></br>
-                        <br></br>
                         <p style={{ marginBottom: "0.15cm" }}> Solve for A<sub>y</sub>  </p>
                         <input placeholder={'Enter answer'} name={'input2'} />
                         <button type="button" onClick={handleClickEvent2}>Check Answer</button>
                         <p id="result2"> Input an answer - this line will update depending on your answer. </p>
                         <br></br>
-                        <br></br>
                         <p style={{ marginBottom: "0.15cm" }}> Solve for A<sub>x</sub>  </p>
                         <input placeholder={'Enter answer'} name={'input3'} />
                         <button type="button" onClick={handleClickEvent3}>Check Answer</button>
                         <p id="result3"> Input an answer - this line will update depending on your answer. </p>
-                        <br></br>
-                        <br></br>
                         <br></br>
                         <br></br>
                         <br></br>
@@ -180,21 +176,16 @@ export default function Statics() {
                         <br></br>
                         <br></br>
                         <br></br>
-                        <br></br>
-                        <br></br>
                         <p style={{ marginBottom: "0.15cm" }}> Solve for F<sub>DC</sub> </p>
                         <input placeholder={'Enter answer'} name={'input6'} />
                         <button type="button" onClick={handleClickEvent6}>Check Answer</button>
                         <p id="result6"> Input an answer - this line will update depending on your answer. </p>
                         <br></br>
                         <br></br>
-                        <br></br>
-                        <br></br>
                         <p style={{ marginBottom: "0.15cm" }}> Solve for F<sub>BC</sub> </p>
                         <input placeholder={'Enter answer'} name={'input7'} />
                         <button type="button" onClick={handleClickEvent7}>Check Answer</button>
                         <p id="result7"> Input an answer - this line will update depending on your answer. </p>
-
                         <br></br>
                     </form>
                 </div>
