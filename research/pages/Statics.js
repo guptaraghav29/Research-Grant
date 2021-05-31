@@ -91,7 +91,7 @@ export default function Statics() {
             <p></p>
             <img class="center" src="images/Statics2.jpeg" alt="Statics" width="75%"></img>
             <p></p>
-            <div class="container" style={{ textAlign: "left;", paddingLeft: "1cm", paddingRight: "1cm", display: "flex;", height: "100px;" }}>
+            <div class="container" style={{ textAlign: "left;", display: "flex;", height: "100px;", width: "100%" }}>
                 <div style={{ width: "50%" }}>
                     <p style={{ color: "brown;", fontWeight: "bold;", fontSize: "20px;" }}> EQUATIONS </p>
                     <p style={{ color: "crimson;", fontWeight: "bold" }}> W<sub>1</sub> = 20 kN, W<sub>2</sub> = 12 kN </p>
