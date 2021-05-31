@@ -85,80 +85,111 @@ export default function Statics() {
             </Head>
             {/* <Navigation></Navigation> */}
             <h1> Statics: Method of Joints </h1>
-            <h5> <b> Problem:</b> For this problem, you are given equations to solve missing pieces of the problem. Please evaluate for the variables/forces specified. </h5>
+            <h5> <b> Problem:</b> You are given equations to solve missing pieces of the question. Please evaluate for the variables/forces specified. </h5>
             <br></br>
-            <img class="center" src="images/Statics3.jpeg" alt="Statics" width="70%"></img>
+            <img class="center" src="images/Statics3.jpeg" alt="Statics" width="75%"></img>
             <p></p>
-            <img class="center" src="images/Statics2.jpeg" alt="Statics" width="70%"></img>
+            <img class="center" src="images/Statics2.jpeg" alt="Statics" width="75%"></img>
             <p></p>
             <div class="container" style={{ textAlign: "left;", paddingLeft: "1cm", paddingRight: "1cm", display: "flex;", height: "100px;" }}>
                 <div style={{ width: "50%" }}>
                     <p style={{ color: "brown;", fontWeight: "bold;", fontSize: "20px;" }}> EQUATIONS </p>
                     <p style={{ color: "crimson;", fontWeight: "bold" }}> W<sub>1</sub> = 20 kN, W<sub>2</sub> = 12 kN </p>
-                    <p style={{ color: "crimson;", fontWeight: "bold" }}> ∠AB = 36.87°, ∠BD = 53.13° </p>
+                    <p style={{ color: "crimson;", fontWeight: "bold" }}> ∠BAD = 36.87°, ∠DBC = 53.13° </p>
                     <p> <b> <u>  The equations are provided below: </u></b> </p>
-                    <p> ∑Ma = 0 </p>
-                    <p> (W<sub>1</sub>)(AB) - (W<sub>2</sub>)(BD) + (Cy)(AC) = 0 </p>
-                    <p style={{ color: "brown;", fontWeight: "bold;", fontSize: "20px;" }}> Cy = ? </p>
-                    <p> ∑Fy = 0 </p>
-                    <p> Ay = Cy + W<sub>1</sub> </p>
-                    <p style={{ color: "brown;", fontWeight: "bold;", fontSize: "20px;" }}> Ay = ? </p>
-                    <p> ∑Fx = 0 </p>
-                    <p> -Ax + W<sub>2</sub> = 0 </p>
-                    <p style={{ color: "brown;", fontWeight: "bold;", fontSize: "20px;" }}> Ax = ? </p>
+                    <p> ∑M<sub>a</sub> = 0 </p>
+                    <p> (W<sub>1</sub>)(AB) - (W<sub>2</sub>)(BD) + (C<sub>y</sub>)(AC) = 0 </p>
+                    <p style={{ color: "brown;", fontWeight: "bold;", fontSize: "20px;" }}> C<sub>y</sub> = ? </p>
+                    <br></br>
+                    <p> ∑F<sub>y</sub> = 0 </p>
+                    <p> A<sub>y</sub> = C<sub>y</sub> + W<sub>1</sub> </p>
+                    <p style={{ color: "brown;", fontWeight: "bold;", fontSize: "20px;" }}> A<sub>y</sub> = ? </p>
+                    <br></br>
+                    <p> ∑F<sub>x</sub> = 0 </p>
+                    <p> -A<sub>x</sub> + W<sub>2</sub> = 0 </p>
+                    <p style={{ color: "brown;", fontWeight: "bold;", fontSize: "20px;" }}> A<sub>x</sub> = ? </p>
+                    <br></br>
+                    <br></br>
                     <p> <b><u>  Analysis of Joint A </u></b> </p>
-                    <p> +↑∑Fy = 0 </p>
-                    <p> F<sub>AB</sub>sin(∠AB) + Ay = 0 </p>
+                    <p> +↑∑F<sub>y</sub> = 0 </p>
+                    <p> F<sub>AB</sub>sin(∠DAB) + A<sub>y</sub> = 0 </p>
                     <p style={{ color: "brown;", fontWeight: "bold;", fontSize: "20px;" }}> F<sub>AB</sub> = ? </p>
-                    <p> +→  ∑Fx = 0 </p>
-                    <p> -Ax + F<sub>AD</sub> +  F<sub>AB</sub>cos(∠AB) = 0 </p>
+                    <br></br>
+                    <p> +→  ∑F<sub>x</sub> = 0 </p>
+                    <p> -A<sub>x</sub> + F<sub>AD</sub> +  F<sub>AB</sub>cos(∠DAB) = 0 </p>
                     <p style={{ color: "brown;", fontWeight: "bold;", fontSize: "20px;" }}> F<sub>AD</sub> = ? </p>
-                    <p> <b> <u>  Analysis of Joint B </u> </b></p>
-                    <p> +↑∑Fy = 0 </p>
+                    <br></br>
+                    <br></br>
+                    <p> <b> <u>  Analysis of Joint D </u> </b></p>
+                    <p> +↑∑F<sub>y</sub> = 0 </p>
                     <p> F<sub>DB</sub> = 0 </p>
                     <p> -F<sub>DA</sub> + -F<sub>DC</sub> = 0 </p>
                     <p style={{ color: "brown;", fontWeight: "bold;", fontSize: "20px;" }}> F<sub>DC</sub> = ? </p>
-                    <p> <b> <u>  Analysis of Joint D </u> </b></p>
-                    <p> +→  ∑Fx = 0 </p>
-                    <p> -F<sub>BA</sub>sin(∠BD) + F<sub>BC</sub>sin(∠BD) + Ax = 0 </p>
+                    <br></br>
+                    <br></br>
+                    <p> <b> <u>  Analysis of Joint B </u> </b></p>
+                    <p> +→  ∑F<sub>x</sub> = 0 </p>
+                    <p> -F<sub>BA</sub>sin(∠DBC) + F<sub>BC</sub>sin(∠DBC) + A<sub>x</sub> = 0 </p>
                     <p style={{ color: "brown;", fontWeight: "bold;", fontSize: "20px;" }}> F<sub>BC</sub> = ? </p>
+                    <br></br>
                 </div>
                 <div style={{ flexGrow: "1;" }}>
                     <form ref={nameForm} style={{ textAlign: "right;" }}>
                         <p style={{ color: "brown;", fontWeight: "bold;", fontSize: "20px;", marginBottom: "0cm" }}> QUESTIONS </p>
-                        <p style={{ marginBottom: "0cm" }}> Solve for the following. Units are in kN. </p>
+                        <p style={{ marginBottom: "0.15cm" }}> Solve for the following. Units are in kN. </p>
                         <br></br>
                         <br></br>
-                        <p style={{ marginBottom: "0cm" }}> Solve for Cy </p>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <p style={{ marginBottom: "0.15cm" }}> Solve for C<sub>y</sub>  </p>
                         <input placeholder={'Enter answer'} name={'input1'} />
                         <button type="button" onClick={handleClickEvent1}>Check Answer</button>
                         <p id="result1"> Input an answer - this line will update depending on your answer. </p>
-
-                        <p style={{ marginBottom: "0cm" }}> Solve for Ay </p>
+                        <br></br>
+                        <br></br>
+                        <p style={{ marginBottom: "0.15cm" }}> Solve for A<sub>y</sub>  </p>
                         <input placeholder={'Enter answer'} name={'input2'} />
                         <button type="button" onClick={handleClickEvent2}>Check Answer</button>
                         <p id="result2"> Input an answer - this line will update depending on your answer. </p>
-
-                        <p style={{ marginBottom: "0cm" }}> Solve for Ax </p>
+                        <br></br>
+                        <br></br>
+                        <p style={{ marginBottom: "0.15cm" }}> Solve for A<sub>x</sub>  </p>
                         <input placeholder={'Enter answer'} name={'input3'} />
                         <button type="button" onClick={handleClickEvent3}>Check Answer</button>
                         <p id="result3"> Input an answer - this line will update depending on your answer. </p>
-
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
                         <p style={{ marginBottom: "0.15cm" }}> Solve for F<sub>AB</sub> </p>
                         <input placeholder={'Enter answer'} name={'input4'} />
                         <button type="button" onClick={handleClickEvent4}>Check Answer</button>
                         <p id="result4"> Input an answer - this line will update depending on your answer. </p>
-
+                        <br></br>
+                        <br></br>
                         <p style={{ marginBottom: "0.15cm" }}> Solve for F<sub>AD</sub> </p>
                         <input placeholder={'Enter answer'} name={'input5'} />
                         <button type="button" onClick={handleClickEvent5}>Check Answer</button>
                         <p id="result5"> Input an answer - this line will update depending on your answer. </p>
-
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
                         <p style={{ marginBottom: "0.15cm" }}> Solve for F<sub>DC</sub> </p>
                         <input placeholder={'Enter answer'} name={'input6'} />
                         <button type="button" onClick={handleClickEvent6}>Check Answer</button>
                         <p id="result6"> Input an answer - this line will update depending on your answer. </p>
-
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
                         <p style={{ marginBottom: "0.15cm" }}> Solve for F<sub>BC</sub> </p>
                         <input placeholder={'Enter answer'} name={'input7'} />
                         <button type="button" onClick={handleClickEvent7}>Check Answer</button>
@@ -167,9 +198,7 @@ export default function Statics() {
                         <br></br>
                     </form>
                 </div>
-
             </div>
-
         </div>
     )
 }
