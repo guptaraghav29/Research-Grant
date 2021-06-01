@@ -85,7 +85,7 @@ export default function Statics() {
             </Head>
             {/* <Navigation></Navigation> */}
             <h1> Statics: Method of Joints </h1>
-            <h5> <b> Problem:</b> You are given equations to solve missing pieces of the question. Please evaluate for the variables/forces specified. </h5>
+            <h5 style={{paddingLeft: "2cm", paddingRight: "2cm"}}> <b> Problem:</b> You are given equations to solve missing pieces of the question. Please evaluate for the variables/forces specified. </h5>
             <br></br>
             <img class="center" src="images/Statics3.jpeg" alt="Statics" width="75%"></img>
             <p></p>
