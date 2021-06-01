@@ -182,6 +182,7 @@ export default function Statics() {
                         <p id="result6"> Input an answer - this line will update depending on your answer. </p>
                         <br></br>
                         <br></br>
+                        <br></br>
                         <p style={{ marginBottom: "0.15cm" }}> Solve for F<sub>BC</sub> </p>
                         <input placeholder={'Enter answer'} name={'input7'} />
                         <button type="button" onClick={handleClickEvent7}>Check Answer</button>
