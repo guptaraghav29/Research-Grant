@@ -2,8 +2,42 @@ import Head from 'next/head'
 import Navigation from './Navigation';
 import React, { useRef } from 'react';
 
+
 export default function Statics() {
+
+    const xAPIFORM = useRef(null);
     const nameForm = useRef(null);
+
+    const sendStatement = () => {
+        const form = xAPIFORM.current;
+        const uNamejs = form['name'].value;
+        console.log(uNamejs);
+        const uEmailjs = form['email'].value;
+        console.log(uEmailjs);
+        const conf = {
+            "endpoint": "https://xcite-testing.lrs.io/xapi/",
+            "auth": "Basic " + toBase64("telfur:kikuev")
+        };
+        ADL.XAPIWrapper.changeConfig(conf);
+        const statement = {
+            "actor": {
+                "name": uNamejs,
+                "mbox": "mailto:" + uEmailjs
+            },
+            "verb": {
+                "id": verbId,
+                "display": { "en-US": verb }
+            },
+            "object": {
+                "id": objectId,
+                "definition": {
+                    "name": { "en-US": object }
+                }
+            }
+        };
+        ADL.XAPIWrapper.sendStatement(statement);
+        alert("Statement has been sent");
+    }
 
     const handleClickEvent1 = () => {
         const form = nameForm.current;
@@ -75,17 +109,24 @@ export default function Statics() {
             document.getElementById("result7").innerHTML = "Incorrect answer! Please try again."
     }
 
-
-
-
     return (
         <div>
+            {/* <script type="text/javascript" src="xapiwrapper.min.js"></script><script type="text/javascript" src="xapi-statement-v4.js"></script> */}
+            <br></br>
+            <form ref={xAPIFORM}>
+                <p> Please enter your name and email.</p>
+                <label> Name: </label>
+                <input placeholder={'Enter name'} name={'name'} />
+                <label>  Email: </label>
+                <input placeholder={'Enter email'} name={'email'} />
+                <button placeholder={'Enter answer'} name={'input7'} onClick={sendStatement}>Submit</button>
+            </form>
             <Head>
                 <title>Statics: Method of Joints </title>
             </Head>
             {/* <Navigation></Navigation> */}
             <h1> Statics: Method of Joints </h1>
-            <h5 style={{paddingLeft: "2cm", paddingRight: "2cm"}}> <b> Problem:</b> You are given equations to solve missing pieces of the question. Please evaluate for the variables/forces specified. </h5>
+            <h5 style={{ paddingLeft: "2cm", paddingRight: "2cm" }}> <b> Problem:</b> You are given equations to solve missing pieces of the question. Please evaluate for the variables/forces specified. </h5>
             <br></br>
             <img class="center" src="images/Statics3.jpeg" alt="Statics" width="75%"></img>
             <p></p>

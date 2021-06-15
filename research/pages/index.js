@@ -23,6 +23,8 @@ export default function Home() {
           <Route path="/Statics2" exact component={() => <Statics2 />} />
           <Route path="/FreeSpace" exact component={() => <FreeSpace />} />
           <Route path="/Quiz" exact component={() => <Quiz />} />
+
+
         </Switch>
       </Navigation>
       <h1 style={{ borderTopWidth: '10em;' }}> Welcome to Electrical Circuits </h1>
