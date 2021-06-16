@@ -122,11 +122,11 @@ export default function UnderstandingQuiz2() {
                     <option value="4">634i</option>
                     <option value="5">634j</option>
                 </select>
+                <br></br>
                 <button type="button" onClick={handleClickEvent6}>Check Answer</button>
                 <p id="result6"> Input an answer - this line will update depending on your answer. </p>
 
             </form>
         </div>
-
     )
 }

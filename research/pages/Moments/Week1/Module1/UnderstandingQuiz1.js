@@ -16,7 +16,7 @@ export default function UnderstandingQuiz1() {
 
     const handleClickEvent2 = () => {
         const form = nameForm.current;
-        var answer = 10;
+        var answer = 'false';
         console.log("value" + form['input2'].value);
         if (form['input2'].value == answer)
             document.getElementById("result2").innerHTML = "Correct answer!";
@@ -26,7 +26,7 @@ export default function UnderstandingQuiz1() {
 
     const handleClickEvent3 = () => {
         const form = nameForm.current;
-        var answer = 10;
+        var answer = 0;
         console.log("value" + form['input3'].value);
         if (form['input3'].value == answer)
             document.getElementById("result3").innerHTML = "Correct answer!";
@@ -37,7 +37,7 @@ export default function UnderstandingQuiz1() {
 
     const handleClickEvent4 = () => {
         const form = nameForm.current;
-        var answer = 10;
+        var answer = -1000;
         console.log("value" + form['input4'].value);
         if (form['input4'].value == answer)
             document.getElementById("result4").innerHTML = "Correct answer!";
@@ -48,7 +48,7 @@ export default function UnderstandingQuiz1() {
 
     const handleClickEvent5 = () => {
         const form = nameForm.current;
-        var answer = 10;
+        var answer = 1800;
         console.log("value" + form['input5'].value);
         if (form['input5'].value == answer)
             document.getElementById("result5").innerHTML = "Correct answer!";
@@ -69,26 +69,31 @@ export default function UnderstandingQuiz1() {
                 <input placeholder={'Enter answer'} name={'input1'} />
                 <button type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
-
+                <img class="center" src="../../../images/quiz1_1_1.png" width="40%"></img>
                 <p>2. True or false: The moment of the force about point A is counter-clockwise. </p>
                 
-                <input placeholder={'Enter answer'} name={'input2'} />
+                <select name={'input2'} size={'2'}>
+                    <option value="true">True </option>
+                    <option value="false">False</option>
+                  
+                </select>
+                <br></br>
                 <button type="button" onClick={handleClickEvent2}>Check Answer</button>
-                <p id="result2"> Input an answer - this line will update depending on your answer. </p>
+                <p id="result2"> Input an answer - this line will update depending on your answer.</p>
                 
                 <p>3. In the figure below, what’s the moment of the force F about point A? Specify your answer in N-m </p>
-                
+                <img class="center" src="../../../images/quiz1_1_2.png" width="30%" ></img>
                 <input placeholder={'Enter answer'} name={'input3'} />
                 <button type="button" onClick={handleClickEvent3}>Check Answer</button>
                 <p id="result3"> Input an answer - this line will update depending on your answer. </p>
                 
-                <p>4. In the figure shown, what’s the moment of force F1 about point O? F1=500N, F2=300N. d1=2 m, d2=6 m. Specify your answer in N-m and use the sign convention that counterclockwise moments are positive.</p>
+                <p>4. In the figure shown below, what’s the moment of force F1 about point O? F1=500N, F2=300N. d1=2 m, d2=6 m. Specify your answer in N-m and use the sign convention that counterclockwise moments are positive.</p>
 
                 <input placeholder={'Enter answer'} name={'input4'} />
                 <button type="button" onClick={handleClickEvent4}>Check Answer</button>
                 <p id="result4"> Input an answer - this line will update depending on your answer. </p>
-
-                <p>5. In the figure shown, what’s the moment of force F2 about point O? F1=500N, F2=300N. d1=2 m, d2=6 m. Specify your answer in N-m and use the sign convention that counterclockwise moments are positive. </p>
+                <img class="center" src="../../../images/quiz1_1_3.png" width="60%"></img>
+                <p>5. In the figure shown above, what’s the moment of force F2 about point O? F1=500N, F2=300N. d1=2 m, d2=6 m. Specify your answer in N-m and use the sign convention that counterclockwise moments are positive. </p>
 
                 <input placeholder={'Enter answer'} name={'input5'} />
                 <button type="button" onClick={handleClickEvent5}>Check Answer</button>
