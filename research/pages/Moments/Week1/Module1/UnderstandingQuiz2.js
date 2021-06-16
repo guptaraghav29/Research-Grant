@@ -6,7 +6,7 @@ export default function UnderstandingQuiz2() {
 
     const handleClickEvent1 = () => {
         const form = nameForm.current;
-        var answer = 634;
+        var answer = '634';
         console.log("value" + form['input1'].value);
         if (form['input1'].value == answer)
             document.getElementById("result1").innerHTML = "Correct answer!";
@@ -16,8 +16,8 @@ export default function UnderstandingQuiz2() {
 
     const handleClickEvent2 = () => {
         const form = nameForm.current;
-        var answer1 = 1.27;
-        var answer2 = 634;
+        var answer1 = '1.27';
+        var answer2 = '634';
         console.log("value" + form['input2'].value);
         if (form['Q2I1'].value == answer1 && form['Q2I2'].value == answer2)
             document.getElementById("result2").innerHTML = "Correct answer!";
@@ -27,8 +27,8 @@ export default function UnderstandingQuiz2() {
 
     const handleClickEvent3 = () => {
         const form = nameForm.current;
-        var answer1 = 1.464;
-        var answer2 = 634;
+        var answer1 = '1.464';
+        var answer2 = '634';
         console.log("value" + form['input3'].value);
         if (form['Q3I1'].value == answer1 && form['Q3I2'].value == answer2)
             document.getElementById("result3").innerHTML = "Correct answer!";
@@ -38,8 +38,8 @@ export default function UnderstandingQuiz2() {
 
     const handleClickEvent4 = () => {
         const form = nameForm.current;
-        var answer1 = 2.54;
-        var answer2 = 634;
+        var answer1 = '2.54';
+        var answer2 = '634';
         console.log("value " + form['input4'].value);
         if (form['Q4I1'].value == answer1 && form['Q4I2'].value == answer2)
             document.getElementById("result4").innerHTML = "Correct answer!";

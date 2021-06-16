@@ -6,7 +6,7 @@ export default function UnderstandingQuiz1() {
 
     const handleClickEvent1 = () => {
         const form = nameForm.current;
-        var answer = 10;
+        var answer = '10';
         console.log("value" + form['input1'].value);
         if (form['input1'].value == answer)
             document.getElementById("result1").innerHTML = "Correct answer!";
@@ -26,9 +26,9 @@ export default function UnderstandingQuiz1() {
 
     const handleClickEvent3 = () => {
         const form = nameForm.current;
-        var answer = 0;
+        var answer = '0';
         console.log("value" + form['input3'].value);
-        if (form['input3'].value == answer)
+        if (form['input3'].value === answer)
             document.getElementById("result3").innerHTML = "Correct answer!";
         else
             document.getElementById("result3").innerHTML = "Incorrect answer! Please try again."
@@ -37,7 +37,7 @@ export default function UnderstandingQuiz1() {
 
     const handleClickEvent4 = () => {
         const form = nameForm.current;
-        var answer = -1000;
+        var answer = '-1000';
         console.log("value" + form['input4'].value);
         if (form['input4'].value == answer)
             document.getElementById("result4").innerHTML = "Correct answer!";
@@ -48,7 +48,7 @@ export default function UnderstandingQuiz1() {
 
     const handleClickEvent5 = () => {
         const form = nameForm.current;
-        var answer = 1800;
+        var answer = '1800';
         console.log("value" + form['input5'].value);
         if (form['input5'].value == answer)
             document.getElementById("result5").innerHTML = "Correct answer!";
