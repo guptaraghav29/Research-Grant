@@ -75,7 +75,6 @@ export default function UnderstandingQuiz1() {
                 <select name={'input2'} size={'2'}>
                     <option value="true">True </option>
                     <option value="false">False</option>
-                  
                 </select>
                 <br></br>
                 <button type="button" onClick={handleClickEvent2}>Check Answer</button>
