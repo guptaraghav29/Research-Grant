@@ -42,7 +42,6 @@ export default function UnderstandingQuiz2() {
             document.getElementById("result4").innerHTML = "Correct answer!";
         else
             document.getElementById("result4").innerHTML = "Incorrect answer! Please try again."
-
     }
 
     const handleClickEvent5 = () => {
@@ -53,7 +52,6 @@ export default function UnderstandingQuiz2() {
             document.getElementById("result5").innerHTML = "Correct answer!";
         else
             document.getElementById("result5").innerHTML = "Incorrect answer! Please try again."
-
     }
 
     const handleClickEvent6 = () => {
@@ -64,7 +62,6 @@ export default function UnderstandingQuiz2() {
             document.getElementById("result6").innerHTML = "Correct answer!";
         else
             document.getElementById("result6").innerHTML = "Incorrect answer! Please try again."
-
     }
 
     return (

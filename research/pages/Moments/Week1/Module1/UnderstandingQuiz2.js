@@ -8,7 +8,7 @@ export default function UnderstandingQuiz2() {
         const form = nameForm.current;
         var answer = '634';
         console.log("value" + form['input1'].value);
-        if (form['input1'].value == answer)
+        if ((form['input1'].value >= answer*0.975) && (form['input1'].value <= answer*1.025))
             document.getElementById("result1").innerHTML = "Correct answer!";
         else
             document.getElementById("result1").innerHTML = "Incorrect answer! Please try again."
@@ -19,7 +19,7 @@ export default function UnderstandingQuiz2() {
         var answer1 = '1.27';
         var answer2 = '634';
         console.log("value" + form['input2'].value);
-        if (form['Q2I1'].value == answer1 && form['Q2I2'].value == answer2)
+        if ((form['Q2I1'].value >= answer1*0.975) && (form['Q2I1'].value <= answer1*1.025) && (form['Q2I2'].value >= answer2*0.975) && (form['Q2I2'].value <= answer2*1.025))
             document.getElementById("result2").innerHTML = "Correct answer!";
         else
             document.getElementById("result2").innerHTML = "Incorrect answer! Please try again."
@@ -30,7 +30,7 @@ export default function UnderstandingQuiz2() {
         var answer1 = '1.464';
         var answer2 = '634';
         console.log("value" + form['input3'].value);
-        if (form['Q3I1'].value == answer1 && form['Q3I2'].value == answer2)
+        if ((form['Q3I1'].value >= answer1*0.975) && (form['Q3I1'].value <= answer1*1.025) && (form['Q3I2'].value >= answer2*0.975) && (form['Q3I2'].value <= answer2*1.025))
             document.getElementById("result3").innerHTML = "Correct answer!";
         else
             document.getElementById("result3").innerHTML = "Incorrect answer! Please try again."
@@ -41,7 +41,7 @@ export default function UnderstandingQuiz2() {
         var answer1 = '2.54';
         var answer2 = '634';
         console.log("value " + form['input4'].value);
-        if (form['Q4I1'].value == answer1 && form['Q4I2'].value == answer2)
+        if ((form['Q4I1'].value >= answer1*0.975) && (form['Q4I1'].value <= answer1*1.025) && (form['Q4I2'].value >= answer2*0.975) && (form['Q4I2'].value <= answer2*1.025))
             document.getElementById("result4").innerHTML = "Correct answer!";
         else
             document.getElementById("result4").innerHTML = "Incorrect answer! Please try again."
@@ -89,15 +89,15 @@ export default function UnderstandingQuiz2() {
 
                 <button type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer. </p>
-                
-                <p>3. Use the principle of transmissibility to slide the force to a point, say C, vertically below point O. The distance OC is <input placeholder={'Enter answer'} name={'input3'} id={'Q3I1'}/> m. The moment of the force F about point O gives <input placeholder={'Enter answer'} name={'input3'} id={'Q3I2'}/>  N-m.</p>
+
+                <p>3. Use the principle of transmissibility to slide the force to a point, say C, vertically below point O. The distance OC is <input placeholder={'Enter answer'} name={'input3'} id={'Q3I1'} /> m. The moment of the force F about point O gives <input placeholder={'Enter answer'} name={'input3'} id={'Q3I2'} />  N-m.</p>
 
                 <button type="button" onClick={handleClickEvent3}>Check Answer</button>
                 <p id="result3"> Input an answer - this line will update depending on your answer. </p>
 
-                <p>4. Use the principle of transmissibility to slide the force to a point, say D, horizontally to the right of point O. The distance OD is  <input placeholder={'Enter answer'} name={'input4'} id={'Q4I1'} />m. The moment of the force F about point O gives  <input placeholder={'Enter answer'} name={'input4'} id={'Q4I2'}/> N-m.</p>
+                <p>4. Use the principle of transmissibility to slide the force to a point, say D, horizontally to the right of point O. The distance OD is  <input placeholder={'Enter answer'} name={'input4'} id={'Q4I1'} />m. The moment of the force F about point O gives  <input placeholder={'Enter answer'} name={'input4'} id={'Q4I2'} /> N-m.</p>
 
-              
+
                 <button type="button" onClick={handleClickEvent4}>Check Answer</button>
                 <p id="result4"> Input an answer - this line will update depending on your answer. </p>
 
