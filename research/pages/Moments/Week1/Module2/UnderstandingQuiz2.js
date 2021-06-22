@@ -77,7 +77,7 @@ export default function UnderstandingQuiz2() {
                 <p>1. The vector expression for force F<sub>2</sub> is </p>
 
                 <select name={'input1'} size={'4'}>
-                    <option value="1">-200i - 400j N</option>
+                    <option value="1">200i - 400j N</option>
                     <option value="2">-200i + 400j N</option>
                     <option value="3">200i - 200j N</option>
                     <option value="4">-200i + 200j N</option>
@@ -132,7 +132,7 @@ export default function UnderstandingQuiz2() {
                     <option value="1">34.1 lb</option>
                     <option value="2">45.9 lb</option>
                     <option value="3">56.3 lb</option>
-                    <option value="4">63.2 lb</option>
+                    <option value="4">33.9 lb</option>
                 </select>
                 <br></br>
                 <button type="button" onClick={handleClickEvent5}>Check Answer</button>
@@ -143,7 +143,7 @@ export default function UnderstandingQuiz2() {
                 <p>6. The angle (in degrees) made by the sum of the forces with the force F<sub>1</sub> is </p>
 
                 <select name={'input6'} size={'4'}>
-                    <option value="1">45.8</option>
+                    <option value="1">24.2</option>
                     <option value="2">29.3</option>
                     <option value="3">32.4</option>
                     <option value="4">45.8</option>

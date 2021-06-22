@@ -2,42 +2,27 @@ import Head from 'next/head'
 import Navigation from './Navigation';
 import React, { useRef } from 'react';
 
+import dynamic from 'next/dynamic'
+
+const DynamicComponentWithNoSSR = dynamic(
+  () => import('../../research/xapiwrapper.min.js'),
+  { ssr: false }
+)
 
 export default function Statics() {
 
-    const xAPIFORM = useRef(null);
+    const xapiform = useRef(null);
     const nameForm = useRef(null);
 
-    const sendStatement = () => {
-        const form = xAPIFORM.current;
-        const uNamejs = form['name'].value;
-        console.log(uNamejs);
-        const uEmailjs = form['email'].value;
-        console.log(uEmailjs);
-        const conf = {
-            "endpoint": "https://xcite-testing.lrs.io/xapi/",
-            "auth": "Basic " + toBase64("telfur:kikuev")
-        };
-        ADL.XAPIWrapper.changeConfig(conf);
-        const statement = {
-            "actor": {
-                "name": uNamejs,
-                "mbox": "mailto:" + uEmailjs
-            },
-            "verb": {
-                "id": verbId,
-                "display": { "en-US": verb }
-            },
-            "object": {
-                "id": objectId,
-                "definition": {
-                    "name": { "en-US": object }
-                }
-            }
-        };
-        ADL.XAPIWrapper.sendStatement(statement);
-        alert("Statement has been sent");
-    }
+    // const savetoFile = (jsonData,filename) => {
+    //     const fileData = JSON.stringify(jsonData);
+    //     const blob = new Blob([fileData], {type: "text/plain"});
+    //     const url = URL.createObjectURL(blob);
+    //     const link = document.createElement('a');
+    //     link.download = `${filename}.json`;
+    //     link.href = url;
+    //     link.click();
+    //   }
 
     const handleClickEvent1 = () => {
         const form = nameForm.current;
@@ -111,15 +96,15 @@ export default function Statics() {
 
     return (
         <div>
-            {/* <script type="text/javascript" src="xapiwrapper.min.js"></script><script type="text/javascript" src="xapi-statement-v4.js"></script> */}
+            <script type="text/javascript" src="xapiwrapper.min.js"></script>
             <br></br>
-            <form ref={xAPIFORM}>
+            <form ref={xapiform} method="POST">
                 <p> Please enter your name and email.</p>
                 <label> Name: </label>
                 <input placeholder={'Enter name'} name={'name'} />
                 <label>  Email: </label>
                 <input placeholder={'Enter email'} name={'email'} />
-                <button placeholder={'Enter answer'} name={'input7'} onClick={sendStatement}>Submit</button>
+                <button placeholder={'Enter answer'} name={'input7'} >Submit</button>
             </form>
             <Head>
                 <title>Statics: Method of Joints </title>

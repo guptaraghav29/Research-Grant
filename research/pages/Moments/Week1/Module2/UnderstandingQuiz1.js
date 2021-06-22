@@ -44,10 +44,10 @@ export default function UnderstandingQuiz1() {
                 <p>1. The vector expression for the force in the figure below is: </p>
                 <img class="center" src="../../../images/quiz1_1_4.png" width="40%"></img>
                 <select name={'input1'} size={'4'}>
-                    <option value="1">-10i + 10√(3j) N </option>
-                    <option value="2">-10i - 10√(3j) N </option>
-                    <option value="3">-20i + 20√(3j) N </option>
-                    <option value="4">-10√(3i) + 10j N </option>
+                    <option value="1">-10i + 10√(3j) lb </option>
+                    <option value="2">-10i - 10√(3j) lb </option>
+                    <option value="3">-20i + 20√(3j) lb </option>
+                    <option value="4">-10√(3i) + 10j lb </option>
                 </select>
                 <br></br>
                 <button type="button" onClick={handleClickEvent1}>Check Answer</button>
@@ -65,7 +65,7 @@ export default function UnderstandingQuiz1() {
                 <button type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer.</p>
                 
-                <img class="center" src="../../../images/quiz1_1_5.png" width="40%"></img>
+                <img class="center" src="../../../images/quiz1_1_5.png" width="65%"></img>
 
                 <p>3. The vector expression for the force in the figure above is: </p>
                 
