@@ -6,7 +6,7 @@ export default function UnderstandingQuiz1() {
 
     const handleClickEvent1 = () => {
         const form = nameForm.current;
-        var answer = '1';
+        var answer = '2';
         console.log("value" + form['input1'].value);
         if (form['input1'].value == answer)
             document.getElementById("result1").innerHTML = "Correct answer!";
@@ -26,7 +26,7 @@ export default function UnderstandingQuiz1() {
 
     const handleClickEvent3 = () => {
         const form = nameForm.current;
-        var answer = '4';
+        var answer = '1';
         console.log("value" + form['input3'].value);
         if (form['input3'].value === answer)
             document.getElementById("result3").innerHTML = "Correct answer!";
@@ -55,55 +55,53 @@ export default function UnderstandingQuiz1() {
                 <img class="center" src="../../../images/quiz1_1_10.png" width="65%"></img>
                 <br></br>
                 <br></br>
-                <p>1. The vector expression for the force in the figure below is: </p>
-                <img class="center" src="../../../images/quiz1_1_4.png" width="40%"></img>
+                <p>1. The vector expression for force F<sub>1</sub> is: </p>
+
                 <select name={'input1'} size={'4'}>
-                    <option value="1">-10i + 10√(3j) lb </option>
-                    <option value="2">-10i - 10√(3j) lb </option>
-                    <option value="3">-20i + 20√(3j) lb </option>
-                    <option value="4">-10√(3i) + 10j lb </option>
+                    <option value="1">5j-5k kN</option>
+                    <option value="2">8i-6k kN</option>
+                    <option value="3">-8i+6k kN</option>
+                    <option value="4">-6i+8k kN </option>
                 </select>
                 <br></br>
                 <button type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
 
-                <p>2. The unit vector along the force in the figure below is: </p>
+                <p>2. The vector expression for force F<sub>2</sub> is: (Same figure as above) </p>
 
                 <select name={'input2'} size={'4'}>
-                    <option value="1">-0.8i + 0.6j </option>
-                    <option value="2">-0.6i + 0.8j  </option>
-                    <option value="3">0.6i - 0.8j </option>
-                    <option value="4">0.8i - 0.6j</option>
+                    <option value="1">8i-6k kN </option>
+                    <option value="2">5j-5k kN </option>
+                    <option value="3">-8i+6k kN</option>
+                    <option value="4">-6i+8k kN</option>
                 </select>
                 <br></br>
                 <button type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer.</p>
 
-                <img class="center" src="../../../images/quiz1_1_5.png" width="65%"></img>
-
-                <p>3. The vector expression for the force in the figure above is: </p>
+                <p>3. The component of the force F<sub>1</sub> along the z-axis is: (Same figure as above) </p>
 
                 <select name={'input3'} size={'4'}>
-                    <option value="1">-1800i + 2400j N</option>
-                    <option value="2">360i - 480j N</option>
-                    <option value="3">-2400i + 1800j N </option>
-                    <option value="4">-360i + 480j N</option>
+                    <option value="1">-6k</option>
+                    <option value="2">2k</option>
+                    <option value="3">8k</option>
+                    <option value="4">6k</option>
                 </select>
                 <br></br>
                 <button type="button" onClick={handleClickEvent3}>Check Answer</button>
                 <p id="result3"> Input an answer - this line will update depending on your answer. </p>
 
-                <p>4. The vector expression for the force in the figure above is: </p>
+                <p>4. The vector expression of the force F<sub>1</sub>  (in kN) along the vector <i>i + 2j - 2k</i> is: (Same figure as above) </p>
 
                 <select name={'input4'} size={'4'}>
-                    <option value="1">-1800i + 2400j N</option>
-                    <option value="2">360i - 480j N</option>
-                    <option value="3">-2400i + 1800j N </option>
-                    <option value="4">-360i + 480j N</option>
+                    <option value="1">2.2i - 4.4j - 4.4k</option>
+                    <option value="2">20i + 40j - 40k</option>
+                    <option value="3">2i + 4j - 4k</option>
+                    <option value="4">2.2i + 4.4j - 4.4k</option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent3}>Check Answer</button>
-                <p id="result3"> Input an answer - this line will update depending on your answer. </p>
+                <button type="button" onClick={handleClickEvent4}>Check Answer</button>
+                <p id="result4"> Input an answer - this line will update depending on your answer. </p>
 
             </form>
         </div>

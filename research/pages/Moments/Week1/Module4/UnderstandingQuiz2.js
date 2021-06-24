@@ -6,7 +6,7 @@ export default function UnderstandingQuiz2() {
 
     const handleClickEvent1 = () => {
         const form = nameForm.current;
-        var answer = '1';
+        var answer = '3';
         console.log("value" + form['input1'].value);
         if (form['input1'].value == answer)
             document.getElementById("result1").innerHTML = "Correct answer!";
@@ -16,7 +16,7 @@ export default function UnderstandingQuiz2() {
 
     const handleClickEvent2 = () => {
         const form = nameForm.current;
-        var answer = '2';
+        var answer = '1';
         console.log("value" + form['input2'].value);
         if (form['input2'].value == answer)
             document.getElementById("result2").innerHTML = "Correct answer!";
@@ -26,7 +26,7 @@ export default function UnderstandingQuiz2() {
 
     const handleClickEvent3 = () => {
         const form = nameForm.current;
-        var answer = '4';
+        var answer = '2';
         console.log("value" + form['input3'].value);
         if (form['input3'].value == answer)
             document.getElementById("result3").innerHTML = "Correct answer!";
@@ -36,7 +36,7 @@ export default function UnderstandingQuiz2() {
 
     const handleClickEvent4 = () => {
         const form = nameForm.current;
-        var answer = '3';
+        var answer = '1';
         console.log("value " + form['input4'].value);
         if (form['input4'].value == answer)
             document.getElementById("result4").innerHTML = "Correct answer!";
@@ -56,52 +56,50 @@ export default function UnderstandingQuiz2() {
                 <img class="center" src="../../../images/quiz1_1_10.png" width="65%"></img>
                 <br></br>
                 <br></br>
-                <p>7. In the figure below, the equivalent force-couple at point O is: </p>
+                <p>7. The sum of the two forces F<sub>1</sub> and F<sub>2</sub> is:  </p>
 
                 <select name={'input1'} size={'4'}>
-                    <option value="1">-125√(3)i + 125j N, 496 N - m ccw</option>
-                    <option value="2">-125√(3)i + 125j N, 496 N - m cw</option>
-                    <option value="3">-125√(3)i + 125j N, 496 N - m ccw</option>
-                    <option value="4">-125√(3)i + 125j N, 370 N - m cw</option>
+                    <option value="1">8i - 5j- k kN</option>
+                    <option value="2">3i + 2j - 3k kN</option>
+                    <option value="3">8i + 5j - 11k kN</option>
+                    <option value="4">5i + 2j - 11k kN</option>
                 </select>
                 <br></br>
                 <button type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
-                <img class="center" src="../../../images/quiz1_1_8.png" width="50%"></img>
 
-                <p>8. In the figure below, what is the equivalent force at point O?</p>
+                <p>8. The sum of the two moments M<sub>1</sub> and M<sub>2</sub> is: </p>
 
                 <select name={'input2'} size={'4'}>
-                    <option value="1">-200 lb</option>
-                    <option value="2">200 lb </option>
-                    <option value="3">700 lb</option>
-                    <option value="4">-500 lb</option>
+                    <option value="1">-10i + 12j + 0k kN - m</option>
+                    <option value="2">-10i - 12j + 0k kN - m</option>
+                    <option value="3">10i + 12j + 0k kN - m</option>
+                    <option value="4">10i - 12j + 0k kN - m</option>
                 </select>
                 <br></br>
 
                 <button type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer. </p>
-                <img class="center" src="../../../images/quiz1_1_9.png" width="50%"></img>
-                <p>9. (Same figure as for #2) In the figure below, what is the moment about point O?</p>
+                <p>9. The magnitude of projection of the sum of moments onto the vector sum of the forces is:</p>
 
                 <select name={'input3'} size={'4'}>
-                    <option value="1">-800 lb-ft </option>
-                    <option value="2">800 lb-ft</option>
-                    <option value="3">-1050 lb-ft</option>
-                    <option value="4">1050 lb-ft</option>
+                    <option value="1">1.39</option>
+                    <option value="2">-1.39</option>
+                    <option value="3">2.78</option>
+                    <option value="4">-2.78</option>
                 </select>
                 <br></br>
 
                 <button type="button" onClick={handleClickEvent3}>Check Answer</button>
                 <p id="result3"> Input an answer - this line will update depending on your answer. </p>
 
-                <p>10. (Same figure as for #2) In the figure below, through what point on OA does the equivalent force at point O?</p>
+                <p>10. The component of the vector sum of moments perpendicular to the vector sum of the forces is: </p>
 
                 <select name={'input4'} size={'4'}>
-                    <option value="1">-5.25 ft </option>
-                    <option value="2">4 ft</option>
-                    <option value="3">5.25 ft</option>
-                    <option value="4">-4 ft</option>
+                    <option value="1">-9.24i + 12.48j - 1.05k kN - m </option>
+                    <option value="2">-0.76i - 0.48j + 1.05k kN - m</option>
+                    <option value="3">3.24i - 1.34j + 2.34k kN - m</option>
+                    <option value="4">-2.58i - 4.62j + 1.87k kN - m</option>
                 </select>
                 <br></br>
 

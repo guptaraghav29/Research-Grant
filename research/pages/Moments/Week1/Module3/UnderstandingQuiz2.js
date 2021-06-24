@@ -57,7 +57,7 @@ export default function UnderstandingQuiz2() {
                 <select name={'input1'} size={'4'}>
                     <option value="1">-125√(3)i + 125j N, 496 N - m ccw</option>
                     <option value="2">-125√(3)i + 125j N, 496 N - m cw</option>
-                    <option value="3">-125√(3)i + 125j N, 496 N - m ccw</option>
+                    <option value="3">-125√(3)i + 125j N, 370 N - m ccw</option>
                     <option value="4">-125√(3)i + 125j N, 370 N - m cw</option>
                 </select>
                 <br></br>
