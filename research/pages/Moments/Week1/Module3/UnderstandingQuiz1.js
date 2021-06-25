@@ -6,9 +6,9 @@ export default function UnderstandingQuiz1() {
 
     const handleClickEvent1 = () => {
         const form = nameForm.current;
-        var answer = '1';
+        var answer = '1.0';
         console.log("value" + form['input1'].value);
-        if (form['input1'].value == answer)
+        if ((form['input1'].value >= answer*0.975) && (form['input1'].value <= answer*1.025))
             document.getElementById("result1").innerHTML = "Correct answer!";
         else
             document.getElementById("result1").innerHTML = "Incorrect answer! Please try again."
@@ -21,8 +21,8 @@ export default function UnderstandingQuiz1() {
             </Head>
             <h1 style={{ paddingBottom: "1cm" }}> Check Your Understanding Part 1 </h1>
             <form ref={nameForm}>
-                <p>1. The force F and the couple M shown in the figure are to replaced by a force located at a distance d. What is d? </p>
-                <img class="center" src="../../../images/quiz1_1_4.png" width="40%"></img>
+                <p>1. The force F and the couple M shown in the figure are to be  replaced by a force located at point A. Point A is on the x-axis at a  distance d. What is d?</p>
+                <img class="center" src="../../../images/quiz1_1_11.png" width="70%"></img>
                 <br></br>
                 <input name={'input1'}></input>
                 <br></br>
