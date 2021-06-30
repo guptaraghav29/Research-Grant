@@ -1,28 +1,50 @@
 import Head from 'next/head'
-import Navigation from './Navigation';
 import React, { useRef } from 'react';
-
-import dynamic from 'next/dynamic'
-
-const DynamicComponentWithNoSSR = dynamic(
-  () => import('../../research/xapiwrapper.min.js'),
-  { ssr: false }
-)
+import XAPI from "@xapi/xapi";
 
 export default function Statics() {
+
+    const endpoint = "https://xcite-testing.lrs.io/xapi/";
+    const username = process.env.LRS_USERNAME || "telfur";
+    const password = process.env.LRS_PASSWORD || "kikuev";
+    const auth = XAPI.toBasicAuth(username, password);
+    const xapi = new XAPI(endpoint, auth);
 
     const xapiform = useRef(null);
     const nameForm = useRef(null);
 
-    // const savetoFile = (jsonData,filename) => {
-    //     const fileData = JSON.stringify(jsonData);
-    //     const blob = new Blob([fileData], {type: "text/plain"});
-    //     const url = URL.createObjectURL(blob);
-    //     const link = document.createElement('a');
-    //     link.download = `${filename}.json`;
-    //     link.href = url;
-    //     link.click();
-    //   }
+    const handleClickEvent0 = () => {
+        const form = xapiform.current;
+        const name = form['name'].value;
+        console.log(name);
+        const email = form['email'].value;
+        console.log(email);
+
+        // Create your statement
+        const myStatement = {
+            "actor": {
+                "name": name,
+                "mbox": "mailto:" + email
+            },
+            "verb": {
+                "id": "http://research-grant.vercel.app/Moments/Week1/Module2/UnderstandingQuiz1",
+                "display": {
+                    "en-US": 'viewed'
+                }
+            },
+            "object": {
+                "id": "http://research-grant.vercel.app/Moments/Week1/Module2/UnderstandingQuiz1",
+                "definition": {
+                    "name": {
+                        "en-US": "Student has viewed this ID"
+                    }
+                }
+            }
+        };
+        xapi.sendStatement(myStatement);
+        console.log("Statement has been sent");
+    }
+
 
     const handleClickEvent1 = () => {
         const form = nameForm.current;
@@ -96,15 +118,14 @@ export default function Statics() {
 
     return (
         <div>
-            <script type="text/javascript" src="xapiwrapper.min.js"></script>
             <br></br>
             <form ref={xapiform} method="POST">
-                <p> Please enter your name and email.</p>
+                <p> Please enter your name and email. This must be done for all the Check Your Understanding Quizzes </p>
                 <label> Name: </label>
                 <input placeholder={'Enter name'} name={'name'} />
                 <label>  Email: </label>
                 <input placeholder={'Enter email'} name={'email'} />
-                <button placeholder={'Enter answer'} name={'input7'} >Submit</button>
+                <button type="button" placeholder={'Enter answer'} name={'input7'} onClick={handleClickEvent0}>Submit</button>
             </form>
             <Head>
                 <title>Statics: Method of Joints </title>

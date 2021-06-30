@@ -6,12 +6,16 @@ body {
     margin: 0;
     background-color: #FFB81C;
     text-align: center;
-    font-family: '/Users/raghavgupta/Desktop/UCR/Research/Code/InteractiveJS3/UCR-Research-Grant/Campus_Brand_Toolkit_2020/Fonts/Fira Sans/FiraSans-ExtraLight.ttf';
+    font-family: Optima;
 }
 
 a {
     color: inherit;
     text-decoration: none;
+}
+
+p {
+    font-size: 20px;
 }
 
 * {

@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@xapi/xapi": "^1.2.0",
     "axios": "^0.21.1",
     "desmos": "^1.5.4",
     "global": "^4.4.0",
@@ -23,7 +24,8 @@
     "react-portal": "^4.2.1",
     "react-router-dom": "^5.2.0",
     "react-to-pdf": "0.0.14",
-    "use-image": "^1.0.7"
+    "use-image": "^1.0.7",
+    "xapiwrapper": "^1.11.0"
   },
   "devDependencies": {
     "webpack": "^5.24.2"

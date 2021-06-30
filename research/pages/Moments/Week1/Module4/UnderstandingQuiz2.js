@@ -1,10 +1,90 @@
 import Head from 'next/head'
 import React, { useRef } from 'react';
+import XAPI from "@xapi/xapi";
 
 export default function UnderstandingQuiz2() {
     const nameForm = useRef(null);
+    const xapiform = useRef(null);
+
+     //xAPI data
+     const endpoint = "https://xcite-testing.lrs.io/xapi/";
+     const username = process.env.LRS_USERNAME || "telfur";
+     const password = process.env.LRS_PASSWORD || "kikuev";
+     const auth = XAPI.toBasicAuth(username, password);
+     const xapi = new XAPI(endpoint, auth);
+ 
+ 
+     const handleClickEvent0 = () => {
+         const xform = xapiform.current;
+         const name = xform['name'].value;
+         console.log(name);
+         const email = xform['email'].value;
+         console.log(email);
+ 
+         if (xform['name'].value == "" || xform['email'].value == "") {
+             document.getElementById("result0").innerHTML = "Status: Unsubmitted! Please fill out fields correctly!";
+         }
+         else {
+             document.getElementById("result0").innerHTML = "Status: Submitted!";
+             document.getElementById("result0").style.color = "green";
+         }
+ 
+         // Create your statement
+         const myStatement = {
+             "actor": {
+                 "name": name,
+                 "mbox": "mailto:" + email
+             },
+             "verb": {
+                 "id": "http://adlnet.gov/expapi/verbs/viewed",
+                 "display": {
+                     "en-US": 'viewed'
+                 }
+             },
+             "object": {
+                 "id": "https://elearn.ucr.edu/courses/3730",
+                 "definition": {
+                     "name": {
+                         "en-US": "Student has viewed Week 1 Module 4 Understanding Quiz 2."
+                     }
+                 }
+             }
+         };
+         xapi.sendStatement(myStatement);
+         console.log("Statement has been submitted.");
+     }
+ 
 
     const handleClickEvent1 = () => {
+        const xform = xapiform.current;
+        const name = xform['name'].value;
+        console.log(name);
+        const email = xform['email'].value;
+        console.log(email);
+
+        const myStatement = {
+            "actor": {
+                "name": name,
+                "mbox": "mailto:" + email
+            },
+            "verb": {
+                "id": "http://adlnet.gov/expapi/verbs/answered",
+                "display": {
+                    "en-US": 'answered'
+                }
+            },
+            "object": {
+                "id": "https://elearn.ucr.edu/courses/3730",
+                "definition": {
+                    "name": {
+                        "en-US": "Student submitted their answer. Week 1 Module 4 Quiz 2 Question 1"
+                    }
+                }
+            }
+        };
+        xapi.sendStatement(myStatement);
+        console.log("Statement has been submitted.");
+
         const form = nameForm.current;
         var answer = '3';
         console.log("value" + form['input1'].value);
@@ -15,6 +95,35 @@ export default function UnderstandingQuiz2() {
     }
 
     const handleClickEvent2 = () => {
+        const xform = xapiform.current;
+        const name = xform['name'].value;
+        console.log(name);
+        const email = xform['email'].value;
+        console.log(email);
+
+        const myStatement = {
+            "actor": {
+                "name": name,
+                "mbox": "mailto:" + email
+            },
+            "verb": {
+                "id": "http://adlnet.gov/expapi/verbs/answered",
+                "display": {
+                    "en-US": 'answered'
+                }
+            },
+            "object": {
+                "id": "https://elearn.ucr.edu/courses/3730",
+                "definition": {
+                    "name": {
+                        "en-US": "Student submitted their answer. Week 1 Module 4 Quiz 2 Question 2"
+                    }
+                }
+            }
+        };
+        xapi.sendStatement(myStatement);
+        console.log("Statement has been submitted.");
+
         const form = nameForm.current;
         var answer = '1';
         console.log("value" + form['input2'].value);
@@ -25,6 +134,35 @@ export default function UnderstandingQuiz2() {
     }
 
     const handleClickEvent3 = () => {
+        const xform = xapiform.current;
+        const name = xform['name'].value;
+        console.log(name);
+        const email = xform['email'].value;
+        console.log(email);
+
+        const myStatement = {
+            "actor": {
+                "name": name,
+                "mbox": "mailto:" + email
+            },
+            "verb": {
+                "id": "http://adlnet.gov/expapi/verbs/answered",
+                "display": {
+                    "en-US": 'answered'
+                }
+            },
+            "object": {
+                "id": "https://elearn.ucr.edu/courses/3730",
+                "definition": {
+                    "name": {
+                        "en-US": "Student submitted their answer. Week 1 Module 4 Quiz 2 Question 3"
+                    }
+                }
+            }
+        };
+        xapi.sendStatement(myStatement);
+        console.log("Statement has been submitted.");
+
         const form = nameForm.current;
         var answer = '2';
         console.log("value" + form['input3'].value);
@@ -35,6 +173,35 @@ export default function UnderstandingQuiz2() {
     }
 
     const handleClickEvent4 = () => {
+        const xform = xapiform.current;
+        const name = xform['name'].value;
+        console.log(name);
+        const email = xform['email'].value;
+        console.log(email);
+
+        const myStatement = {
+            "actor": {
+                "name": name,
+                "mbox": "mailto:" + email
+            },
+            "verb": {
+                "id": "http://adlnet.gov/expapi/verbs/answered",
+                "display": {
+                    "en-US": 'answered'
+                }
+            },
+            "object": {
+                "id": "https://elearn.ucr.edu/courses/3730",
+                "definition": {
+                    "name": {
+                        "en-US": "Student submitted their answer. Week 1 Module 4 Quiz 2 Question 4"
+                    }
+                }
+            }
+        };
+        xapi.sendStatement(myStatement);
+        console.log("Statement has been submitted.");
+
         const form = nameForm.current;
         var answer = '1';
         console.log("value " + form['input4'].value);
@@ -47,6 +214,16 @@ export default function UnderstandingQuiz2() {
 
     return (
         <div style={{ paddingLeft: "2cm", paddingRight: "2cm", textAlign: "left" }}>
+              <br></br>
+            <form style={{ textAlign: "center" }} ref={xapiform} method="POST">
+                <p> Please enter your name and email. This must be done for all of the Check Your Understanding Quizzes. </p>
+                <label> Name: </label>
+                <input placeholder={'Enter name'} name={'name'} />
+                <label style={{ paddingLeft: "0.3cm" }}>  Email: </label>
+                <input placeholder={'Enter email'} name={'email'} />
+                <button type="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
+                <p style={{ color: "red", fontWeight: "bold" }} id="result0"> Status: Unsubmitted </p>
+            </form>
             <Head>
                 <title> Understanding Quiz 2 </title>
             </Head>
