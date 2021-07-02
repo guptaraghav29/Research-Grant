@@ -13,7 +13,6 @@ export default function UnderstandingQuiz() {
     const auth = XAPI.toBasicAuth(username, password);
     const xapi = new XAPI(endpoint, auth);
 
-
     const handleClickEvent0 = () => {
         const xform = xapiform.current;
         const name = xform['name'].value;

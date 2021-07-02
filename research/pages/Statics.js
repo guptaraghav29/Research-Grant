@@ -3,22 +3,30 @@ import React, { useRef } from 'react';
 import XAPI from "@xapi/xapi";
 
 export default function Statics() {
-
-    const endpoint = "https://xcite-testing.lrs.io/xapi/";
-    const username = process.env.LRS_USERNAME || "telfur";
-    const password = process.env.LRS_PASSWORD || "kikuev";
-    const auth = XAPI.toBasicAuth(username, password);
-    const xapi = new XAPI(endpoint, auth);
-
     const xapiform = useRef(null);
     const nameForm = useRef(null);
 
-    const handleClickEvent0 = () => {
-        const form = xapiform.current;
-        const name = form['name'].value;
+     //xAPI data
+     const endpoint = "https://xcite-testing.lrs.io/xapi/";
+     const username = process.env.LRS_USERNAME || "telfur";
+     const password = process.env.LRS_PASSWORD || "kikuev";
+     const auth = XAPI.toBasicAuth(username, password);
+     const xapi = new XAPI(endpoint, auth);
+
+     const handleClickEvent0 = () => {
+        const xform = xapiform.current;
+        const name = xform['name'].value;
         console.log(name);
-        const email = form['email'].value;
+        const email = xform['email'].value;
         console.log(email);
+
+        if (xform['name'].value == "" || xform['email'].value == "") {
+            document.getElementById("result0").innerHTML = "Status: Unsubmitted! Please fill out fields correctly!";
+        }
+        else {
+            document.getElementById("result0").innerHTML = "Status: Submitted!";
+            document.getElementById("result0").style.color = "green";
+        }
 
         // Create your statement
         const myStatement = {
@@ -27,26 +35,54 @@ export default function Statics() {
                 "mbox": "mailto:" + email
             },
             "verb": {
-                "id": "http://research-grant.vercel.app/Moments/Week1/Module2/UnderstandingQuiz1",
+                "id": "http://adlnet.gov/expapi/verbs/viewed",
                 "display": {
                     "en-US": 'viewed'
                 }
             },
             "object": {
-                "id": "http://research-grant.vercel.app/Moments/Week1/Module2/UnderstandingQuiz1",
+                "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student has viewed this ID"
+                        "en-US": "Student has viewed Statics Method of Joints."
                     }
                 }
             }
         };
         xapi.sendStatement(myStatement);
-        console.log("Statement has been sent");
-    }
-
+        console.log("Statement has been submitted.");
+     }
 
     const handleClickEvent1 = () => {
+        const xform = xapiform.current;
+        const name = xform['name'].value;
+        console.log(name);
+        const email = xform['email'].value;
+        console.log(email);
+
+        const myStatement = {
+            "actor": {
+                "name": name,
+                "mbox": "mailto:" + email
+            },
+            "verb": {
+                "id": "http://adlnet.gov/expapi/verbs/answered",
+                "display": {
+                    "en-US": 'answered'
+                }
+            },
+            "object": {
+                "id": "https://elearn.ucr.edu/courses/3730",
+                "definition": {
+                    "name": {
+                        "en-US": "Student submitted their answer. Statics Method of Joints Question 1"
+                    }
+                }
+            }
+        };
+        xapi.sendStatement(myStatement);
+        console.log("Statement has been submitted.");
+
         const form = nameForm.current;
         var answer = -5.5;
         console.log("value" + form['input1'].value);
@@ -57,6 +93,35 @@ export default function Statics() {
     }
 
     const handleClickEvent2 = () => {
+        const xform = xapiform.current;
+        const name = xform['name'].value;
+        console.log(name);
+        const email = xform['email'].value;
+        console.log(email);
+
+        const myStatement = {
+            "actor": {
+                "name": name,
+                "mbox": "mailto:" + email
+            },
+            "verb": {
+                "id": "http://adlnet.gov/expapi/verbs/answered",
+                "display": {
+                    "en-US": 'answered'
+                }
+            },
+            "object": {
+                "id": "https://elearn.ucr.edu/courses/3730",
+                "definition": {
+                    "name": {
+                        "en-US": "Student submitted their answer. Statics Method of Joints Question 2"
+                    }
+                }
+            }
+        };
+        xapi.sendStatement(myStatement);
+        console.log("Statement has been submitted.");
+
         const form = nameForm.current;
         var answer = -14.5;
         console.log("value" + form['input2'].value);
@@ -67,6 +132,35 @@ export default function Statics() {
     }
 
     const handleClickEvent3 = () => {
+        const xform = xapiform.current;
+        const name = xform['name'].value;
+        console.log(name);
+        const email = xform['email'].value;
+        console.log(email);
+
+        const myStatement = {
+            "actor": {
+                "name": name,
+                "mbox": "mailto:" + email
+            },
+            "verb": {
+                "id": "http://adlnet.gov/expapi/verbs/answered",
+                "display": {
+                    "en-US": 'answered'
+                }
+            },
+            "object": {
+                "id": "https://elearn.ucr.edu/courses/3730",
+                "definition": {
+                    "name": {
+                        "en-US": "Student submitted their answer. Statics Method of Joints Question 3"
+                    }
+                }
+            }
+        };
+        xapi.sendStatement(myStatement);
+        console.log("Statement has been submitted.");
+
         const form = nameForm.current;
         var answer = 12;
         console.log("value" + form['input3'].value);
@@ -77,6 +171,35 @@ export default function Statics() {
     }
 
     const handleClickEvent4 = () => {
+        const xform = xapiform.current;
+        const name = xform['name'].value;
+        console.log(name);
+        const email = xform['email'].value;
+        console.log(email);
+
+        const myStatement = {
+            "actor": {
+                "name": name,
+                "mbox": "mailto:" + email
+            },
+            "verb": {
+                "id": "http://adlnet.gov/expapi/verbs/answered",
+                "display": {
+                    "en-US": 'answered'
+                }
+            },
+            "object": {
+                "id": "https://elearn.ucr.edu/courses/3730",
+                "definition": {
+                    "name": {
+                        "en-US": "Student submitted their answer. Statics Method of Joints Question 4"
+                    }
+                }
+            }
+        };
+        xapi.sendStatement(myStatement);
+        console.log("Statement has been submitted.");
+
         const form = nameForm.current;
         var answer = 24.17;
         console.log("value" + form['input4'].value);
@@ -87,6 +210,35 @@ export default function Statics() {
     }
 
     const handleClickEvent5 = () => {
+        const xform = xapiform.current;
+        const name = xform['name'].value;
+        console.log(name);
+        const email = xform['email'].value;
+        console.log(email);
+
+        const myStatement = {
+            "actor": {
+                "name": name,
+                "mbox": "mailto:" + email
+            },
+            "verb": {
+                "id": "http://adlnet.gov/expapi/verbs/answered",
+                "display": {
+                    "en-US": 'answered'
+                }
+            },
+            "object": {
+                "id": "https://elearn.ucr.edu/courses/3730",
+                "definition": {
+                    "name": {
+                        "en-US": "Student submitted their answer. Statics Method of Joints Question 5"
+                    }
+                }
+            }
+        };
+        xapi.sendStatement(myStatement);
+        console.log("Statement has been submitted.");
+
         const form = nameForm.current;
         var answer = -7.34;
         console.log("value" + form['input5'].value);
@@ -97,6 +249,35 @@ export default function Statics() {
     }
 
     const handleClickEvent6 = () => {
+        const xform = xapiform.current;
+        const name = xform['name'].value;
+        console.log(name);
+        const email = xform['email'].value;
+        console.log(email);
+
+        const myStatement = {
+            "actor": {
+                "name": name,
+                "mbox": "mailto:" + email
+            },
+            "verb": {
+                "id": "http://adlnet.gov/expapi/verbs/answered",
+                "display": {
+                    "en-US": 'answered'
+                }
+            },
+            "object": {
+                "id": "https://elearn.ucr.edu/courses/3730",
+                "definition": {
+                    "name": {
+                        "en-US": "Student submitted their answer. Statics Method of Joints Question 6"
+                    }
+                }
+            }
+        };
+        xapi.sendStatement(myStatement);
+        console.log("Statement has been submitted.");
+
         const form = nameForm.current;
         var answer = -7.34;
         console.log("value" + form['input6'].value);
@@ -119,13 +300,14 @@ export default function Statics() {
     return (
         <div>
             <br></br>
-            <form ref={xapiform} method="POST">
-                <p> Please enter your name and email. This must be done for all the Check Your Understanding Quizzes </p>
+            <form style={{ textAlign: "center" }} ref={xapiform} method="POST">
+                <p> Please enter your name and email. This must be done for all of the Check Your Understanding Quizzes. </p>
                 <label> Name: </label>
                 <input placeholder={'Enter name'} name={'name'} />
-                <label>  Email: </label>
+                <label style={{ paddingLeft: "0.3cm" }}>  Email: </label>
                 <input placeholder={'Enter email'} name={'email'} />
-                <button type="button" placeholder={'Enter answer'} name={'input7'} onClick={handleClickEvent0}>Submit</button>
+                <button type="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
+                <p style={{ color: "red", fontWeight: "bold" }} id="result0"> Status: Unsubmitted </p>
             </form>
             <Head>
                 <title>Statics: Method of Joints </title>
