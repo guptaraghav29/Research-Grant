@@ -87,9 +87,9 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '2';
         console.log("value" + form['input1'].value);
-        if (form['input1'].value == answer)
+
+        if (form['input1']['6'].checked && form['input1']['7'].checked && form['input1']['10'].checked && !form['input1']['0'].checked && !form['input1']['1'].checked && !form['input1']['2'].checked && !form['input1']['3'].checked && !form['input1']['4'].checked && !form['input1']['5'].checked && !form['input1']['8'].checked && !form['input1']['9'].checked) 
             document.getElementById("result1").innerHTML = "Correct answer!";
         else
             document.getElementById("result1").innerHTML = "Incorrect answer! Please try again."
@@ -126,9 +126,9 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '2';
         console.log("value" + form['input2'].value);
-        if (form['input2'].value == answer)
+
+        if (form['input2']['2'].checked && form['input2']['5'].checked && form['input2']['6'].checked && !form['input2']['0'].checked && !form['input2']['1'].checked && !form['input2']['3'].checked && !form['input2']['4'].checked)
             document.getElementById("result2").innerHTML = "Correct answer!";
         else
             document.getElementById("result2").innerHTML = "Incorrect answer! Please try again."
@@ -165,9 +165,9 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '1';
         console.log("value" + form['input3'].value);
-        if (form['input3'].value === answer)
+
+        if (form['input3']['2'].checked && form['input3']['4'].checked && !form['input3']['3'].checked && !form['input3']['1'].checked && !form['input3']['0'].checked)
             document.getElementById("result3").innerHTML = "Correct answer!";
         else
             document.getElementById("result3").innerHTML = "Incorrect answer! Please try again."
@@ -204,9 +204,9 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '4';
         console.log("value" + form['input4'].value);
-        if (form['input4'].value === answer)
+
+        if (form['input4']['0'].checked && !form['input4']['1'].checked && !form['input4']['2'].checked)
             document.getElementById("result4").innerHTML = "Correct answer!";
         else
             document.getElementById("result4").innerHTML = "Incorrect answer! Please try again."
@@ -229,54 +229,88 @@ export default function UnderstandingQuiz() {
             </Head>
             <h1 style={{ paddingBottom: "1cm" }}> Check Your Understanding</h1>
             <form ref={nameForm}>
-                <p> Please use the following image for the next couple of questions: </p>
-                <img class="center" src="../../../images/quiz1_1_10.png" width="65%"></img>
                 <br></br>
-                <br></br>
-                <p>1. The vector expression for force F<sub>1</sub> is: </p>
+                <p>1. The figure below shows a ladder resting against a wall. The ladder has mass m. Both the wall and the floor are rough. </p>
+                <img class="center" src="../../../images/quiz2_1_1.png" width="35%"></img>
+                <p> Which of the following is true? (more than one may be true) </p>
+                <img class="center" src="../../../images/quiz2_1_2.png" width="40%"></img>
 
-                <select name={'input1'} size={'4'}>
-                    <option value="1">5j-5k kN</option>
-                    <option value="2">8i-6k kN</option>
-                    <option value="3">-8i+6k kN</option>
-                    <option value="4">-6i+8k kN </option>
-                </select>
+                <input name={'input1'} type="checkbox"/> a. The free body diagram is complete and correct.
+                <br></br>
+                <input name={'input1'} type="checkbox"/> b. The horizontal reaction at B should be deleted.
+                <br></br>
+                <input name={'input1'} type="checkbox"/> c. The horizontal reaction at B should point in the positive x-direction.
+                <br></br>
+                <input name={'input1'} type="checkbox"/> d. The vertical reaction at B should be deleted.
+                <br></br>
+                <input name={'input1'} type="checkbox"/> e. The vertical reaction at B should point in the negative y-direction.
+                <br></br>
+                <input name={'input1'} type="checkbox"/> f. The vertical reaction at A should be deleted. 
+                <br></br>
+                <input name={'input1'} type="checkbox"/> g. The vertical reaction at B should point in the positive y-direction. 
+                <br></br>
+                <input name={'input1'} type="checkbox"/> h. A horizontal reaction at A should be added in the positive x-direction
+                <br></br>
+                <input name={'input1'} type="checkbox"/> i. A horizontal reaction at A should be added in the negative x-direction.
+                <br></br>
+                <input name={'input1'} type="checkbox"/> j. The weight of the ladder needs to be added. This weight is vertically downwards and passes through point A.
+                <br></br>
+                <input name={'input1'} type="checkbox"/> k. The weight of the ladder needs to be added. This weight is vertically downwards and passes through point G, the center of gravity.
                 <br></br>
                 <button type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
 
-                <p>2. The vector expression for force F<sub>2</sub> is: (Same figure as above) </p>
-
-                <select name={'input2'} size={'4'}>
-                    <option value="1">8i-6k kN </option>
-                    <option value="2">5j-5k kN </option>
-                    <option value="3">-8i+6k kN</option>
-                    <option value="4">-6i+8k kN</option>
-                </select>
+                <p>2. The figure shows a roller being held in place by means of weight connected by a cable over a pulley. </p>
+                <img class="center" src="../../../images/quiz2_1_4.png" width="35%"></img>
+                <p> Shown below is the free-body diagram of the roller. Which of the following is true? (Mark all the statements that are true)</p>
+                <img class="center" src="../../../images/quiz2_1_5.png" width="35%"></img>
+                
+                <input name={'input2'} type="checkbox"/> a. The free body diagram is complete and correct. 
                 <br></br>
+                <input name={'input2'} type="checkbox"/> b. The force from the cable should be deleted.
+                <br></br>
+                <input name={'input2'} type="checkbox"/> c. The force from the cable should point in the opposite direction.
+                <br></br>
+                <input name={'input2'} type="checkbox"/> d. The force from the cable must be parallel to the incline. 
+                <br></br>
+                <input name={'input2'} type="checkbox"/> e. The force through G must be deleted.
+                <br></br>
+                <input name={'input2'} type="checkbox"/> f. The force at A is pointing in the incorrect direction.
+                <br></br>
+                <input name={'input2'} type="checkbox"/> g. The force at A must point perpendicular to the incline and directed towards towards G.
+                <br></br>
+
                 <button type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer.</p>
 
-                <p>3. The component of the force F<sub>1</sub> along the z-axis is: (Same figure as above) </p>
+                <p>3. The figure below shows the same system with the free body diagram of the pulley. Note that B represents the axle of the pulley. Assume that the pulley has no mass. Which of the following is true? (Mark all the statements that are true) </p>
+                <img class="center" src="../../../images/quiz2_1_6.png" width="65%"></img>
 
-                <select name={'input3'} size={'4'}>
-                    <option value="1">-6k</option>
-                    <option value="2">2k</option>
-                    <option value="3">8k</option>
-                    <option value="4">6k</option>
-                </select>
+                <input name={'input3'} type="checkbox"/> a. The free body diagram is complete and correct.
                 <br></br>
+                <input name={'input3'} type="checkbox"/> b. Force T<sub>1</sub> should be directed in the opposite direction.
+                <br></br>
+                <input name={'input3'} type="checkbox"/> c. Force T<sub>2</sub> should be directed in the opposite direction
+                <br></br>
+                <input name={'input3'} type="checkbox"/> d. Force F<sub>y</sub> should be deleted.
+                <br></br>
+                <input name={'input3'} type="checkbox"/> e. A horizontal force should be added at B.
+                <br></br>
+           
                 <button type="button" onClick={handleClickEvent3}>Check Answer</button>
                 <p id="result3"> Input an answer - this line will update depending on your answer. </p>
 
-                <p>4. The vector expression of the force F<sub>1</sub>  (in kN) along the vector <i>i + 2j - 2k</i> is: (Same figure as above) </p>
+                <p>4. The figure below shows the same system with the free-body diagram of the mass. Which of the following is true? (Mark all the statements that are true)</p>
+                <img class="center" src="../../../images/quiz2_1_7.png" width="65%"></img>
 
-                <select name={'input4'} size={'4'}>
-                    <option value="1">2.2i - 4.4j - 4.4k</option>
-                    <option value="2">20i + 40j - 40k</option>
-                    <option value="3">2i + 4j - 4k</option>
-                    <option value="4">2.2i + 4.4j - 4.4k</option>
-                </select>
+             
+                <input name={'input4'} type="checkbox"/> a. The free body diagram is complete and correct.
+                <br></br>
+                <input name={'input4'} type="checkbox"/> b. The force F should be pointing downwards.
+                <br></br>
+                <input name={'input4'} type="checkbox"/> c. The weight should be pointing in the upward direction.
+                <br></br>
+                
                 <br></br>
                 <button type="button" onClick={handleClickEvent4}>Check Answer</button>
                 <p id="result4"> Input an answer - this line will update depending on your answer. </p>
