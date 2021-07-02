@@ -85,9 +85,10 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '2';
+        var answer1 = '10';
+        var answer2 = '17.32';
         console.log("value" + form['input1'].value);
-        if (form['input1'].value == answer)
+        if ((form['Q1I1'].value >= answer1 * 0.975) && (form['Q1I1'].value <= answer1 * 1.025) && (form['Q1I2'].value >= answer2 * 0.975) && (form['Q1I2'].value <= answer2 * 1.025))
             document.getElementById("result1").innerHTML = "Correct answer!";
         else
             document.getElementById("result1").innerHTML = "Incorrect answer! Please try again."
@@ -124,9 +125,10 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '2';
+        var answer1 = '900';
+        var answer2 = '1500';
         console.log("value" + form['input2'].value);
-        if (form['input2'].value == answer)
+        if ((form['Q2I1'].value >= answer1 * 0.975) && (form['Q2I1'].value <= answer1 * 1.025) && (form['Q2I2'].value >= answer2 * 0.975) && (form['Q2I2'].value <= answer2 * 1.025))
             document.getElementById("result2").innerHTML = "Correct answer!";
         else
             document.getElementById("result2").innerHTML = "Incorrect answer! Please try again."
@@ -163,9 +165,11 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '1';
+        var answer1 = '0';
+        var answer2 = '5';
+        var answer3 = '12';
         console.log("value" + form['input3'].value);
-        if (form['input3'].value === answer)
+        if ((form['Q3I1'].value >= answer1 * 0.975) && (form['Q3I1'].value <= answer1 * 1.025) && (form['Q3I2'].value >= answer2 * 0.975) && (form['Q3I2'].value <= answer2 * 1.025) && (form['Q3I3'].value >= answer3 * 0.975) && (form['Q3I3'].value <= answer3 * 1.025))
             document.getElementById("result3").innerHTML = "Correct answer!";
         else
             document.getElementById("result3").innerHTML = "Incorrect answer! Please try again."
@@ -190,40 +194,21 @@ export default function UnderstandingQuiz() {
             <form ref={nameForm}>
                 <br></br>
                 <br></br>
-                <p>1. The vector expression for force F<sub>1</sub> is: </p>
-
-                <select name={'input1'} size={'4'}>
-                    <option value="1">5j-5k kN</option>
-                    <option value="2">8i-6k kN</option>
-                    <option value="3">-8i+6k kN</option>
-                    <option value="4">-6i+8k kN </option>
-                </select>
+                <p>1. The figure below shows a weight W = 20 kN suspended by means of two cables attached to the ceiling at points A and B. The tension in the cable OA is <input placeholder={'Enter answer'} name={'input1'} id={'Q1I1'} /> kN while the tension in the cable OB is <input placeholder={'Enter answer'} name={'input1'} id={'Q1I2'} /> kN. </p>
                 <br></br>
                 <button type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
                 <img class="center" src="../../../images/quiz2_1_8.png" width="50%"></img>
 
-                <p>2. The vector expression for force F<sub>2</sub> is: (Same figure as above) </p>
+                <p>2. The figure below shows a car standing on a flat road. The car weighs 2000 lb. The center of gravity is located at G and has a horizontal distance 3 ft from B. The distance between the front and the rear tires is 8 ft. The reaction force at tire A is <input placeholder={'Enter answer'} name={'input2'} id={'Q2I1'} /> lb while the reaction force at tire B is <input placeholder={'Enter answer'} name={'input2'} id={'Q2I2'} /> lb </p>
 
-                <select name={'input2'} size={'4'}>
-                    <option value="1">8i-6k kN </option>
-                    <option value="2">5j-5k kN </option>
-                    <option value="3">-8i+6k kN</option>
-                    <option value="4">-6i+8k kN</option>
-                </select>
                 <br></br>
                 <button type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer.</p>
                 <img class="center" src="../../../images/quiz2_1_9.png" width="50%"></img>
 
-                <p>3. The component of the force F<sub>1</sub> along the z-axis is: (Same figure as above) </p>
+                <p>3. The figure shows a beam fixed at point A with two external forces. The magnitude of the horizontal reaction at A is <input placeholder={'Enter answer'} name={'input3'} id={'Q3I1'} /> kN and is pointed towards left/right/doesn’t apply. The vertical reaction at A has magnitude <input placeholder={'Enter answer'} name={'input3'} id={'Q3I2'} /> kN and is pointed upwards/downwards/doesn’t apply (answer: upwards). The moment reaction at A has magnitude <input placeholder={'Enter answer'} name={'input3'} id={'Q3I3'} /> kN-m. The sense of the moment is clockwise/counterclockwise/doesn’t apply. (answer: counterclockwise)  </p>
 
-                <select name={'input3'} size={'4'}>
-                    <option value="1">-6k</option>
-                    <option value="2">2k</option>
-                    <option value="3">8k</option>
-                    <option value="4">6k</option>
-                </select>
                 <br></br>
                 <button type="button" onClick={handleClickEvent3}>Check Answer</button>
                 <p id="result3"> Input an answer - this line will update depending on your answer. </p>
