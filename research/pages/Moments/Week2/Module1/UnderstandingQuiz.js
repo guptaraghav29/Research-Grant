@@ -231,10 +231,20 @@ export default function UnderstandingQuiz() {
             <form ref={nameForm}>
                 <br></br>
                 <p>1. The figure below shows a ladder resting against a wall. The ladder has mass m. Both the wall and the floor are rough. </p>
-                <img class="center" src="../../../images/quiz2_1_1.png" width="35%"></img>
                 <p> Which of the following is true? (more than one may be true) </p>
+                {/* <div class="row" width="100%" class="center">
+                    <div class="column" width="50%" float="left" display="flex">
+                        <img class="center" src="../../../images/quiz2_1_1.png" ></img>
+                    </div>
+                    <div class="column" width="50%" float="right" display="flex">
+                        <img class="center" src="../../../images/quiz2_1_2.png" ></img>
+                    </div>
+                </div> */}
+    
+                
+                <img class="center" src="../../../images/quiz2_1_1.png" width="40%"></img>
                 <img class="center" src="../../../images/quiz2_1_2.png" width="40%"></img>
-
+             
                 <input name={'input1'} type="checkbox"/> a. The free body diagram is complete and correct.
                 <br></br>
                 <input name={'input1'} type="checkbox"/> b. The horizontal reaction at B should be deleted.
@@ -261,8 +271,8 @@ export default function UnderstandingQuiz() {
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
 
                 <p>2. The figure shows a roller being held in place by means of weight connected by a cable over a pulley. </p>
-                <img class="center" src="../../../images/quiz2_1_4.png" width="35%"></img>
                 <p> Shown below is the free-body diagram of the roller. Which of the following is true? (Mark all the statements that are true)</p>
+                <img class="center" src="../../../images/quiz2_1_4.png" width="35%"></img>
                 <img class="center" src="../../../images/quiz2_1_5.png" width="35%"></img>
                 
                 <input name={'input2'} type="checkbox"/> a. The free body diagram is complete and correct. 
@@ -273,7 +283,7 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 <input name={'input2'} type="checkbox"/> d. The force from the cable must be parallel to the incline. 
                 <br></br>
-                <input name={'input2'} type="checkbox"/> e. The force through G must be deleted.
+                <input name={'input2'} type="checkbox"/> e. The vertically downward force through G should be deleted.
                 <br></br>
                 <input name={'input2'} type="checkbox"/> f. The force at A is pointing in the incorrect direction.
                 <br></br>
