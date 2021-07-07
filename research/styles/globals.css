@@ -15,7 +15,7 @@ a {
     text-decoration: none;
 }
 
-p, option, button, select, input {
+p, option, button, select, input, label {
     font-size: 22px;
 }
 

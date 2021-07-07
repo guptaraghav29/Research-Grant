@@ -167,8 +167,12 @@ export default function UnderstandingQuiz() {
         var answer1 = '0';
         var answer2 = '5';
         var answer3 = '12';
+        var answer4 = '3';
+        var answer5 = '1';
+        var answer6 = '2';
+
         console.log("value" + form['input3'].value);
-        if ((form['Q3I1'].value >= answer1 * 0.975) && (form['Q3I1'].value <= answer1 * 1.025) && (form['Q3I2'].value >= answer2 * 0.975) && (form['Q3I2'].value <= answer2 * 1.025) && (form['Q3I3'].value >= answer3 * 0.975) && (form['Q3I3'].value <= answer3 * 1.025))
+        if ((form['Q3I1'].value >= answer1 * 0.975) && (form['Q3I1'].value <= answer1 * 1.025) && (form['Q3I2'].value >= answer2 * 0.975) && (form['Q3I2'].value <= answer2 * 1.025) && (form['Q3I3'].value >= answer3 * 0.975) && (form['Q3I3'].value <= answer3 * 1.025) && form['input9'].value == answer4 && form['input10'].value == answer5 && form['input11'].value == answer6)
             document.getElementById("result3").innerHTML = "Correct answer!";
         else
             document.getElementById("result3").innerHTML = "Incorrect answer! Please try again."
@@ -198,15 +202,22 @@ export default function UnderstandingQuiz() {
                 <button type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
                 <img class="center" src="../../../images/quiz2_1_8.png" width="50%"></img>
-
-                <p>2. The figure below shows a car standing on a flat road. The car weighs 2000 lb. The center of gravity is located at G and has a horizontal distance 3 ft from B. The distance between the front and the rear tires is 8 ft. The reaction force at tire A is <input placeholder={'Enter answer'} name={'input2'} id={'Q2I1'} /> lb while the reaction force at tire B is <input placeholder={'Enter answer'} name={'input2'} id={'Q2I2'} /> lb </p>
+                
+                <br></br>
+                <br></br>
+                <br></br>
+                <p>2. The figure below shows a car standing on a flat road. The car weighs 2040 lb. The center of gravity is located at G and has a horizontal distance 3 ft from B. The distance between the front and the rear tires is 8 ft. The reaction force at tire A is <input placeholder={'Enter answer'} name={'input2'} id={'Q2I1'} /> lb while the reaction force at tire B is <input placeholder={'Enter answer'} name={'input2'} id={'Q2I2'} /> lb. </p>
 
                 <br></br>
                 <button type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer.</p>
                 <img class="center" src="../../../images/quiz2_1_9.png" width="50%"></img>
 
-                <p>3. The figure shows a beam fixed at point A with two external forces. The magnitude of the horizontal reaction at A is <input placeholder={'Enter answer'} name={'input3'} id={'Q3I1'} /> kN and is pointed towards left/right/doesn’t apply. The vertical reaction at A has magnitude <input placeholder={'Enter answer'} name={'input3'} id={'Q3I2'} /> kN and is pointed upwards/downwards/doesn’t apply (answer: upwards). The moment reaction at A has magnitude <input placeholder={'Enter answer'} name={'input3'} id={'Q3I3'} /> kN-m. The sense of the moment is clockwise/counterclockwise/doesn’t apply. (answer: counterclockwise)  </p>
+                <br></br>
+                <br></br>
+                <br></br>
+
+                <p>3. The figure shows a beam fixed at point A with two external forces. The magnitude of the horizontal reaction at A is <input placeholder={'Enter answer'} name={'input3'} id={'Q3I1'} /> kN and is pointed towards the   <select name={'input9'} size={'1'}> id={'Q3I4'} <option value="1">left</option><option value="2">right</option><option value="3">doesn't apply</option></select>. The vertical reaction at A has magnitude <input placeholder={'Enter answer'} name={'input3'} id={'Q3I2'} /> kN and is pointed  <select name={'input10'} size={'1'}> id={'Q3I5'} <option value="1">upwards</option><option value="2">downwards</option><option value="3">doesn't apply</option></select>. The moment reaction at A has magnitude <input placeholder={'Enter answer'} name={'input3'} id={'Q3I3'} /> kN-m. The sense of the moment is  <select name={'input11'} size={'1'}> id={'Q3I6'} <option value="1">clockwise</option><option value="2">counter-clockwise</option><option value="3">doesn't apply</option></select>.  </p>
 
                 <br></br>
                 <button type="button" onClick={handleClickEvent3}>Check Answer</button>
