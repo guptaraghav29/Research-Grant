@@ -206,7 +206,7 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 <br></br>
                 <br></br>
-                <p>2. The figure below shows a car standing on a flat road. The car weighs 2040 lb. The center of gravity is located at G and has a horizontal distance 3 ft from B. The distance between the front and the rear tires is 8 ft. The reaction force at tire A is <input placeholder={'Enter answer'} name={'input2'} id={'Q2I1'} /> lb while the reaction force at tire B is <input placeholder={'Enter answer'} name={'input2'} id={'Q2I2'} /> lb. </p>
+                <p>2. The figure below shows a car standing on a flat road. The car weighs 2400 lb. The center of gravity is located at G and has a horizontal distance 3 ft from B. The distance between the front and the rear tires is 8 ft. The reaction force at tire A is <input placeholder={'Enter answer'} name={'input2'} id={'Q2I1'} /> lb while the reaction force at tire B is <input placeholder={'Enter answer'} name={'input2'} id={'Q2I2'} /> lb. </p>
 
                 <br></br>
                 <button type="button" onClick={handleClickEvent2}>Check Answer</button>
