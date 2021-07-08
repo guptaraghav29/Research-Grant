@@ -87,9 +87,9 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
+        var answer = '2';
         console.log("value" + form['input1'].value);
-
-        if (form['input1']['6'].checked && form['input1']['7'].checked && form['input1']['10'].checked && !form['input1']['0'].checked && !form['input1']['1'].checked && !form['input1']['2'].checked && !form['input1']['3'].checked && !form['input1']['4'].checked && !form['input1']['5'].checked && !form['input1']['8'].checked && !form['input1']['9'].checked) 
+        if (form['input1'].value == answer)
             document.getElementById("result1").innerHTML = "Correct answer!";
         else
             document.getElementById("result1").innerHTML = "Incorrect answer! Please try again."
@@ -126,9 +126,11 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
+        var answer1 = '0';
+        var answer2 = '200';
+        var answer3 = '200';
         console.log("value" + form['input2'].value);
-
-        if (form['input2']['2'].checked && form['input2']['5'].checked && form['input2']['6'].checked && !form['input2']['0'].checked && !form['input2']['1'].checked && !form['input2']['3'].checked && !form['input2']['4'].checked)
+        if ((form['Q2I1'].value >= answer1 * 0.975) && (form['Q2I1'].value <= answer1 * 1.025) && (form['Q2I2'].value >= answer2 * 0.975) && (form['Q2I2'].value <= answer2 * 1.025) && (form['Q2I3'].value >= answer3 * 0.975) && (form['Q2I3'].value <= answer3 * 1.025))
             document.getElementById("result2").innerHTML = "Correct answer!";
         else
             document.getElementById("result2").innerHTML = "Incorrect answer! Please try again."
@@ -167,7 +169,7 @@ export default function UnderstandingQuiz() {
         const form = nameForm.current;
         console.log("value" + form['input3'].value);
 
-        if (form['input3']['2'].checked && form['input3']['4'].checked && !form['input3']['3'].checked && !form['input3']['1'].checked && !form['input3']['0'].checked)
+        if (form['input3']['1'].checked && form['input3']['3'].checked && !form['input3']['2'].checked && !form['input3']['4'].checked && !form['input3']['0'].checked)
             document.getElementById("result3").innerHTML = "Correct answer!";
         else
             document.getElementById("result3").innerHTML = "Incorrect answer! Please try again."
@@ -206,7 +208,7 @@ export default function UnderstandingQuiz() {
         const form = nameForm.current;
         console.log("value" + form['input4'].value);
 
-        if (form['input4']['0'].checked && !form['input4']['1'].checked && !form['input4']['2'].checked)
+        if (form['input4']['1'].checked && form['input4']['2'].checked && !form['input4']['0'].checked && !form['input4']['3'].checked && !form['input4']['4'].checked)
             document.getElementById("result4").innerHTML = "Correct answer!";
         else
             document.getElementById("result4").innerHTML = "Incorrect answer! Please try again."
@@ -243,12 +245,14 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        console.log("value" + form['input1'].value);
-
-        if (form['input1']['6'].checked && form['input1']['7'].checked && form['input1']['10'].checked && !form['input1']['0'].checked && !form['input1']['1'].checked && !form['input1']['2'].checked && !form['input1']['3'].checked && !form['input1']['4'].checked && !form['input1']['5'].checked && !form['input1']['8'].checked && !form['input1']['9'].checked) 
-            document.getElementById("result1").innerHTML = "Correct answer!";
+        var answer1 = '32.2';
+        var answer2 = '0';
+        var answer3 = '32.2';
+        console.log("value" + form['input2'].value);
+        if ((form['Q5I1'].value >= answer1 * 0.975) && (form['Q5I1'].value <= answer1 * 1.025) && (form['Q5I2'].value >= answer2 * 0.975) && (form['Q5I2'].value <= answer2 * 1.025) && (form['Q5I3'].value >= answer3 * 0.975) && (form['Q5I3'].value <= answer3 * 1.025))
+            document.getElementById("result5").innerHTML = "Correct answer!";
         else
-            document.getElementById("result1").innerHTML = "Incorrect answer! Please try again."
+            document.getElementById("result5").innerHTML = "Incorrect answer! Please try again."
     }
 
     const handleClickEvent6 = () => {
@@ -282,12 +286,12 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        console.log("value" + form['input1'].value);
-
-        if (form['input1']['6'].checked && form['input1']['7'].checked && form['input1']['10'].checked && !form['input1']['0'].checked && !form['input1']['1'].checked && !form['input1']['2'].checked && !form['input1']['3'].checked && !form['input1']['4'].checked && !form['input1']['5'].checked && !form['input1']['8'].checked && !form['input1']['9'].checked) 
-            document.getElementById("result1").innerHTML = "Correct answer!";
+        var answer = '1';
+        console.log("value" + form['input6'].value);
+        if (form['input6'].value == answer)
+            document.getElementById("result6").innerHTML = "Correct answer!";
         else
-            document.getElementById("result1").innerHTML = "Incorrect answer! Please try again."
+            document.getElementById("result6").innerHTML = "Incorrect answer! Please try again."
     }
 
     return (
@@ -308,33 +312,19 @@ export default function UnderstandingQuiz() {
             <h1 style={{ paddingBottom: "1cm" }}> Check Your Understanding</h1>
             <form ref={nameForm}>
                 <br></br>
-                <p> The figure shows a ladder that is connected to the ground with a pin joint at A and a roller joint at B. Both members AC and BC have the same weight W. W = 200 N, and L = 0.5 m. The angle θ=15°.</p>
+                <p> The figure shows a ladder that is connected to the ground with a pin joint at A and a roller joint at B. Both members AC and BC have the same weight W. W = 200 N, and L = 0.5 m. The angle θ = 15°.</p>
                 <img class="center" src="../../../images/quiz3_1_1.png" width="40%"></img>
                 <p>1. Shown below is the freebody diagram for the whole frame. Which of the following statements are true? </p>
                 <img class="center" src="../../../images/quiz3_1_2.png" width="40%"></img>
-               
-             
-                <input name={'input1'} type="checkbox"/> a. The free body diagram is complete and correct.
+
                 <br></br>
-                <input name={'input1'} type="checkbox"/> b. The horizontal reaction at B should be deleted.
-                <br></br>
-                <input name={'input1'} type="checkbox"/> c. The horizontal reaction at B should point in the positive x-direction.
-                <br></br>
-                <input name={'input1'} type="checkbox"/> d. The vertical reaction at B should be deleted.
-                <br></br>
-                <input name={'input1'} type="checkbox"/> e. The vertical reaction at B should point in the negative y-direction.
-                <br></br>
-                <input name={'input1'} type="checkbox"/> f. The vertical reaction at A should be deleted. 
-                <br></br>
-                <input name={'input1'} type="checkbox"/> g. The vertical reaction at B should point in the positive y-direction. 
-                <br></br>
-                <input name={'input1'} type="checkbox"/> h. A horizontal reaction at A should be added in the positive x-direction
-                <br></br>
-                <input name={'input1'} type="checkbox"/> i. A horizontal reaction at A should be added in the negative x-direction.
-                <br></br>
-                <input name={'input1'} type="checkbox"/> j. The weight of the ladder needs to be added. This weight is vertically downwards and passes through point A.
-                <br></br>
-                <input name={'input1'} type="checkbox"/> k. The weight of the ladder needs to be added. This weight is vertically downwards and passes through point G, the center of gravity.
+                <select name={'input1'} size={'5'}>
+                    <option value="1">The spring force should be added.</option>
+                    <option value="2">The freebody diagram is complete and accurate</option>
+                    <option value="3">The horizontal reaction at C should be included.</option>
+                    <option value="4">The vertical reaction at C should be included</option>
+                    <option value="5">A moment reaction should be included at A.</option>
+                </select>
                 <br></br>
                 <button type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
@@ -343,22 +333,7 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 <br></br>
 
-                <p>2. The support reactions at A are Ax= __________ (answer: 0) and Ay= ________ N (answer: 200 N). The support reaction at B is By= _______________ (answer: 200 N)</p>
-                
-                <input name={'input2'} type="checkbox"/> a. The free body diagram is complete and correct. 
-                <br></br>
-                <input name={'input2'} type="checkbox"/> b. The force from the cable should be deleted.
-                <br></br>
-                <input name={'input2'} type="checkbox"/> c. The force from the cable should point in the opposite direction.
-                <br></br>
-                <input name={'input2'} type="checkbox"/> d. The force from the cable must be parallel to the incline. 
-                <br></br>
-                <input name={'input2'} type="checkbox"/> e. The vertically downward force through G should be deleted.
-                <br></br>
-                <input name={'input2'} type="checkbox"/> f. The force at A is pointing in the incorrect direction.
-                <br></br>
-                <input name={'input2'} type="checkbox"/> g. The force at A must point perpendicular to the incline and directed towards towards G.
-                <br></br>
+                <p>2. The support reactions at A are Ax = <input placeholder={'Enter answer'} name={'input2'} id={'Q2I1'} /> and Ay = <input placeholder={'Enter answer'} name={'input2'} id={'Q2I2'} /> N. The support reaction at B is By = <input placeholder={'Enter answer'} name={'input2'} id={'Q2I3'} />.</p>
 
                 <button type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer.</p>
@@ -369,18 +344,18 @@ export default function UnderstandingQuiz() {
 
                 <p>3. The figure (below) shows the freebody diagram of BC. Which of the following statements are true? </p>
                 <img class="center" src="../../../images/quiz3_1_3.png" width="40%"></img>
+                <br></br>
+                <input name={'input3'} type="checkbox" /> a. The freebody diagram is complete and accurate.
+                <br></br>
+                <input name={'input3'} type="checkbox" /> b. Spring force should be horizontal.
+                <br></br>
+                <input name={'input3'} type="checkbox" /> c. Horizontal reaction at C should be removed.
+                <br></br>
+                <input name={'input3'} type="checkbox" /> d. Vertical reaction at C should be included.
+                <br></br>
+                <input name={'input3'} type="checkbox" /> e. Weight should be removed.
+                <br></br>
 
-                <input name={'input3'} type="checkbox"/> a. The free body diagram is complete and correct.
-                <br></br>
-                <input name={'input3'} type="checkbox"/> b. Force T<sub>1</sub> should be directed in the opposite direction.
-                <br></br>
-                <input name={'input3'} type="checkbox"/> c. Force T<sub>2</sub> should be directed in the opposite direction
-                <br></br>
-                <input name={'input3'} type="checkbox"/> d. Force F<sub>y</sub> should be deleted.
-                <br></br>
-                <input name={'input3'} type="checkbox"/> e. A horizontal force should be added at B.
-                <br></br>
-           
                 <button type="button" onClick={handleClickEvent3}>Check Answer</button>
                 <p id="result3"> Input an answer - this line will update depending on your answer. </p>
 
@@ -391,14 +366,18 @@ export default function UnderstandingQuiz() {
                 <p>4. The figure below shows the freebody diagrams for both AC and BC. Which of the following statements are true about the freebody diagram for AC? </p>
                 <img class="center" src="../../../images/quiz3_1_4.png" width="40%"></img>
 
-             
-                <input name={'input4'} type="checkbox"/> a. The free body diagram is complete and correct.
+
+                <input name={'input4'} type="checkbox" /> a. Both diagrams are complete and correct.
                 <br></br>
-                <input name={'input4'} type="checkbox"/> b. The force F should be pointing downwards.
+                <input name={'input4'} type="checkbox" /> b. The spring force on AC should be in the opposite direction.
                 <br></br>
-                <input name={'input4'} type="checkbox"/> c. The weight should be pointing in the upward direction.
+                <input name={'input4'} type="checkbox" /> c. The vertical reaction at C should be in the opposite direction.
                 <br></br>
-                
+                <input name={'input4'} type="checkbox" /> d. The horizontal reaction at C should be in the opposite direction
+                <br></br>
+                <input name={'input4'} type="checkbox" /> e. The weight vector should be removed.
+                <br></br>
+
                 <br></br>
                 <button type="button" onClick={handleClickEvent4}>Check Answer</button>
                 <p id="result4"> Input an answer - this line will update depending on your answer. </p>
@@ -407,20 +386,10 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 <br></br>
 
-                <p>5. From the freebody diagram of BC, the magnitude of the reaction components at C are: Cx=__________(answer: 32.2) N and Cy=  ___________ N (answer: 0). The magnitude of the force of the spring is Fs= ________ (answer: 32.2 N).  </p>
-                <img class="center" src="../../../images/quiz3_1_5.png" width="40%"></img>
-
-             
-                <input name={'input5'} type="checkbox"/> a. The free body diagram is complete and correct.
-                <br></br>
-                <input name={'input5'} type="checkbox"/> b. The force F should be pointing downwards.
-                <br></br>
-                <input name={'input5'} type="checkbox"/> c. The weight should be pointing in the upward direction.
-                <br></br>
-                
-                <br></br>
+                <p>5. From the freebody diagram of BC, the magnitude of the reaction components at C are: C<sub>x</sub> = <input placeholder={'Enter answer'} name={'input5'} id={'Q5I1'} /> N and C<sub>y</sub> = <input placeholder={'Enter answer'} name={'input5'} id={'Q5I2'} /> N. The magnitude of the force of the spring is F<sub>s</sub> = <input placeholder={'Enter answer'} name={'input5'} id={'Q5I3'} />. </p>
                 <button type="button" onClick={handleClickEvent5}>Check Answer</button>
                 <p id="result5"> Input an answer - this line will update depending on your answer. </p>
+                <img class="center" src="../../../images/quiz3_1_5.png" width="40%"></img>
 
                 <br></br>
                 <br></br>
@@ -429,14 +398,14 @@ export default function UnderstandingQuiz() {
                 <p>6. The figure shows the freebody diagram of AC. Which of the following equations is the correct equation for moments about point A? </p>
                 <img class="center" src="../../../images/quiz3_1_6.png" width="40%"></img>
 
-             
-                <input name={'input6'} type="checkbox"/> a. The free body diagram is complete and correct.
                 <br></br>
-                <input name={'input6'} type="checkbox"/> b. The force F should be pointing downwards.
-                <br></br>
-                <input name={'input6'} type="checkbox"/> c. The weight should be pointing in the upward direction.
-                <br></br>
-                
+                <select name={'input6'} size={'4'}>
+                    <option value="1"> -Fscosθ - Wsinθ + CyLsinθ - CxLcosθ = 0 </option>
+                    <option value="2"> -Fscosθ + Wsinθ + CyLsinθ - CxLcosθ = 0 </option>
+                    <option value="3"> -Fscosθ - Wsinθ - CyLsinθ + CxLcosθ = 0 </option>
+                    <option value="4"> -Fscosθ - Wsinθ + CyLsinθ + CxLcosθ = 0 </option>
+                </select>
+
                 <br></br>
                 <button type="button" onClick={handleClickEvent6}>Check Answer</button>
                 <p id="result6"> Input an answer - this line will update depending on your answer. </p>
