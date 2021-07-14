@@ -1,8 +1,23 @@
 import Head from 'next/head'
-import React, { useRef } from 'react';
+import React, {ReactDOM, useRef } from 'react';
 import XAPI from "@xapi/xapi";
+// import styles from './home.modules.scss';
+// import Latex from 'react-latex';
+// import katex from 'katex';
+
+// import 'katex/dist/katex.min.css'
+// import Latex from 'react-latex-next'
+// import parse from 'html-react-parser';
+
+// import MathJax from 'react-mathjax2'
+// const tex = 'f(x) = \\int_{-\\infty}^\\infty\\hat f(\\xi)\\,e^{2 \\pi i \\xi x}\\,d\\xi'
+// import { MathfieldComponent } from "react-mathlive";
+// import '/Users/raghavgupta/Desktop/UCR/Research/Code/Research-Grant/research/node_modules/react-mathlive/dist/mathlive-fonts.css'
+// import 'https://unpkg.com/mathlive/dist/mathlive-static.css';
+
 
 export default function UnderstandingQuiz() {
+
     const nameForm = useRef(null);
     const xapiform = useRef(null);
 
@@ -286,7 +301,7 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '1';
+        var answer = '3';
         console.log("value" + form['input6'].value);
         if (form['input6'].value == answer)
             document.getElementById("result6").innerHTML = "Correct answer!";
@@ -294,8 +309,20 @@ export default function UnderstandingQuiz() {
             document.getElementById("result6").innerHTML = "Incorrect answer! Please try again."
     }
 
+    // const text =  "\displaystyle \sum_{i=0}^n \frac{a_i}{1+x}"
+    //const object = {"<math-field  virtual-keyboard-mode="manual"> {text}</math-field>"}
     return (
         <div style={{ paddingLeft: "2cm", paddingRight: "2cm", textAlign: "left" }}>
+            <script defer src="//unpkg.com/mathlive/dist/mathlive.min.js"></script>
+           
+            {/* <p>$$\frac{''\pi''}{2}$$</p> */}
+            {/* <MathJax.Context input='ascii'>
+                <div>
+                This is an inline math formula: <MathJax.Node >{'a = b'}</MathJax.Node>
+                </div>
+            </MathJax.Context> */}
+            <math-field></math-field>
+            {/* <p>{'{'} {'}'}</p> */}
             <br></br>
             <form style={{ textAlign: "center" }} ref={xapiform} method="POST">
                 <p> Please enter your name and email. This must be done for all of the Check Your Understanding Quizzes. </p>
@@ -308,12 +335,17 @@ export default function UnderstandingQuiz() {
             </form>
             <Head>
                 <title> Understanding Quiz 1 </title>
+                <link
+                    href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css"
+                    rel="stylesheet"
+                />
             </Head>
             <h1 style={{ paddingBottom: "1cm" }}> Check Your Understanding</h1>
             <form ref={nameForm}>
                 <br></br>
                 <p> The figure shows a ladder that is connected to the ground with a pin joint at A and a roller joint at B. Both members AC and BC have the same weight W. W = 200 N, and L = 0.5 m. The angle θ = 15°.</p>
                 <img class="center" src="../../../images/quiz3_1_1.png" width="40%"></img>
+                <p></p>
                 <p>1. Shown below is the freebody diagram for the whole frame. Which of the following statements are true? </p>
                 <img class="center" src="../../../images/quiz3_1_2.png" width="40%"></img>
 
@@ -363,7 +395,7 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 <br></br>
 
-                <p>4. The figure below shows the freebody diagrams for both AC and BC. Which of the following statements are true about the freebody diagram for AC? </p>
+                <p>4. The figure below shows the freebody diagrams for both AC and BC. Assuming that the freebody diagram of BC is correct, which of the following statements are true about the freebody diagram for AC? </p>
                 <img class="center" src="../../../images/quiz3_1_4.png" width="40%"></img>
 
 
@@ -399,12 +431,18 @@ export default function UnderstandingQuiz() {
                 <img class="center" src="../../../images/quiz3_1_6.png" width="40%"></img>
 
                 <br></br>
+                <p>The options are listed below. Please choose an option. </p>
+                <img class="center" src="../../../images/quiz3_1_7.png" width="40%"></img>
+                <img class="center" src="../../../images/quiz3_1_8.png" width="40%"></img>
+                <img class="center" src="../../../images/quiz3_1_9.png" width="40%"></img>
+                <img class="center" src="../../../images/quiz3_1_10.png" width="40%"></img>
                 <select name={'input6'} size={'4'}>
-                    <option value="1"> -Fscosθ - Wsinθ + CyLsinθ - CxLcosθ = 0 </option>
-                    <option value="2"> -Fscosθ + Wsinθ + CyLsinθ - CxLcosθ = 0 </option>
-                    <option value="3"> -Fscosθ - Wsinθ - CyLsinθ + CxLcosθ = 0 </option>
-                    <option value="4"> -Fscosθ - Wsinθ + CyLsinθ + CxLcosθ = 0 </option>
+                    <option value="1"> Option A </option>  
+                    <option value="2"> Option B </option>
+                    <option value="3"> Option C </option>
+                    <option value="4"> Option D </option>
                 </select>
+               
 
                 <br></br>
                 <button type="button" onClick={handleClickEvent6}>Check Answer</button>

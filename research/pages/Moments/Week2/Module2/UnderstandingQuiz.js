@@ -2,6 +2,7 @@ import Head from 'next/head'
 import React, { useRef } from 'react';
 import XAPI from "@xapi/xapi";
 
+
 export default function UnderstandingQuiz() {
     const nameForm = useRef(null);
     const xapiform = useRef(null);
