@@ -3,7 +3,6 @@ import { render } from 'react-dom'
 import React, { Component, useRef, useState, useEffect } from 'react';
 import XAPI from "@xapi/xapi";
 
-
 export default function UnderstandingQuiz() {
 
     const nameForm = useRef(null);
@@ -316,7 +315,7 @@ export default function UnderstandingQuiz() {
             <Head>
                 <title> Understanding Quiz 1 </title>
             </Head>
-            <h1 style={{ paddingBottom: "1cm" }}> Check Your Understanding</h1>
+            <h1 style={{ paddingBottom: "1cm" }}> Check Your Understanding Part 2</h1>
             <form ref={nameForm}>
                 <br></br>
                 <p> The figure shows a ladder that is connected to the ground with a pin joint at A and a roller joint at B. Both members AC and BC have the same weight W. W = 200 N, and L = 0.5 m. The angle θ = 15°.</p>
@@ -425,5 +424,4 @@ export default function UnderstandingQuiz() {
             </form>
         </div>
     )
-
 }

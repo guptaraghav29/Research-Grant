@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@innodoc/react-mathjax-node": "^0.1.2",
     "@xapi/xapi": "^1.2.0",
     "axios": "^0.21.1",
     "core-js": "^3.15.2",
@@ -21,10 +22,12 @@
     "latex.js": "^0.12.4",
     "mathjax": "^3.2.0",
     "mathjax-full": "^3.2.0",
+    "mathjax-react": "^1.0.6",
     "mathlive": "^0.69.4",
     "minimist": "^0.2.1",
     "next": "^10.2.3",
     "node-geogebra": "^1.2.1",
+    "postscribe": "^2.0.8",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-katex": "^2.0.2",
@@ -33,6 +36,7 @@
     "react-latex-next": "^2.0.0",
     "react-lineto": "^3.0.0",
     "react-markdown": "^6.0.2",
+    "react-mathjax-preview": "^2.2.3",
     "react-mathjax2": "^0.0.2",
     "react-mathlive": "^3.0.5-preview.1",
     "react-native-latex": "^0.5.0",
