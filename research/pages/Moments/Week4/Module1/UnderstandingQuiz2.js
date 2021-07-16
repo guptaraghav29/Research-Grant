@@ -249,8 +249,7 @@ export default function UnderstandingQuiz() {
 
         const form = nameForm.current;
         var answer1 = '32.2';
-        var answer2 = '0';
-        var answer3 = '32.2';
+      
         console.log("value" + form['input2'].value);
         if ((form['Q5I1'].value >= answer1 * 0.975) && (form['Q5I1'].value <= answer1 * 1.025) && (form['Q5I2'].value >= answer2 * 0.975) && (form['Q5I2'].value <= answer2 * 1.025) && (form['Q5I3'].value >= answer3 * 0.975) && (form['Q5I3'].value <= answer3 * 1.025))
             document.getElementById("result5").innerHTML = "Correct answer!";

@@ -3,7 +3,6 @@ import { render } from 'react-dom'
 import React, { Component, useRef, useState, useEffect } from 'react';
 import XAPI from "@xapi/xapi";
 
-
 export default function UnderstandingQuiz() {
 
     const nameForm = useRef(null);
@@ -49,7 +48,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student has viewed Week 3 Module 1 Understanding Quiz."
+                        "en-US": "Student has viewed Week 4 Module 2 Understanding Quiz."
                     }
                 }
             }
@@ -82,7 +81,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student submitted their answer. Week 3 Module 1 Quiz Question 1"
+                        "en-US": "Student submitted their answer. Week 4 Module 2 Quiz Question 1"
                     }
                 }
             }
@@ -91,9 +90,9 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '2';
+        var answer1 = '13.56';
         console.log("value" + form['input1'].value);
-        if (form['input1'].value == answer)
+        if ((form['Q1I1'].value >= answer1 * 0.975) && (form['Q1I1'].value <= answer1 * 1.025))
             document.getElementById("result1").innerHTML = "Correct answer!";
         else
             document.getElementById("result1").innerHTML = "Incorrect answer! Please try again."
@@ -121,7 +120,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student submitted their answer. Week 3 Module 1 Quiz Question 2"
+                        "en-US": "Student submitted their answer. Week 4 Module 2 Quiz Question 2"
                     }
                 }
             }
@@ -130,11 +129,11 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer1 = '0';
-        var answer2 = '200';
-        var answer3 = '200';
+        var answer1 = '3.27';
+        var answer2 = '2.82';
+    
         console.log("value" + form['input2'].value);
-        if ((form['Q2I1'].value >= answer1 * 0.975) && (form['Q2I1'].value <= answer1 * 1.025) && (form['Q2I2'].value >= answer2 * 0.975) && (form['Q2I2'].value <= answer2 * 1.025) && (form['Q2I3'].value >= answer3 * 0.975) && (form['Q2I3'].value <= answer3 * 1.025))
+        if ((form['Q2I1'].value >= answer1 * 0.975) && (form['Q2I1'].value <= answer1 * 1.025) && (form['Q2I2'].value >= answer2 * 0.975) && (form['Q2I2'].value <= answer2 * 1.025))
             document.getElementById("result2").innerHTML = "Correct answer!";
         else
             document.getElementById("result2").innerHTML = "Incorrect answer! Please try again."
@@ -161,33 +160,18 @@ export default function UnderstandingQuiz() {
             <h1 style={{ paddingBottom: "1cm" }}> Check Your Understanding Part 1</h1>
             <form ref={nameForm}>
                 <br></br>
-                <p> The figure shows a ladder that is connected to the ground with a pin joint at A and a roller joint at B. Both members AC and BC have the same weight W. W = 200 N, and L = 0.5 m. The angle θ = 15°.</p>
-                <img class="center" src="../../../images/quiz3_1_1.png" width="40%"></img>
-                <p></p>
-                <p>1. Shown below is the freebody diagram for the whole frame. Which of the following statements are true? </p>
-                <img class="center" src="../../../images/quiz3_1_2.png" width="40%"></img>
-
-                <br></br>
-                <select name={'input1'} size={'5'}>
-                    <option value="1">The spring force should be added.</option>
-                    <option value="2">The freebody diagram is complete and accurate</option>
-                    <option value="3">The horizontal reaction at C should be included.</option>
-                    <option value="4">The vertical reaction at C should be included</option>
-                    <option value="5">A moment reaction should be included at A.</option>
-                </select>
-                <br></br>
+                <p>1. The y-coordinate of the centroid of figure is <input placeholder={'Enter answer'} name={'input1'} id={'Q1I1'} />.  </p>    
                 <button type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
-
+                <img class="center" src="../../../images/quiz4_1_1.png" width="40%"></img>
                 <br></br>
                 <br></br>
                 <br></br>
 
-                <p>2. The support reactions at A are Ax = <input placeholder={'Enter answer'} name={'input2'} id={'Q2I1'} /> and Ay = <input placeholder={'Enter answer'} name={'input2'} id={'Q2I2'} /> N. The support reaction at B is By = <input placeholder={'Enter answer'} name={'input2'} id={'Q2I3'} />.</p>
-
+                <p>2. The x-coordinate of the centroid in the figure below is <input placeholder={'Enter answer'} name={'input2'} id={'Q2I1'} />. The y-coordinate of the centroid in the figure is <input placeholder={'Enter answer'} name={'input2'} id={'Q2I2'} />.</p>
                 <button type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer.</p>
-
+                <img class="center" src="../../../images/quiz4_1_2.png" width="40%"></img>
 
             </form>
         </div>
