@@ -48,7 +48,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student has viewed Week 4 Module 2 Understanding Quiz."
+                        "en-US": "Student has viewed Week 4 Module 1 Understanding Quiz."
                     }
                 }
             }
@@ -81,7 +81,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student submitted their answer. Week 4 Module 2 Quiz Question 1"
+                        "en-US": "Student submitted their answer. Week 4 Module 1 Quiz 1 Question 1"
                     }
                 }
             }
@@ -120,7 +120,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student submitted their answer. Week 4 Module 2 Quiz Question 2"
+                        "en-US": "Student submitted their answer. Week 4 Module 1 Quiz 1 Question 2"
                     }
                 }
             }
