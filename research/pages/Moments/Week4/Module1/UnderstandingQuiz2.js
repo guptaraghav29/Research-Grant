@@ -90,7 +90,7 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '2';
+        var answer = '1';
         console.log("value" + form['input1'].value);
         if (form['input1'].value == answer)
             document.getElementById("result1").innerHTML = "Correct answer!";
@@ -129,7 +129,7 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '2';
+        var answer = '1';
         console.log("value" + form['input2'].value);
         if (form['input2'].value == answer)
             document.getElementById("result2").innerHTML = "Correct answer!";
@@ -168,7 +168,7 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '3';
+        var answer = '2';
         console.log("value" + form['input3'].value);
         if (form['input3'].value == answer)
             document.getElementById("result3").innerHTML = "Correct answer!";
@@ -208,7 +208,7 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '4';
+        var answer = '3';
         console.log("value" + form['input4'].value);
         if (form['input4'].value == answer)
             document.getElementById("result4").innerHTML = "Correct answer!";
@@ -248,7 +248,7 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '1';
+        var answer = '4';
         console.log("value" + form['input5'].value);
         if (form['input5'].value == answer)
             document.getElementById("result5").innerHTML = "Correct answer!";
@@ -321,12 +321,14 @@ export default function UnderstandingQuiz() {
                 <img class="center" src="../../../images/quiz4_1_3.png" width="40%"></img>
                 <p></p>
                 <p>1. The area of the element in the figure is: </p>
+                <img src="../../../images/quiz4_1_8.png" width="20%"></img>
+                <br></br>
                 <select name={'input1'} size={'5'}>
-                    <option value="1">The spring force should be added.</option>
-                    <option value="2">The freebody diagram is complete and accurate</option>
-                    <option value="3">The horizontal reaction at C should be included.</option>
-                    <option value="4">The vertical reaction at C should be included</option>
-                    <option value="5">A moment reaction should be included at A.</option>
+                    <option value="1"> Option A </option>
+                    <option value="2"> Option B </option>
+                    <option value="3"> Option C </option>
+                    <option value="4"> Option D </option>
+                    <option value="5"> Option E </option>
                 </select>
                 <br></br>
                 <button type="button" onClick={handleClickEvent1}>Check Answer</button>
@@ -339,12 +341,13 @@ export default function UnderstandingQuiz() {
                 <img class="center" src="../../../images/quiz4_1_4.png" width="40%"></img>
                 <p></p>
                 <p>2. The coordinates of the centroid of the area of the element above (indicated by the red dot) is: </p>
-                
+                <img src="../../../images/quiz4_1_9.png" width="20%"></img>
+                <br></br>
                 <select name={'input2'} size={'4'}>
-                    <option value="1"> 2/5 </option>
-                    <option value="2"> 1/5 </option>
-                    <option value="3"> 3/5 </option>
-                    <option value="4"> 1/7 </option>
+                    <option value="1"> Option A </option>
+                    <option value="2"> Option B </option>
+                    <option value="3"> Option C </option>
+                    <option value="4"> Option D </option>
                 </select>
                 <br></br>
                 
@@ -356,12 +359,13 @@ export default function UnderstandingQuiz() {
                 <br></br>
 
                 <p>3. The coordinates of centroid of the area using the element above: </p>
-                
+                <img src="../../../images/quiz4_1_10.png" width="20%"></img>
+                <br></br>
                 <select name={'input3'} size={'4'}>
-                    <option value="1"> 2/5 </option>
-                    <option value="2"> 1/5 </option>
-                    <option value="3"> 3/5 </option>
-                    <option value="4"> 1/7 </option>
+                    <option value="1"> Option A </option>
+                    <option value="2"> Option B </option>
+                    <option value="3"> Option C </option>
+                    <option value="4"> Option D </option>
                 </select>
                 <br></br>
                 <button type="button" onClick={handleClickEvent3}>Check Answer</button>
@@ -372,12 +376,14 @@ export default function UnderstandingQuiz() {
                 <br></br>
 
                 <p>4. The expression for the area of the element in the figure is: </p>
-
-                <select name={'input4'} size={'4'}>
-                    <option value="1"> 2/5 </option>
-                    <option value="2"> 1/5 </option>
-                    <option value="3"> 3/5 </option>
-                    <option value="4"> 1/7 </option>
+                <img src="../../../images/quiz4_1_11.png" width="20%"></img>
+                <br></br>
+                <select name={'input4'} size={'5'}>
+                    <option value="1"> Option A </option>
+                    <option value="2"> Option B </option>
+                    <option value="3"> Option C </option>
+                    <option value="4"> Option D </option>
+                    <option value="5"> Option E </option>
                 </select>
                 <br></br>
                 <button type="button" onClick={handleClickEvent4}>Check Answer</button>
@@ -390,12 +396,14 @@ export default function UnderstandingQuiz() {
                 <img class="center" src="../../../images/quiz4_1_5.png" width="40%"></img>
                 <p></p>
                 <p>5. The coordinates of the centroid of the area of the element (shown by the red dot) is: </p>
-                
-                <select name={'input5'} size={'4'}>
-                    <option value="1"> 2/5 </option>
-                    <option value="2"> 1/5 </option>
-                    <option value="3"> 3/5 </option>
-                    <option value="4"> 1/7 </option>
+                <img src="../../../images/quiz4_1_12.png" width="20%"></img>
+                <br></br>
+                <select name={'input5'} size={'5'}>
+                    <option value="1"> Option A </option>
+                    <option value="2"> Option B </option>
+                    <option value="3"> Option C </option>
+                    <option value="4"> Option D </option>
+                    <option value="5"> Option E </option>
                 </select>
                 <br></br>
                 <button type="button" onClick={handleClickEvent5}>Check Answer</button>
