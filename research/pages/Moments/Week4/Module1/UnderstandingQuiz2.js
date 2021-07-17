@@ -320,7 +320,7 @@ export default function UnderstandingQuiz() {
                 <p> The figure shows a parabolic area. Let’s determine the centroid of this area in two ways.</p>
                 <img class="center" src="../../../images/quiz4_1_3.png" width="40%"></img>
                 <p></p>
-                <p>1. The area of the element in the figure is: </p>
+                <p>1. The area of the element in the figure shown <b>below</b> is: </p>
                 <img src="../../../images/quiz4_1_8.png" width="20%"></img>
                 <br></br>
                 <select name={'input1'} size={'5'}>
@@ -334,8 +334,6 @@ export default function UnderstandingQuiz() {
                 <button type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
 
-                <br></br>
-                <br></br>
                 <br></br>
 
                 <img class="center" src="../../../images/quiz4_1_4.png" width="40%"></img>
@@ -398,12 +396,11 @@ export default function UnderstandingQuiz() {
                 <p>5. The coordinates of the centroid of the area of the element (shown by the red dot) is: </p>
                 <img src="../../../images/quiz4_1_12.png" width="20%"></img>
                 <br></br>
-                <select name={'input5'} size={'5'}>
+                <select name={'input5'} size={'4'}>
                     <option value="1"> Option A </option>
                     <option value="2"> Option B </option>
                     <option value="3"> Option C </option>
                     <option value="4"> Option D </option>
-                    <option value="5"> Option E </option>
                 </select>
                 <br></br>
                 <button type="button" onClick={handleClickEvent5}>Check Answer</button>
@@ -414,7 +411,7 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 <br></br>
 
-                <p>6.The x-coordinate of the centroid of the area using the element above is: </p>
+                <p>6.The y-coordinate of the centroid of the area using the element above is: </p>
 
                 <select name={'input6'} size={'4'}>
                     <option value="1"> 2/5 </option>
