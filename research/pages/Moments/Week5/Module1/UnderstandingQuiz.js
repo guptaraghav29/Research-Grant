@@ -3,7 +3,6 @@ import { render } from 'react-dom'
 import React, { Component, useRef, useState, useEffect } from 'react';
 import XAPI from "@xapi/xapi";
 
-
 export default function UnderstandingQuiz() {
 
     const nameForm = useRef(null);
@@ -49,7 +48,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student has viewed Week 3 Module 1 Understanding Quiz."
+                        "en-US": "Student has viewed Week 4 Module 1 Understanding Quiz 2."
                     }
                 }
             }
@@ -82,7 +81,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student submitted their answer. Week 3 Module 1 Quiz Question 1"
+                        "en-US": "Student submitted their answer. Week 4 Module 1 Quiz 2 Question 1"
                     }
                 }
             }
@@ -91,7 +90,7 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '2';
+        var answer = '1';
         console.log("value" + form['input1'].value);
         if (form['input1'].value == answer)
             document.getElementById("result1").innerHTML = "Correct answer!";
@@ -121,7 +120,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student submitted their answer. Week 3 Module 1 Quiz Question 2"
+                        "en-US": "Student submitted their answer. Week 4 Module 1 Quiz 2 Question 2"
                     }
                 }
             }
@@ -130,11 +129,9 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer1 = '0';
-        var answer2 = '200';
-        var answer3 = '200';
+        var answer = '1';
         console.log("value" + form['input2'].value);
-        if ((form['Q2I1'].value >= answer1 * 0.975) && (form['Q2I1'].value <= answer1 * 1.025) && (form['Q2I2'].value >= answer2 * 0.975) && (form['Q2I2'].value <= answer2 * 1.025) && (form['Q2I3'].value >= answer3 * 0.975) && (form['Q2I3'].value <= answer3 * 1.025))
+        if (form['input2'].value == answer)
             document.getElementById("result2").innerHTML = "Correct answer!";
         else
             document.getElementById("result2").innerHTML = "Incorrect answer! Please try again."
@@ -162,7 +159,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student submitted their answer. Week 3 Module 1 Quiz Question 3"
+                        "en-US": "Student submitted their answer. Week 4 Module 1 Quiz 2 Question 3"
                     }
                 }
             }
@@ -171,12 +168,13 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
+        var answer = '2';
         console.log("value" + form['input3'].value);
-
-        if (form['input3']['1'].checked && form['input3']['3'].checked && !form['input3']['2'].checked && !form['input3']['4'].checked && !form['input3']['0'].checked)
+        if (form['input3'].value == answer)
             document.getElementById("result3").innerHTML = "Correct answer!";
         else
             document.getElementById("result3").innerHTML = "Incorrect answer! Please try again."
+    
     }
 
     const handleClickEvent4 = () => {
@@ -201,7 +199,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student submitted their answer. Week 3 Module 1 Quiz Question 4"
+                        "en-US": "Student submitted their answer.  Week 4 Module 1 Quiz 2 Question 4"
                     }
                 }
             }
@@ -210,12 +208,13 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
+        var answer = '3';
         console.log("value" + form['input4'].value);
-
-        if (form['input4']['1'].checked && form['input4']['2'].checked && !form['input4']['0'].checked && !form['input4']['3'].checked && !form['input4']['4'].checked)
+        if (form['input4'].value == answer)
             document.getElementById("result4").innerHTML = "Correct answer!";
         else
             document.getElementById("result4").innerHTML = "Incorrect answer! Please try again."
+    
     }
 
     const handleClickEvent5 = () => {
@@ -240,7 +239,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student submitted their answer. Week 3 Module 1 Quiz Question 5"
+                        "en-US": "Student submitted their answer.  Week 4 Module 1 Quiz 2 Question 5"
                     }
                 }
             }
@@ -249,15 +248,14 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer1 = '32.2';
-        var answer2 = '0';
-        var answer3 = '32.2';
-        console.log("value" + form['input2'].value);
-        if ((form['Q5I1'].value >= answer1 * 0.975) && (form['Q5I1'].value <= answer1 * 1.025) && (form['Q5I2'].value >= answer2 * 0.975) && (form['Q5I2'].value <= answer2 * 1.025) && (form['Q5I3'].value >= answer3 * 0.975) && (form['Q5I3'].value <= answer3 * 1.025))
+        var answer = '4';
+        console.log("value" + form['input5'].value);
+        if (form['input5'].value == answer)
             document.getElementById("result5").innerHTML = "Correct answer!";
         else
             document.getElementById("result5").innerHTML = "Incorrect answer! Please try again."
     }
+
 
     const handleClickEvent6 = () => {
         const xform = xapiform.current;
@@ -281,7 +279,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student submitted their answer. Week 3 Module 1 Quiz Question 6"
+                        "en-US": "Student submitted their answer.  Week 4 Module 1 Quiz 2 Question 6"
                     }
                 }
             }
@@ -290,7 +288,7 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '3';
+        var answer = '1';
         console.log("value" + form['input6'].value);
         if (form['input6'].value == answer)
             document.getElementById("result6").innerHTML = "Correct answer!";
@@ -314,37 +312,45 @@ export default function UnderstandingQuiz() {
                 <p style={{ color: "red", fontWeight: "bold" }} id="result0"> Status: Unsubmitted </p>
             </form>
             <Head>
-                <title> Understanding Quiz 1 </title>
+                <title> Understanding Quiz </title>
                 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
                 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             </Head>
             <h1 style={{ paddingBottom: "1cm" }}> Check Your Understanding</h1>
             <form ref={nameForm}>
                 <br></br>
-                <p> The figure shows a ladder that is connected to the ground with a pin joint at A and a roller joint at B. Both members AC and BC have the same weight W. W = 200 N, and L = 0.5 m. The angle θ = 15°.</p>
-                <img class="center" src="../../../images/quiz3_1_1.png" width="40%"></img>
+                <p> The figure shows a parabolic area. Let’s determine the centroid of this area in two ways.</p>
+                <img class="center" src="../../../images/quiz4_1_3.png" width="40%"></img>
                 <p></p>
-                <p>1. Shown below is the freebody diagram for the whole frame. Which of the following statements are true? </p>
-                <img class="center" src="../../../images/quiz3_1_2.png" width="40%"></img>
-
+                <p>1. The area of the element in the figure shown <b>below</b> is: </p>
+                <img src="../../../images/quiz4_1_8.png" width="20%"></img>
                 <br></br>
                 <select name={'input1'} size={'5'}>
-                    <option value="1">The spring force should be added.</option>
-                    <option value="2">The freebody diagram is complete and accurate</option>
-                    <option value="3">The horizontal reaction at C should be included.</option>
-                    <option value="4">The vertical reaction at C should be included</option>
-                    <option value="5">A moment reaction should be included at A.</option>
+                    <option value="1"> Option A </option>
+                    <option value="2"> Option B </option>
+                    <option value="3"> Option C </option>
+                    <option value="4"> Option D </option>
+                    <option value="5"> Option E </option>
                 </select>
                 <br></br>
                 <button type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
 
                 <br></br>
-                <br></br>
-                <br></br>
 
-                <p>2. The support reactions at A are Ax = <input placeholder={'Enter answer'} name={'input2'} id={'Q2I1'} /> and Ay = <input placeholder={'Enter answer'} name={'input2'} id={'Q2I2'} /> N. The support reaction at B is By = <input placeholder={'Enter answer'} name={'input2'} id={'Q2I3'} />.</p>
-
+                <img class="center" src="../../../images/quiz4_1_4.png" width="40%"></img>
+                <p></p>
+                <p>2. The coordinates of the centroid of the area of the element above (indicated by the red dot) is: </p>
+                <img src="../../../images/quiz4_1_9.png" width="20%"></img>
+                <br></br>
+                <select name={'input2'} size={'4'}>
+                    <option value="1"> Option A </option>
+                    <option value="2"> Option B </option>
+                    <option value="3"> Option C </option>
+                    <option value="4"> Option D </option>
+                </select>
+                <br></br>
+                
                 <button type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer.</p>
 
@@ -352,20 +358,16 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 <br></br>
 
-                <p>3. The figure (below) shows the freebody diagram of BC. Which of the following statements are true? </p>
-                <img class="center" src="../../../images/quiz3_1_3.png" width="40%"></img>
+                <p>3. The coordinates of centroid of the area using the element above: </p>
+                <img src="../../../images/quiz4_1_10.png" width="20%"></img>
                 <br></br>
-                <input name={'input3'} type="checkbox" /> a. The freebody diagram is complete and accurate.
+                <select name={'input3'} size={'4'}>
+                    <option value="1"> Option A </option>
+                    <option value="2"> Option B </option>
+                    <option value="3"> Option C </option>
+                    <option value="4"> Option D </option>
+                </select>
                 <br></br>
-                <input name={'input3'} type="checkbox" /> b. Spring force should be horizontal.
-                <br></br>
-                <input name={'input3'} type="checkbox" /> c. Horizontal reaction at C should be removed.
-                <br></br>
-                <input name={'input3'} type="checkbox" /> d. Vertical reaction at C should be included.
-                <br></br>
-                <input name={'input3'} type="checkbox" /> e. Weight should be removed.
-                <br></br>
-
                 <button type="button" onClick={handleClickEvent3}>Check Answer</button>
                 <p id="result3"> Input an answer - this line will update depending on your answer. </p>
 
@@ -373,21 +375,16 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 <br></br>
 
-                <p>4. The figure below shows the freebody diagrams for both AC and BC. Assuming that the freebody diagram of BC is correct, which of the following statements are true about the freebody diagram for AC? </p>
-                <img class="center" src="../../../images/quiz3_1_4.png" width="40%"></img>
-
-
-                <input name={'input4'} type="checkbox" /> a. Both diagrams are complete and correct.
+                <p>4. The expression for the area of the element in the figure is: </p>
+                <img src="../../../images/quiz4_1_11.png" width="20%"></img>
                 <br></br>
-                <input name={'input4'} type="checkbox" /> b. The spring force on AC should be in the opposite direction.
-                <br></br>
-                <input name={'input4'} type="checkbox" /> c. The vertical reaction at C should be in the opposite direction.
-                <br></br>
-                <input name={'input4'} type="checkbox" /> d. The horizontal reaction at C should be in the opposite direction
-                <br></br>
-                <input name={'input4'} type="checkbox" /> e. The weight vector should be removed.
-                <br></br>
-
+                <select name={'input4'} size={'5'}>
+                    <option value="1"> Option A </option>
+                    <option value="2"> Option B </option>
+                    <option value="3"> Option C </option>
+                    <option value="4"> Option D </option>
+                    <option value="5"> Option E </option>
+                </select>
                 <br></br>
                 <button type="button" onClick={handleClickEvent4}>Check Answer</button>
                 <p id="result4"> Input an answer - this line will update depending on your answer. </p>
@@ -396,130 +393,33 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 <br></br>
 
-                <p>5. From the freebody diagram of BC, the magnitude of the reaction components at C are: C<sub>x</sub> = <input placeholder={'Enter answer'} name={'input5'} id={'Q5I1'} /> N and C<sub>y</sub> = <input placeholder={'Enter answer'} name={'input5'} id={'Q5I2'} /> N. The magnitude of the force of the spring is F<sub>s</sub> = <input placeholder={'Enter answer'} name={'input5'} id={'Q5I3'} />. </p>
-                <button type="button" onClick={handleClickEvent5}>Check Answer</button>
-                <p id="result5"> Input an answer - this line will update depending on your answer. </p>
-                <img class="center" src="../../../images/quiz3_1_5.png" width="40%"></img>
-
+                <img class="center" src="../../../images/quiz4_1_5.png" width="40%"></img>
+                <p></p>
+                <p>5. The coordinates of the centroid of the area of the element (shown by the red dot) is: </p>
+                <img src="../../../images/quiz4_1_12.png" width="20%"></img>
                 <br></br>
-                <br></br>
-                <br></br>
-
-                <p>6. The figure shows the freebody diagram of AC. Which of the following equations is the correct equation for moments about point A? </p>
-                <img class="center" src="../../../images/quiz3_1_6.png" width="40%"></img>
-
-                <br></br>
-                <p>The options are listed below. Please choose an option. </p>
-
-                <ol type='a'>
-                    <li><math display='left'>
-                        <mrow>
-                            <mo>&#x2212;</mo><msub>
-                                <mi>F</mi>
-                                <mi>s</mi>
-                            </msub>
-                            <mfrac>
-                                <mi>L</mi>
-                                <mn>6</mn>
-                            </mfrac>
-                            <mi>cos</mi><mi>&#x03B8;</mi><mo>&#x2212;</mo><mi>W</mi><mfrac>
-                                <mi>L</mi>
-                                <mn>2</mn>
-                            </mfrac>
-                            <mi>sin</mi><mi>&#x03B8;</mi><mo>+</mo><msub>
-                                <mi>C</mi>
-                                <mi>y</mi>
-                            </msub>
-                            <mi>L</mi><mi>sin</mi><mi>&#x03B8;</mi><mo>&#x2212;</mo><msub>
-                                <mi>C</mi>
-                                <mi>x</mi>
-                            </msub>
-                            <mi>L</mi><mi>cos</mi><mi>&#x03B8;</mi><mo>=</mo><mn>0</mn></mrow>
-                    </math>
-                    </li>
-                    <li><math display='left'>
-                        <mrow>
-                            <mo>&#x2212;</mo><msub>
-                                <mi>F</mi>
-                                <mi>s</mi>
-                            </msub>
-                            <mfrac>
-                                <mi>L</mi>
-                                <mn>6</mn>
-                            </mfrac>
-                            <mi>cos</mi><mi>&#x03B8;</mi><mo>+</mo><mi>W</mi><mfrac>
-                                <mi>L</mi>
-                                <mn>2</mn>
-                            </mfrac>
-                            <mi>sin</mi><mi>&#x03B8;</mi><mo>+</mo><msub>
-                                <mi>C</mi>
-                                <mi>y</mi>
-                            </msub>
-                            <mi>L</mi><mi>sin</mi><mi>&#x03B8;</mi><mo>&#x2212;</mo><msub>
-                                <mi>C</mi>
-                                <mi>x</mi>
-                            </msub>
-                            <mi>L</mi><mi>cos</mi><mi>&#x03B8;</mi><mo>=</mo><mn>0</mn></mrow>
-                    </math>
-                    </li>
-                    <li><math display='left'>
-                        <mrow>
-                            <mo>&#x2212;</mo><msub>
-                                <mi>F</mi>
-                                <mi>s</mi>
-                            </msub>
-                            <mfrac>
-                                <mi>L</mi>
-                                <mn>6</mn>
-                            </mfrac>
-                            <mi>cos</mi><mi>&#x03B8;</mi><mo>&#x2212;</mo><mi>W</mi><mfrac>
-                                <mi>L</mi>
-                                <mn>2</mn>
-                            </mfrac>
-                            <mi>sin</mi><mi>&#x03B8;</mi><mo>&#x2212;</mo><msub>
-                                <mi>C</mi>
-                                <mi>y</mi>
-                            </msub>
-                            <mi>L</mi><mi>sin</mi><mi>&#x03B8;</mi><mo>+</mo><msub>
-                                <mi>C</mi>
-                                <mi>x</mi>
-                            </msub>
-                            <mi>L</mi><mi>cos</mi><mi>&#x03B8;</mi><mo>=</mo><mn>0</mn></mrow>
-                    </math>
-                    </li>
-                    <li><math display='left'>
-                        <mrow>
-                            <mo>&#x2212;</mo><msub>
-                                <mi>F</mi>
-                                <mi>s</mi>
-                            </msub>
-                            <mfrac>
-                                <mi>L</mi>
-                                <mn>6</mn>
-                            </mfrac>
-                            <mi>cos</mi><mi>&#x03B8;</mi><mo>&#x2212;</mo><mi>W</mi><mfrac>
-                                <mi>L</mi>
-                                <mn>2</mn>
-                            </mfrac>
-                            <mi>sin</mi><mi>&#x03B8;</mi><mo>+</mo><msub>
-                                <mi>C</mi>
-                                <mi>y</mi>
-                            </msub>
-                            <mi>L</mi><mi>sin</mi><mi>&#x03B8;</mi><mo>+</mo><msub>
-                                <mi>C</mi>
-                                <mi>x</mi>
-                            </msub>
-                            <mi>L</mi><mi>cos</mi><mi>&#x03B8;</mi><mo>=</mo><mn>0</mn></mrow>
-                    </math>
-                    </li>
-                </ol>
-
-
-                <select name={'input6'} size={'4'}>
+                <select name={'input5'} size={'4'}>
                     <option value="1"> Option A </option>
                     <option value="2"> Option B </option>
                     <option value="3"> Option C </option>
                     <option value="4"> Option D </option>
+                </select>
+                <br></br>
+                <button type="button" onClick={handleClickEvent5}>Check Answer</button>
+                <p id="result5"> Input an answer - this line will update depending on your answer. </p>
+
+
+                <br></br>
+                <br></br>
+                <br></br>
+
+                <p>6.The y-coordinate of the centroid of the area using the element above is: </p>
+
+                <select name={'input6'} size={'4'}>
+                    <option value="1"> 2/5 </option>
+                    <option value="2"> 1/5 </option>
+                    <option value="3"> 3/5 </option>
+                    <option value="4"> 1/7 </option>
                 </select>
 
                 <br></br>
@@ -528,5 +428,4 @@ export default function UnderstandingQuiz() {
             </form>
         </div>
     )
-
 }
