@@ -48,7 +48,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student has viewed Week 4 Module 1 Understanding Quiz 2."
+                        "en-US": "Student has viewed Week 5 Module 1 Understanding Quiz."
                     }
                 }
             }
@@ -81,7 +81,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student submitted their answer. Week 4 Module 1 Quiz 2 Question 1"
+                        "en-US": "Student submitted their answer. Week 5 Module 1 Quiz Question 1"
                     }
                 }
             }
@@ -90,7 +90,7 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '1';
+        var answer = '2';
         console.log("value" + form['input1'].value);
         if (form['input1'].value == answer)
             document.getElementById("result1").innerHTML = "Correct answer!";
@@ -120,7 +120,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student submitted their answer. Week 4 Module 1 Quiz 2 Question 2"
+                        "en-US": "Student submitted their answer. Week 5 Module 1 Quiz Question 2"
                     }
                 }
             }
@@ -159,7 +159,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student submitted their answer. Week 4 Module 1 Quiz 2 Question 3"
+                        "en-US": "Student submitted their answer. Week 5 Module 1 Quiz Question 3"
                     }
                 }
             }
@@ -199,7 +199,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student submitted their answer.  Week 4 Module 1 Quiz 2 Question 4"
+                        "en-US": "Student submitted their answer.  Week 5 Module 1 Quiz Question 4"
                     }
                 }
             }
@@ -239,7 +239,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student submitted their answer.  Week 4 Module 1 Quiz 2 Question 5"
+                        "en-US": "Student submitted their answer.  Week 5 Module 1 Quiz Question 5"
                     }
                 }
             }
@@ -248,9 +248,9 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '4';
+        var answer1 = '112.4';
         console.log("value" + form['input5'].value);
-        if (form['input5'].value == answer)
+        if ((form['Q5I1'].value >= answer1 * 0.975) && (form['Q5I1'].value <= answer1 * 1.025))
             document.getElementById("result5").innerHTML = "Correct answer!";
         else
             document.getElementById("result5").innerHTML = "Incorrect answer! Please try again."
@@ -279,7 +279,7 @@ export default function UnderstandingQuiz() {
                 "id": "https://elearn.ucr.edu/courses/3730",
                 "definition": {
                     "name": {
-                        "en-US": "Student submitted their answer.  Week 4 Module 1 Quiz 2 Question 6"
+                        "en-US": "Student submitted their answer.  Week 5 Module 1 Quiz Question 6"
                     }
                 }
             }
@@ -288,9 +288,9 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '1';
+        var answer1 = '24.56';
         console.log("value" + form['input6'].value);
-        if (form['input6'].value == answer)
+        if ((form['Q6I1'].value >= answer1 * 0.975) && (form['Q6I1'].value <= answer1 * 1.025))
             document.getElementById("result6").innerHTML = "Correct answer!";
         else
             document.getElementById("result6").innerHTML = "Incorrect answer! Please try again."
@@ -319,30 +319,28 @@ export default function UnderstandingQuiz() {
             <h1 style={{ paddingBottom: "1cm" }}> Check Your Understanding</h1>
             <form ref={nameForm}>
                 <br></br>
-                <p> The figure shows a parabolic area. Let’s determine the centroid of this area in two ways.</p>
-                <img class="center" src="../../../images/quiz4_1_3.png" width="40%"></img>
+                <p> The figure shows a block A of mass 10 kg resting on a block B of 15 kg that rests on the ground. Block A is restrained by a string to the wall. The coefficient of friction between blocks A and B is 0.25 while the coefficient between B and the ground is 0.3.  A force P acts an angle 50 degrees on B. </p>
+                <img class="center" src="../../../images/quiz5_1_1.png" width="40%"></img>
                 <p></p>
-                <p>1. The area of the element in the figure shown <b>below</b> is: </p>
-                <img src="../../../images/quiz4_1_8.png" width="20%"></img>
+                <p>1. The figure shows the free-body diagram of block B. Which of the following are true? </p>
                 <br></br>
-                <select name={'input1'} size={'5'}>
-                    <option value="1"> Option A </option>
-                    <option value="2"> Option B </option>
-                    <option value="3"> Option C </option>
-                    <option value="4"> Option D </option>
-                    <option value="5"> Option E </option>
+                <select name={'input1'} size={'4'}>
+                    <option value="1"> The force T should be pointing in the opposite direction. </option>
+                    <option value="2"> The freebody diagram is complete and correct. </option>
+                    <option value="3"> The reaction force N<sub>B</sub> should be in the opposite direction </option>
+                    <option value="4"> The friction force F<sub>B</sub> should be in the opposite direction. </option>
                 </select>
                 <br></br>
                 <button type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
 
                 <br></br>
-
-                <img class="center" src="../../../images/quiz4_1_4.png" width="40%"></img>
-                <p></p>
-                <p>2. The coordinates of the centroid of the area of the element above (indicated by the red dot) is: </p>
-                <img src="../../../images/quiz4_1_9.png" width="20%"></img>
                 <br></br>
+                <br></br>
+
+                <img class="center" src="../../../images/quiz5_1_2.png" width="40%"></img>
+                <p></p>
+                <p>2. The figure shows the free-body diagram of block A. Which of the following are true? </p>
                 <select name={'input2'} size={'4'}>
                     <option value="1"> Option A </option>
                     <option value="2"> Option B </option>
@@ -358,9 +356,9 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 <br></br>
 
-                <p>3. The coordinates of centroid of the area using the element above: </p>
-                <img src="../../../images/quiz4_1_10.png" width="20%"></img>
-                <br></br>
+                <img class="center" src="../../../images/quiz5_1_3.png" width="40%"></img>
+                <p>3. (Same figure as above) The following are the equilibrium equations for the two blocks. Which of them is incorrect? </p>
+    
                 <select name={'input3'} size={'4'}>
                     <option value="1"> Option A </option>
                     <option value="2"> Option B </option>
@@ -375,9 +373,7 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 <br></br>
 
-                <p>4. The expression for the area of the element in the figure is: </p>
-                <img src="../../../images/quiz4_1_11.png" width="20%"></img>
-                <br></br>
+                <p>4. (Same figure as above) If the block A is at the verge of slipping, which of the following must be true? (there may be multiple correct answers) </p>
                 <select name={'input4'} size={'5'}>
                     <option value="1"> Option A </option>
                     <option value="2"> Option B </option>
@@ -392,37 +388,17 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 <br></br>
                 <br></br>
-
-                <img class="center" src="../../../images/quiz4_1_5.png" width="40%"></img>
+              
                 <p></p>
-                <p>5. The coordinates of the centroid of the area of the element (shown by the red dot) is: </p>
-                <img src="../../../images/quiz4_1_12.png" width="20%"></img>
-                <br></br>
-                <select name={'input5'} size={'4'}>
-                    <option value="1"> Option A </option>
-                    <option value="2"> Option B </option>
-                    <option value="3"> Option C </option>
-                    <option value="4"> Option D </option>
-                </select>
-                <br></br>
+                <p>5. (Same figure as above) If Block B is on the verge of slipping, then the force P required is <input placeholder={'Enter answer'} name={'input5'} id={'Q5I1'}/> N.</p>
                 <button type="button" onClick={handleClickEvent5}>Check Answer</button>
                 <p id="result5"> Input an answer - this line will update depending on your answer. </p>
 
-
                 <br></br>
                 <br></br>
                 <br></br>
 
-                <p>6.The y-coordinate of the centroid of the area using the element above is: </p>
-
-                <select name={'input6'} size={'4'}>
-                    <option value="1"> 2/5 </option>
-                    <option value="2"> 1/5 </option>
-                    <option value="3"> 3/5 </option>
-                    <option value="4"> 1/7 </option>
-                </select>
-
-                <br></br>
+                <p>6.(Same figure as above) The value of the tension in the cord is <input placeholder={'Enter answer'} name={'input6'} id={'Q6I1'}/> N. </p>
                 <button type="button" onClick={handleClickEvent6}>Check Answer</button>
                 <p id="result6"> Input an answer - this line will update depending on your answer. </p>
             </form>
