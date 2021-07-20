@@ -129,9 +129,9 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '1';
+        // var answer = '1';
         console.log("value" + form['input2'].value);
-        if (form['input2'].value == answer)
+        if (form['input2']['4'].checked && form['input2']['5'].checked && !form['input2']['0'].checked && !form['input2']['1'].checked && !form['input2']['2'].checked && !form['input2']['3'].checked)
             document.getElementById("result2").innerHTML = "Correct answer!";
         else
             document.getElementById("result2").innerHTML = "Incorrect answer! Please try again."
@@ -168,13 +168,13 @@ export default function UnderstandingQuiz() {
         console.log("Statement has been submitted.");
 
         const form = nameForm.current;
-        var answer = '2';
+        // var answer = '2';
         console.log("value" + form['input3'].value);
-        if (form['input3'].value == answer)
+        if (!form['input3']['3'].checked && form['input3']['0'].checked && form['input3']['1'].checked && form['input3']['2'].checked && form['input3']['4'].checked)
             document.getElementById("result3").innerHTML = "Correct answer!";
         else
             document.getElementById("result3").innerHTML = "Incorrect answer! Please try again."
-    
+
     }
 
     const handleClickEvent4 = () => {
@@ -210,11 +210,11 @@ export default function UnderstandingQuiz() {
         const form = nameForm.current;
         var answer = '3';
         console.log("value" + form['input4'].value);
-        if (form['input4'].value == answer)
+        if (form['input4']['0'].checked && form['input4']['1'].checked && form['input4']['2'].checked && form['input4']['3'].checked)
             document.getElementById("result4").innerHTML = "Correct answer!";
         else
             document.getElementById("result4").innerHTML = "Incorrect answer! Please try again."
-    
+
     }
 
     const handleClickEvent5 = () => {
@@ -341,14 +341,21 @@ export default function UnderstandingQuiz() {
                 <img class="center" src="../../../images/quiz5_1_2.png" width="40%"></img>
                 <p></p>
                 <p>2. The figure shows the free-body diagram of block A. Which of the following are true? </p>
-                <select name={'input2'} size={'4'}>
-                    <option value="1"> Option A </option>
-                    <option value="2"> Option B </option>
-                    <option value="3"> Option C </option>
-                    <option value="4"> Option D </option>
-                </select>
+
+                <input name={'input2'} type="checkbox" /> a. The freebody diagram is complete and correct.
                 <br></br>
-                
+                <input name={'input2'} type="checkbox" /> b. The reaction force N<sub>A</sub> should be in the opposite direction.
+                <br></br>
+                <input name={'input2'} type="checkbox" /> c. The weight of block A should be added.
+                <br></br>
+                <input name={'input2'} type="checkbox" /> d. The reaction force N<sub>B</sub> should be in the opposite direction.
+                <br></br>
+                <input name={'input2'} type="checkbox" /> e. The friction force F<sub>A</sub> should be in the opposite direction
+                <br></br>
+                <input name={'input2'} type="checkbox" /> f. The friction force F<sub>B</sub> should be in the opposite direction.
+                <br></br>
+                <br></br>
+
                 <button type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer.</p>
 
@@ -357,14 +364,87 @@ export default function UnderstandingQuiz() {
                 <br></br>
 
                 <img class="center" src="../../../images/quiz5_1_3.png" width="40%"></img>
+                <p></p>
                 <p>3. (Same figure as above) The following are the equilibrium equations for the two blocks. Which of them is incorrect? </p>
-    
-                <select name={'input3'} size={'4'}>
-                    <option value="1"> Option A </option>
-                    <option value="2"> Option B </option>
-                    <option value="3"> Option C </option>
-                    <option value="4"> Option D </option>
-                </select>
+
+                <ol type='a'>
+                    <li><math display='left'>
+                        <mrow>
+                            <mo>&#x2212;</mo><mi>T</mi><mo>+</mo><msub>
+                                <mi>F</mi>
+                                <mi>B</mi>
+                            </msub>
+                            <mo>=</mo><mn>0</mn></mrow>
+                    </math>
+                    </li>
+                    <li><math display='left'>
+                        <mrow>
+                            <mo>&#x2212;</mo><msub>
+                                <mi>W</mi>
+                                <mi>B</mi>
+                            </msub>
+                            <mo>+</mo><msub>
+                                <mi>N</mi>
+                                <mi>B</mi>
+                            </msub>
+                            <mo>=</mo><mn>0</mn></mrow>
+                    </math>
+                    </li>
+                    <li><math display='left'>
+                        <mrow>
+                            <mo>&#x2212;</mo><msub>
+                                <mi>N</mi>
+                                <mi>B</mi>
+                            </msub>
+                            <mo>+</mo><msub>
+                                <mi>W</mi>
+                                <mi>A</mi>
+                            </msub>
+                            <mo>+</mo><msub>
+                                <mi>N</mi>
+                                <mi>A</mi>
+                            </msub>
+                            <mo>+</mo><mi>P</mi><mi>sin</mi><mi>&#x03B8;</mi><mo>=</mo><mn>0</mn></mrow>
+                    </math>
+                    </li>
+                    <li><math display='left'>
+                        <mrow>
+                            <mo>&#x2212;</mo><mi>P</mi><mi>cos</mi><mi>&#x03B8;</mi><mo>&#x2212;</mo><msub>
+                                <mi>F</mi>
+                                <mi>A</mi>
+                            </msub>
+                            <mo>&#x2212;</mo><msub>
+                                <mi>F</mi>
+                                <mi>B</mi>
+                            </msub>
+                            <mo>=</mo><mn>0</mn></mrow>
+                    </math>
+                    </li>
+                    <li><math display='left'>
+                        <mrow>
+                            <mo>&#x2212;</mo><mi>P</mi><mi>cos</mi><mi>&#x03B8;</mi><mo>+</mo><msub>
+                                <mi>F</mi>
+                                <mi>A</mi>
+                            </msub>
+                            <mo>+</mo><msub>
+                                <mi>F</mi>
+                                <mi>B</mi>
+                            </msub>
+                            <mo>=</mo><mn>0</mn></mrow>
+                    </math>
+                    </li>
+                </ol>
+
+                <input name={'input3'} type="checkbox" /> Option A
+                <br></br>
+                <input name={'input3'} type="checkbox" /> Option B
+                <br></br>
+                <input name={'input3'} type="checkbox" /> Option C
+                <br></br>
+                <input name={'input3'} type="checkbox" /> Option D
+                <br></br>
+                <input name={'input3'} type="checkbox" /> Option E
+                <br></br>
                 <br></br>
                 <button type="button" onClick={handleClickEvent3}>Check Answer</button>
                 <p id="result3"> Input an answer - this line will update depending on your answer. </p>
@@ -374,13 +454,81 @@ export default function UnderstandingQuiz() {
                 <br></br>
 
                 <p>4. (Same figure as above) If the block A is at the verge of slipping, which of the following must be true? (there may be multiple correct answers) </p>
-                <select name={'input4'} size={'5'}>
-                    <option value="1"> Option A </option>
-                    <option value="2"> Option B </option>
-                    <option value="3"> Option C </option>
-                    <option value="4"> Option D </option>
-                    <option value="5"> Option E </option>
-                </select>
+
+                <ol type='a'>
+                    <li><math display='left'>
+                        <mrow>
+                            <msub>
+                                <mi>F</mi>
+                                <mi>A</mi>
+                            </msub>
+                            <mo>=</mo><msub>
+                                <mi>&#x03BC;</mi>
+                                <mi>A</mi>
+                            </msub>
+                            <msub>
+                                <mi>N</mi>
+                                <mi>A</mi>
+                            </msub>
+                        </mrow>
+                    </math>
+                    </li>
+                    <li><math display='left'>
+                        <mrow>
+                            <msub>
+                                <mi>F</mi>
+                                <mi>B</mi>
+                            </msub>
+                            <mo>=</mo><msub>
+                                <mi>&#x03BC;</mi>
+                                <mi>B</mi>
+                            </msub>
+                            <msub>
+                                <mi>N</mi>
+                                <mi>B</mi>
+                            </msub>
+                        </mrow>
+                    </math></li>
+                    <li><math display='left'>
+                        <mrow>
+                            <mo>&#x2212;</mo><msub>
+                                <mi>W</mi>
+                                <mi>B</mi>
+                            </msub>
+                            <mo>+</mo><msub>
+                                <mi>N</mi>
+                                <mi>B</mi>
+                            </msub>
+                            <mo>=</mo><mn>0</mn></mrow>
+                    </math>
+                    </li>
+                    <li><math display='left'>
+                        <mrow>
+                            <mo>&#x2212;</mo><msub>
+                                <mi>N</mi>
+                                <mi>B</mi>
+                            </msub>
+                            <mo>&#x2212;</mo><msub>
+                                <mi>W</mi>
+                                <mi>A</mi>
+                            </msub>
+                            <mo>+</mo><msub>
+                                <mi>N</mi>
+                                <mi>A</mi>
+                            </msub>
+                            <mo>+</mo><mi>P</mi><mi>sin</mi><mi>&#x03B8;</mi><mo>=</mo><mn>0</mn></mrow>
+                    </math>
+                    </li>
+                </ol>
+
+                <input name={'input4'} type="checkbox" /> Option A
+                <br></br>
+                <input name={'input4'} type="checkbox" /> Option B
+                <br></br>
+                <input name={'input4'} type="checkbox" /> Option C
+                <br></br>
+                <input name={'input4'} type="checkbox" /> Option D
+
                 <br></br>
                 <button type="button" onClick={handleClickEvent4}>Check Answer</button>
                 <p id="result4"> Input an answer - this line will update depending on your answer. </p>
@@ -388,9 +536,8 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 <br></br>
                 <br></br>
-              
-                <p></p>
-                <p>5. (Same figure as above) If Block B is on the verge of slipping, then the force P required is <input placeholder={'Enter answer'} name={'input5'} id={'Q5I1'}/> N.</p>
+
+                <p>5. (Same figure as above) If Block B is on the verge of slipping, then the force P required is <input placeholder={'Enter answer'} name={'input5'} id={'Q5I1'} /> N.</p>
                 <button type="button" onClick={handleClickEvent5}>Check Answer</button>
                 <p id="result5"> Input an answer - this line will update depending on your answer. </p>
 
@@ -398,7 +545,7 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 <br></br>
 
-                <p>6.(Same figure as above) The value of the tension in the cord is <input placeholder={'Enter answer'} name={'input6'} id={'Q6I1'}/> N. </p>
+                <p>6.(Same figure as above) The value of the tension in the cord is <input placeholder={'Enter answer'} name={'input6'} id={'Q6I1'} /> N. </p>
                 <button type="button" onClick={handleClickEvent6}>Check Answer</button>
                 <p id="result6"> Input an answer - this line will update depending on your answer. </p>
             </form>
