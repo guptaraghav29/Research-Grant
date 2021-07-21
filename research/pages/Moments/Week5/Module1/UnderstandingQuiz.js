@@ -170,7 +170,7 @@ export default function UnderstandingQuiz() {
         const form = nameForm.current;
         // var answer = '2';
         console.log("value" + form['input3'].value);
-        if (!form['input3']['3'].checked && form['input3']['0'].checked && form['input3']['1'].checked && form['input3']['2'].checked && form['input3']['4'].checked)
+        if (form['input3']['3'].checked && !form['input3']['0'].checked && !form['input3']['1'].checked && !form['input3']['2'].checked && !form['input3']['4'].checked)
             document.getElementById("result3").innerHTML = "Correct answer!";
         else
             document.getElementById("result3").innerHTML = "Incorrect answer! Please try again."
@@ -319,7 +319,7 @@ export default function UnderstandingQuiz() {
             <h1 style={{ paddingBottom: "1cm" }}> Check Your Understanding</h1>
             <form ref={nameForm}>
                 <br></br>
-                <p> The figure shows a block A of mass 10 kg resting on a block B of 15 kg that rests on the ground. Block A is restrained by a string to the wall. The coefficient of friction between blocks A and B is 0.25 while the coefficient between B and the ground is 0.3.  A force P acts an angle 50 degrees on B. </p>
+                <p> The figure shows a block B of mass 10 kg resting on a block A of 15 kg that rests on the ground. Block B  is restrained by a string to the wall. The coefficient of friction between blocks A and B is 0.25 while the coefficient between A and the ground is 0.3.  A force P acts an angle 50 degrees on B. </p>
                 <img class="center" src="../../../images/quiz5_1_1.png" width="40%"></img>
                 <p></p>
                 <p>1. The figure shows the free-body diagram of block B. Which of the following are true? </p>
