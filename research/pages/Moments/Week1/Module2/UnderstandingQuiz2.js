@@ -297,7 +297,7 @@ export default function UnderstandingQuiz2() {
                 <input placeholder={'Enter name'} name={'name'} />
                 <label style={{ paddingLeft: "0.3cm" }}>  Email: </label>
                 <input placeholder={'Enter email'} name={'email'} />
-                <button type="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
                 <p style={{ color: "red", fontWeight: "bold" }} id="result0"> Status: Unsubmitted </p>
             </form>
             <Head>
@@ -314,7 +314,7 @@ export default function UnderstandingQuiz2() {
                     <option value="4">-200i + 200j N</option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent1}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
                 <img class="center" src="../../../images/quiz1_1_6.png" width="60%"></img>
 
@@ -328,7 +328,7 @@ export default function UnderstandingQuiz2() {
                 </select>
                 <br></br>
 
-                <button type="button" onClick={handleClickEvent2}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer. </p>
 
                 <p>3. (Same figure as above) The magnitude of the sum of the two forces is: </p>
@@ -341,7 +341,7 @@ export default function UnderstandingQuiz2() {
                 </select>
                 <br></br>
 
-                <button type="button" onClick={handleClickEvent3}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent3}>Check Answer</button>
                 <p id="result3"> Input an answer - this line will update depending on your answer. </p>
 
                 <p>4. (Same figure as above) The angle (in degrees) made by the sum of the forces with the positive x-axis is:</p>
@@ -354,7 +354,7 @@ export default function UnderstandingQuiz2() {
                 </select>
                 <br></br>
 
-                <button type="button" onClick={handleClickEvent4}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent4}>Check Answer</button>
                 <p id="result4"> Input an answer - this line will update depending on your answer. </p>
 
                 <p>5. The magnitude of the sum of the forces in the figure below is: </p>
@@ -366,7 +366,7 @@ export default function UnderstandingQuiz2() {
                     <option value="4">33.9 lb</option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent5}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent5}>Check Answer</button>
                 <p id="result5"> Input an answer - this line will update depending on your answer. </p>
 
                 <img class="center" src="../../../images/quiz1_1_7.png" width="40%"></img>
@@ -380,7 +380,7 @@ export default function UnderstandingQuiz2() {
                     <option value="4">45.8</option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent6}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent6}>Check Answer</button>
                 <p id="result6"> Input an answer - this line will update depending on your answer. </p>
 
             </form>

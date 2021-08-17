@@ -6,6 +6,7 @@ import Statics from './Statics';
 import FreeSpace from './FreeSpace';
 import Quiz from './Quiz';
 import { Router, Route, Switch } from "react-router-dom";
+import Login from './login'
 import Head from 'next/head';
 
 export default function Home() {

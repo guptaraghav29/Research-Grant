@@ -151,7 +151,7 @@ export default function UnderstandingQuiz() {
                 <input placeholder={'Enter name'} name={'name'} />
                 <label style={{ paddingLeft: "0.3cm" }}>  Email: </label>
                 <input placeholder={'Enter email'} name={'email'} />
-                <button type="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
                 <p style={{ color: "red", fontWeight: "bold" }} id="result0"> Status: Unsubmitted </p>
             </form>
             <Head>
@@ -161,7 +161,7 @@ export default function UnderstandingQuiz() {
             <form ref={nameForm}>
                 <br></br>
                 <p>1. The y-coordinate of the centroid of figure is <input placeholder={'Enter answer'} name={'input1'} id={'Q1I1'} />.  </p>    
-                <button type="button" onClick={handleClickEvent1}>Check Answer</button>
+                <button  class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
                 <img class="center" src="../../../images/quiz4_1_1.png" width="40%"></img>
                 <br></br>
@@ -169,7 +169,7 @@ export default function UnderstandingQuiz() {
                 <br></br>
 
                 <p>2. The x-coordinate of the centroid in the figure below is <input placeholder={'Enter answer'} name={'input2'} id={'Q2I1'} />. The y-coordinate of the centroid in the figure is <input placeholder={'Enter answer'} name={'input2'} id={'Q2I2'} />.</p>
-                <button type="button" onClick={handleClickEvent2}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer.</p>
                 <img class="center" src="../../../images/quiz4_1_2.png" width="40%"></img>
 

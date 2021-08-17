@@ -221,7 +221,7 @@ export default function UnderstandingQuiz() {
                 <input placeholder={'Enter name'} name={'name'} />
                 <label style={{ paddingLeft: "0.3cm" }}>  Email: </label>
                 <input placeholder={'Enter email'} name={'email'} />
-                <button type="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
                 <p style={{ color: "red", fontWeight: "bold" }} id="result0"> Status: Unsubmitted </p>
             </form>
             <Head>
@@ -232,14 +232,7 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 <p>1. The figure below shows a ladder resting against a wall. The ladder has mass m. Both the wall and the floor are rough. </p>
                 <p> Which of the following is true? (more than one may be true) </p>
-                {/* <div class="row" width="100%" class="center">
-                    <div class="column" width="50%" float="left" display="flex">
-                        <img class="center" src="../../../images/quiz2_1_1.png" ></img>
-                    </div>
-                    <div class="column" width="50%" float="right" display="flex">
-                        <img class="center" src="../../../images/quiz2_1_2.png" ></img>
-                    </div>
-                </div> */}
+              
     
                 
                 <img class="center" src="../../../images/quiz2_1_1.png" width="40%"></img>
@@ -267,7 +260,7 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 <input name={'input1'} type="checkbox"/> k. The weight of the ladder needs to be added. This weight is vertically downwards and passes through point G, the center of gravity.
                 <br></br>
-                <button type="button" onClick={handleClickEvent1}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
 
                 <p>2. The figure shows a roller being held in place by means of weight connected by a cable over a pulley. </p>
@@ -290,7 +283,7 @@ export default function UnderstandingQuiz() {
                 <input name={'input2'} type="checkbox"/> g. The force at A must point perpendicular to the incline and directed towards towards G.
                 <br></br>
 
-                <button type="button" onClick={handleClickEvent2}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer.</p>
 
                 <p>3. The figure below shows the same system with the free body diagram of the pulley. Note that B represents the axle of the pulley. Assume that the pulley has no mass. Which of the following is true? (Mark all the statements that are true) </p>
@@ -307,7 +300,7 @@ export default function UnderstandingQuiz() {
                 <input name={'input3'} type="checkbox"/> e. A horizontal force should be added at B.
                 <br></br>
            
-                <button type="button" onClick={handleClickEvent3}>Check Answer</button>
+                <button  class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent3}>Check Answer</button>
                 <p id="result3"> Input an answer - this line will update depending on your answer. </p>
 
                 <p>4. The figure below shows the same system with the free-body diagram of the mass. Which of the following is true? (Mark all the statements that are true)</p>
@@ -322,7 +315,7 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 
                 <br></br>
-                <button type="button" onClick={handleClickEvent4}>Check Answer</button>
+                <button  class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent4}>Check Answer</button>
                 <p id="result4"> Input an answer - this line will update depending on your answer. </p>
 
             </form>

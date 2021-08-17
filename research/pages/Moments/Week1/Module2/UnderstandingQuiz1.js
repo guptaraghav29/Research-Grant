@@ -198,7 +198,7 @@ export default function UnderstandingQuiz1() {
                     <option value="4">-10√(3i) + 10j lb </option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent1}>Check Answer</button>
+                <button  class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
 
                 <p>2. The unit vector along the force in the figure below is: </p>
@@ -210,7 +210,7 @@ export default function UnderstandingQuiz1() {
                     <option value="4">0.8i - 0.6j</option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent2}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer.</p>
 
                 <img class="center" src="../../../images/quiz1_1_5.png" width="65%"></img>
@@ -225,7 +225,7 @@ export default function UnderstandingQuiz1() {
                     <option value="5">1800i - 2400j N</option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent3}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent3}>Check Answer</button>
                 <p id="result3"> Input an answer - this line will update depending on your answer. </p>
 
 

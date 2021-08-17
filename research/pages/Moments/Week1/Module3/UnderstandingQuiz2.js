@@ -238,7 +238,7 @@ export default function UnderstandingQuiz2() {
                     <option value="4">-125√(3)i + 125j N, 370 N - m cw</option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent1}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
                 <img class="center" src="../../../images/quiz1_1_8.png" width="50%"></img>
 
@@ -252,7 +252,7 @@ export default function UnderstandingQuiz2() {
                 </select>
                 <br></br>
 
-                <button type="button" onClick={handleClickEvent2}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer. </p>
                 <img class="center" src="../../../images/quiz1_1_9.png" width="50%"></img>
                 <p>3. (Same figure as for #2) In the figure below, what is the moment about point O?</p>
@@ -265,7 +265,7 @@ export default function UnderstandingQuiz2() {
                 </select>
                 <br></br>
 
-                <button type="button" onClick={handleClickEvent3}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent3}>Check Answer</button>
                 <p id="result3"> Input an answer - this line will update depending on your answer. </p>
 
                 <p>4. (Same figure as for #2) In the figure below, through what point on OA does the equivalent force at point O?</p>
@@ -278,7 +278,7 @@ export default function UnderstandingQuiz2() {
                 </select>
                 <br></br>
 
-                <button type="button" onClick={handleClickEvent4}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent4}>Check Answer</button>
                 <p id="result4"> Input an answer - this line will update depending on your answer. </p>
             </form>
         </div>

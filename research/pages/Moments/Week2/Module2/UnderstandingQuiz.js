@@ -188,7 +188,7 @@ export default function UnderstandingQuiz() {
                 <input placeholder={'Enter name'} name={'name'} />
                 <label style={{ paddingLeft: "0.3cm" }}>  Email: </label>
                 <input placeholder={'Enter email'} name={'email'} />
-                <button type="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
                 <p style={{ color: "red", fontWeight: "bold" }} id="result0"> Status: Unsubmitted </p>
             </form>
             <Head>
@@ -200,7 +200,7 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 <p>1. The figure below shows a weight W = 20 kN suspended by means of two cables attached to the ceiling at points A and B. The tension in the cable OA is <input placeholder={'Enter answer'} name={'input1'} id={'Q1I1'} /> kN while the tension in the cable OB is <input placeholder={'Enter answer'} name={'input1'} id={'Q1I2'} /> kN. </p>
                 <br></br>
-                <button type="button" onClick={handleClickEvent1}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
                 <img class="center" src="../../../images/quiz2_1_8.png" width="50%"></img>
                 
@@ -210,7 +210,7 @@ export default function UnderstandingQuiz() {
                 <p>2. The figure below shows a car standing on a flat road. The car weighs 2400 lb. The center of gravity is located at G and has a horizontal distance 3 ft from B. The distance between the front and the rear tires is 8 ft. The reaction force at tire A is <input placeholder={'Enter answer'} name={'input2'} id={'Q2I1'} /> lb while the reaction force at tire B is <input placeholder={'Enter answer'} name={'input2'} id={'Q2I2'} /> lb. </p>
 
                 <br></br>
-                <button type="button" onClick={handleClickEvent2}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer.</p>
                 <img class="center" src="../../../images/quiz2_1_9.png" width="50%"></img>
 
@@ -221,7 +221,7 @@ export default function UnderstandingQuiz() {
                 <p>3. The figure shows a beam fixed at point A with two external forces. The magnitude of the horizontal reaction at A is <input placeholder={'Enter answer'} name={'input3'} id={'Q3I1'} /> kN and is pointed towards the   <select name={'input9'} size={'1'}> id={'Q3I4'} <option value="1">left</option><option value="2">right</option><option value="3">doesn't apply</option></select>. The vertical reaction at A has magnitude <input placeholder={'Enter answer'} name={'input3'} id={'Q3I2'} /> kN and is pointed  <select name={'input10'} size={'1'}> id={'Q3I5'} <option value="1">upwards</option><option value="2">downwards</option><option value="3">doesn't apply</option></select>. The moment reaction at A has magnitude <input placeholder={'Enter answer'} name={'input3'} id={'Q3I3'} /> kN-m. The sense of the moment is  <select name={'input11'} size={'1'}> id={'Q3I6'} <option value="1">clockwise</option><option value="2">counter-clockwise</option><option value="3">doesn't apply</option></select>.  </p>
 
                 <br></br>
-                <button type="button" onClick={handleClickEvent3}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent3}>Check Answer</button>
                 <p id="result3"> Input an answer - this line will update depending on your answer. </p>
                 <img class="center" src="../../../images/quiz2_1_10.png" width="50%"></img>
             </form>

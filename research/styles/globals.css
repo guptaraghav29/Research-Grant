@@ -1,14 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
 html,
 body {
     padding: 0;
     margin: 0;
-    background-color: #FFB81C;
+    background-color: #ffcb9a;
     text-align: center;
     font-family: Optima;
     font-size: 22px;
+    pitch: 18;
     /* overflow-y: scroll; */
+}
+
+button {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full;
 }
 
 ::-webkit-scrollbar {
@@ -37,10 +46,12 @@ p, option, button, select, input, label {
 }
 
 h1 {
+    /* @apply text-2xl; */
     padding-top: 1em;
     text-align: center;
     color: #003DA5;
     font-size: 40px;
+    font-weight: bold;
 }
 
 sub {

@@ -308,7 +308,7 @@ export default function UnderstandingQuiz() {
                 <input placeholder={'Enter name'} name={'name'} />
                 <label style={{ paddingLeft: "0.3cm" }}>  Email: </label>
                 <input placeholder={'Enter email'} name={'email'} />
-                <button type="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
                 <p style={{ color: "red", fontWeight: "bold" }} id="result0"> Status: Unsubmitted </p>
             </form>
             <Head>
@@ -424,7 +424,7 @@ export default function UnderstandingQuiz() {
                     <option value="5"> Option E </option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent1}>Check Answer</button>
+                <button  class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
 
                 <br></br>
@@ -487,7 +487,7 @@ export default function UnderstandingQuiz() {
                 </select>
                 <br></br>
 
-                <button type="button" onClick={handleClickEvent2}>Check Answer</button>
+                <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer.</p>
 
                 <br></br>
@@ -563,7 +563,7 @@ export default function UnderstandingQuiz() {
                     <option value="4"> Option D </option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent3}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent3}>Check Answer</button>
                 <p id="result3"> Input an answer - this line will update depending on your answer. </p>
 
                 <br></br>
@@ -657,7 +657,7 @@ export default function UnderstandingQuiz() {
                     <option value="5"> Option E </option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent4}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent4}>Check Answer</button>
                 <p id="result4"> Input an answer - this line will update depending on your answer. </p>
 
                 <br></br>
@@ -721,7 +721,7 @@ export default function UnderstandingQuiz() {
                     <option value="4"> Option D </option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent5}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent5}>Check Answer</button>
                 <p id="result5"> Input an answer - this line will update depending on your answer. </p>
 
 
@@ -739,7 +739,7 @@ export default function UnderstandingQuiz() {
                 </select>
 
                 <br></br>
-                <button type="button" onClick={handleClickEvent6}>Check Answer</button>
+                <button  class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent6}>Check Answer</button>
                 <p id="result6"> Input an answer - this line will update depending on your answer. </p>
             </form>
         </div>

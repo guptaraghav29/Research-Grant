@@ -221,7 +221,7 @@ export default function UnderstandingQuiz1() {
                 <input placeholder={'Enter name'} name={'name'} />
                 <label style={{ paddingLeft: "0.3cm" }}>  Email: </label>
                 <input placeholder={'Enter email'} name={'email'} />
-                <button type="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
                 <p style={{ color: "red", fontWeight: "bold" }} id="result0"> Status: Unsubmitted </p>
             </form>
             <Head>
@@ -242,7 +242,7 @@ export default function UnderstandingQuiz1() {
                     <option value="4">-6i+8k kN </option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent1}>Check Answer</button>
+                <button  class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
 
                 <p>2. The vector expression for force F<sub>2</sub> is: (Same figure as above) </p>
@@ -254,7 +254,7 @@ export default function UnderstandingQuiz1() {
                     <option value="4">-6i+8k kN</option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent2}>Check Answer</button>
+                <button  class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer.</p>
 
                 <p>3. The component of the force F<sub>1</sub> along the z-axis is: (Same figure as above) </p>
@@ -266,7 +266,7 @@ export default function UnderstandingQuiz1() {
                     <option value="4">6k</option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent3}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent3}>Check Answer</button>
                 <p id="result3"> Input an answer - this line will update depending on your answer. </p>
 
                 <p>4. The vector expression of the force F<sub>1</sub>  (in kN) along the vector <i>i + 2j - 2k</i> is: (Same figure as above) </p>
@@ -278,7 +278,7 @@ export default function UnderstandingQuiz1() {
                     <option value="4">2.2i + 4.4j - 4.4k</option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent4}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent4}>Check Answer</button>
                 <p id="result4"> Input an answer - this line will update depending on your answer. </p>
 
             </form>

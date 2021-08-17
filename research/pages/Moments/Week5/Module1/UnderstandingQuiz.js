@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import { render } from 'react-dom'
-import React, { Component, useRef, useState, useEffect } from 'react';
+import React, { Component, useRef, useState, useEffect, Suspense } from 'react';
 import XAPI from "@xapi/xapi";
+// import Login from "../../../login"
 
 export default function UnderstandingQuiz() {
-
+    // const Login = React.lazy(() => import('../../../login'));
     const nameForm = useRef(null);
     const xapiform = useRef(null);
 
@@ -16,13 +17,42 @@ export default function UnderstandingQuiz() {
     const xapi = new XAPI(endpoint, auth);
 
 
-    const handleClickEvent0 = () => {
-
+    const sendXAPIStatement = (name, email, verb, statement) => {
         const xform = xapiform.current;
-        const name = xform['name'].value;
+        name = xform['name'].value;
         console.log(name);
-        const email = xform['email'].value;
+        email = xform['email'].value;
         console.log(email);
+
+        // Create your statement
+        const myStatement = {
+            "actor": {
+                "name": name,
+                "mbox": "mailto:" + email
+            },
+            "verb": {
+                "id": "http://adlnet.gov/expapi/verbs/" + verb,
+                "display": {
+                    "en-US": verb
+                }
+            },
+            "object": {
+                "id": "https://elearn.ucr.edu/courses/3730",
+                "definition": {
+                    "name": {
+                        "en-US": statement
+                    }
+                }
+            }
+        };
+
+        xapi.sendStatement(myStatement);
+        console.log("Statement has been submitted.");
+    }
+
+
+    const handleClickEvent0 = () => {
+        const xform = xapiform.current;
 
         if (xform['name'].value == "" || xform['email'].value == "") {
             document.getElementById("result0").innerHTML = "Status: Unsubmitted! Please fill out fields correctly!";
@@ -32,62 +62,10 @@ export default function UnderstandingQuiz() {
             document.getElementById("result0").style.color = "green";
         }
 
-        // Create your statement
-        const myStatement = {
-            "actor": {
-                "name": name,
-                "mbox": "mailto:" + email
-            },
-            "verb": {
-                "id": "http://adlnet.gov/expapi/verbs/viewed",
-                "display": {
-                    "en-US": 'viewed'
-                }
-            },
-            "object": {
-                "id": "https://elearn.ucr.edu/courses/3730",
-                "definition": {
-                    "name": {
-                        "en-US": "Student has viewed Week 5 Module 1 Understanding Quiz."
-                    }
-                }
-            }
-        };
-        xapi.sendStatement(myStatement);
-        console.log("Statement has been submitted.");
+        sendXAPIStatement(xform['name'].value, xform['email'].value, "viewed", "Week 5 Module 1 Quiz")
     }
 
-
-
     const handleClickEvent1 = () => {
-        const xform = xapiform.current;
-        const name = xform['name'].value;
-        console.log(name);
-        const email = xform['email'].value;
-        console.log(email);
-
-        const myStatement = {
-            "actor": {
-                "name": name,
-                "mbox": "mailto:" + email
-            },
-            "verb": {
-                "id": "http://adlnet.gov/expapi/verbs/answered",
-                "display": {
-                    "en-US": 'answered'
-                }
-            },
-            "object": {
-                "id": "https://elearn.ucr.edu/courses/3730",
-                "definition": {
-                    "name": {
-                        "en-US": "Student submitted their answer. Week 5 Module 1 Quiz Question 1"
-                    }
-                }
-            }
-        };
-        xapi.sendStatement(myStatement);
-        console.log("Statement has been submitted.");
 
         const form = nameForm.current;
         var answer = '2';
@@ -96,37 +74,12 @@ export default function UnderstandingQuiz() {
             document.getElementById("result1").innerHTML = "Correct answer!";
         else
             document.getElementById("result1").innerHTML = "Incorrect answer! Please try again."
+
+
+        sendXAPIStatement(name, email, "answered", "Week 5 Module 1 Quiz Question 1");
     }
 
     const handleClickEvent2 = () => {
-        const xform = xapiform.current;
-        const name = xform['name'].value;
-        console.log(name);
-        const email = xform['email'].value;
-        console.log(email);
-
-        const myStatement = {
-            "actor": {
-                "name": name,
-                "mbox": "mailto:" + email
-            },
-            "verb": {
-                "id": "http://adlnet.gov/expapi/verbs/answered",
-                "display": {
-                    "en-US": 'answered'
-                }
-            },
-            "object": {
-                "id": "https://elearn.ucr.edu/courses/3730",
-                "definition": {
-                    "name": {
-                        "en-US": "Student submitted their answer. Week 5 Module 1 Quiz Question 2"
-                    }
-                }
-            }
-        };
-        xapi.sendStatement(myStatement);
-        console.log("Statement has been submitted.");
 
         const form = nameForm.current;
         // var answer = '1';
@@ -135,37 +88,11 @@ export default function UnderstandingQuiz() {
             document.getElementById("result2").innerHTML = "Correct answer!";
         else
             document.getElementById("result2").innerHTML = "Incorrect answer! Please try again."
+
+        sendXAPIStatement(name, email, "answered", "Week 5 Module 1 Quiz Question 2");
     }
 
     const handleClickEvent3 = () => {
-        const xform = xapiform.current;
-        const name = xform['name'].value;
-        console.log(name);
-        const email = xform['email'].value;
-        console.log(email);
-
-        const myStatement = {
-            "actor": {
-                "name": name,
-                "mbox": "mailto:" + email
-            },
-            "verb": {
-                "id": "http://adlnet.gov/expapi/verbs/answered",
-                "display": {
-                    "en-US": 'answered'
-                }
-            },
-            "object": {
-                "id": "https://elearn.ucr.edu/courses/3730",
-                "definition": {
-                    "name": {
-                        "en-US": "Student submitted their answer. Week 5 Module 1 Quiz Question 3"
-                    }
-                }
-            }
-        };
-        xapi.sendStatement(myStatement);
-        console.log("Statement has been submitted.");
 
         const form = nameForm.current;
         // var answer = '2';
@@ -175,37 +102,12 @@ export default function UnderstandingQuiz() {
         else
             document.getElementById("result3").innerHTML = "Incorrect answer! Please try again."
 
+
+        sendXAPIStatement(name, email, "answered", "Week 5 Module 1 Quiz Question 3");
+
     }
 
     const handleClickEvent4 = () => {
-        const xform = xapiform.current;
-        const name = xform['name'].value;
-        console.log(name);
-        const email = xform['email'].value;
-        console.log(email);
-
-        const myStatement = {
-            "actor": {
-                "name": name,
-                "mbox": "mailto:" + email
-            },
-            "verb": {
-                "id": "http://adlnet.gov/expapi/verbs/answered",
-                "display": {
-                    "en-US": 'answered'
-                }
-            },
-            "object": {
-                "id": "https://elearn.ucr.edu/courses/3730",
-                "definition": {
-                    "name": {
-                        "en-US": "Student submitted their answer.  Week 5 Module 1 Quiz Question 4"
-                    }
-                }
-            }
-        };
-        xapi.sendStatement(myStatement);
-        console.log("Statement has been submitted.");
 
         const form = nameForm.current;
         var answer = '3';
@@ -215,37 +117,11 @@ export default function UnderstandingQuiz() {
         else
             document.getElementById("result4").innerHTML = "Incorrect answer! Please try again."
 
+        sendXAPIStatement(name, email, "answered", "Week 5 Module 1 Quiz Question 4");
+
     }
 
     const handleClickEvent5 = () => {
-        const xform = xapiform.current;
-        const name = xform['name'].value;
-        console.log(name);
-        const email = xform['email'].value;
-        console.log(email);
-
-        const myStatement = {
-            "actor": {
-                "name": name,
-                "mbox": "mailto:" + email
-            },
-            "verb": {
-                "id": "http://adlnet.gov/expapi/verbs/answered",
-                "display": {
-                    "en-US": 'answered'
-                }
-            },
-            "object": {
-                "id": "https://elearn.ucr.edu/courses/3730",
-                "definition": {
-                    "name": {
-                        "en-US": "Student submitted their answer.  Week 5 Module 1 Quiz Question 5"
-                    }
-                }
-            }
-        };
-        xapi.sendStatement(myStatement);
-        console.log("Statement has been submitted.");
 
         const form = nameForm.current;
         var answer1 = '112.4';
@@ -254,38 +130,12 @@ export default function UnderstandingQuiz() {
             document.getElementById("result5").innerHTML = "Correct answer!";
         else
             document.getElementById("result5").innerHTML = "Incorrect answer! Please try again."
+
+        sendXAPIStatement(name, email, "answered", "Week 5 Module 1 Quiz Question 5");
     }
 
 
     const handleClickEvent6 = () => {
-        const xform = xapiform.current;
-        const name = xform['name'].value;
-        console.log(name);
-        const email = xform['email'].value;
-        console.log(email);
-
-        const myStatement = {
-            "actor": {
-                "name": name,
-                "mbox": "mailto:" + email
-            },
-            "verb": {
-                "id": "http://adlnet.gov/expapi/verbs/answered",
-                "display": {
-                    "en-US": 'answered'
-                }
-            },
-            "object": {
-                "id": "https://elearn.ucr.edu/courses/3730",
-                "definition": {
-                    "name": {
-                        "en-US": "Student submitted their answer.  Week 5 Module 1 Quiz Question 6"
-                    }
-                }
-            }
-        };
-        xapi.sendStatement(myStatement);
-        console.log("Statement has been submitted.");
 
         const form = nameForm.current;
         var answer1 = '24.56';
@@ -294,13 +144,12 @@ export default function UnderstandingQuiz() {
             document.getElementById("result6").innerHTML = "Correct answer!";
         else
             document.getElementById("result6").innerHTML = "Incorrect answer! Please try again."
+
+        sendXAPIStatement(name, email, "answered", "Week 5 Module 1 Quiz Question 6");
     }
 
     return (
         <div style={{ paddingLeft: "2cm", paddingRight: "2cm", textAlign: "left" }}>
-            <div>
-            </div>
-            <div></div>
             <br></br>
             <form style={{ textAlign: "center" }} ref={xapiform} method="POST">
                 <p> Please enter your name and email. This must be done for all of the Check Your Understanding Quizzes. </p>
@@ -308,7 +157,7 @@ export default function UnderstandingQuiz() {
                 <input placeholder={'Enter name'} name={'name'} />
                 <label style={{ paddingLeft: "0.3cm" }}>  Email: </label>
                 <input placeholder={'Enter email'} name={'email'} />
-                <button type="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
                 <p style={{ color: "red", fontWeight: "bold" }} id="result0"> Status: Unsubmitted </p>
             </form>
             <Head>
@@ -331,7 +180,7 @@ export default function UnderstandingQuiz() {
                     <option value="4"> The friction force F<sub>B</sub> should be in the opposite direction. </option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent1}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
 
                 <br></br>
@@ -356,7 +205,7 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 <br></br>
 
-                <button type="button" onClick={handleClickEvent2}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer.</p>
 
                 <br></br>
@@ -446,7 +295,7 @@ export default function UnderstandingQuiz() {
                 <input name={'input3'} type="checkbox" /> Option E
                 <br></br>
                 <br></br>
-                <button type="button" onClick={handleClickEvent3}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent3}>Check Answer</button>
                 <p id="result3"> Input an answer - this line will update depending on your answer. </p>
 
                 <br></br>
@@ -530,7 +379,7 @@ export default function UnderstandingQuiz() {
                 <input name={'input4'} type="checkbox" /> Option D
 
                 <br></br>
-                <button type="button" onClick={handleClickEvent4}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent4}>Check Answer</button>
                 <p id="result4"> Input an answer - this line will update depending on your answer. </p>
 
                 <br></br>
@@ -538,7 +387,7 @@ export default function UnderstandingQuiz() {
                 <br></br>
 
                 <p>5. (Same figure as above) If Block B is on the verge of slipping, then the force P required is <input placeholder={'Enter answer'} name={'input5'} id={'Q5I1'} /> N.</p>
-                <button type="button" onClick={handleClickEvent5}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent5}>Check Answer</button>
                 <p id="result5"> Input an answer - this line will update depending on your answer. </p>
 
                 <br></br>
@@ -546,7 +395,7 @@ export default function UnderstandingQuiz() {
                 <br></br>
 
                 <p>6.(Same figure as above) The value of the tension in the cord is <input placeholder={'Enter answer'} name={'input6'} id={'Q6I1'} /> N. </p>
-                <button type="button" onClick={handleClickEvent6}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent6}>Check Answer</button>
                 <p id="result6"> Input an answer - this line will update depending on your answer. </p>
             </form>
         </div>

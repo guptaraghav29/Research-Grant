@@ -308,7 +308,7 @@ export default function UnderstandingQuiz2() {
                 <input placeholder={'Enter name'} name={'name'} />
                 <label style={{ paddingLeft: "0.3cm" }}>  Email: </label>
                 <input placeholder={'Enter email'} name={'email'} />
-                <button type="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
+                <button tclass="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" ype="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
                 <p style={{ color: "red", fontWeight: "bold" }} id="result0"> Status: Unsubmitted </p>
             </form>
             <Head>
@@ -321,23 +321,23 @@ export default function UnderstandingQuiz2() {
                 <p>1. Determine the moment of the force F about point O by taking moments of the x- and y-components of F. Express your answer in N-m and use counterclockwise positive convention. </p>
 
                 <input placeholder={'Enter answer'} name={'input1'} />
-                <button type="button" onClick={handleClickEvent1}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
 
                 <p>2. The perpendicular distance of the line of action of the force F to the point O is <input placeholder={'Enter answer'} name={'input2'} id={'Q2I1'} /> m. Using this perpendicular distance to determine the moment of force F about point O gives <input placeholder={'Enter answer'} name={'input2'} id={'Q2I2'} /> N-m.</p>
 
-                <button type="button" onClick={handleClickEvent2}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer. </p>
 
                 <p>3. Use the principle of transmissibility to slide the force to a point, say C, vertically below point O. The distance OC is <input placeholder={'Enter answer'} name={'input3'} id={'Q3I1'} /> m. The moment of the force F about point O gives <input placeholder={'Enter answer'} name={'input3'} id={'Q3I2'} />  N-m.</p>
 
-                <button type="button" onClick={handleClickEvent3}>Check Answer</button>
+                <button  class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent3}>Check Answer</button>
                 <p id="result3"> Input an answer - this line will update depending on your answer. </p>
 
                 <p>4. Use the principle of transmissibility to slide the force to a point, say D, horizontally to the right of point O. The distance OD is  <input placeholder={'Enter answer'} name={'input4'} id={'Q4I1'} />m. The moment of the force F about point O gives  <input placeholder={'Enter answer'} name={'input4'} id={'Q4I2'} /> N-m.</p>
 
 
-                <button type="button" onClick={handleClickEvent4}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent4}>Check Answer</button>
                 <p id="result4"> Input an answer - this line will update depending on your answer. </p>
 
                 <p>5. Multiple choice: Let’s use the vector method to determine the moment of point F about point O. In the formula M = r x F, r is: </p>
@@ -349,7 +349,7 @@ export default function UnderstandingQuiz2() {
                     <option value="4">6i - 2j</option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent5}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent5}>Check Answer</button>
                 <p id="result5"> Input an answer - this line will update depending on your answer. </p>
 
                 <p>6. Multiple choice: Let’s use the vector method to determine the moment of point F about point O. The vector expression for M  is: </p>
@@ -362,7 +362,7 @@ export default function UnderstandingQuiz2() {
                     <option value="5">634j</option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent6}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent6}>Check Answer</button>
                 <p id="result6"> Input an answer - this line will update depending on your answer. </p>
 
             </form>

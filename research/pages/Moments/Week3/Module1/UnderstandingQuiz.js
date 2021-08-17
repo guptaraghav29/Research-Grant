@@ -310,7 +310,7 @@ export default function UnderstandingQuiz() {
                 <input placeholder={'Enter name'} name={'name'} />
                 <label style={{ paddingLeft: "0.3cm" }}>  Email: </label>
                 <input placeholder={'Enter email'} name={'email'} />
-                <button type="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" placeholder={'Enter answer'} id={'input0'} onClick={handleClickEvent0}>Submit</button>
                 <p style={{ color: "red", fontWeight: "bold" }} id="result0"> Status: Unsubmitted </p>
             </form>
             <Head>
@@ -336,7 +336,7 @@ export default function UnderstandingQuiz() {
                     <option value="5">A moment reaction should be included at A.</option>
                 </select>
                 <br></br>
-                <button type="button" onClick={handleClickEvent1}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent1}>Check Answer</button>
                 <p id="result1"> Input an answer - this line will update depending on your answer. </p>
 
                 <br></br>
@@ -345,7 +345,7 @@ export default function UnderstandingQuiz() {
 
                 <p>2. The support reactions at A are Ax = <input placeholder={'Enter answer'} name={'input2'} id={'Q2I1'} /> and Ay = <input placeholder={'Enter answer'} name={'input2'} id={'Q2I2'} /> N. The support reaction at B is By = <input placeholder={'Enter answer'} name={'input2'} id={'Q2I3'} />.</p>
 
-                <button type="button" onClick={handleClickEvent2}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent2}>Check Answer</button>
                 <p id="result2"> Input an answer - this line will update depending on your answer.</p>
 
                 <br></br>
@@ -366,7 +366,7 @@ export default function UnderstandingQuiz() {
                 <input name={'input3'} type="checkbox" /> e. Weight should be removed.
                 <br></br>
 
-                <button type="button" onClick={handleClickEvent3}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent3}>Check Answer</button>
                 <p id="result3"> Input an answer - this line will update depending on your answer. </p>
 
                 <br></br>
@@ -397,7 +397,7 @@ export default function UnderstandingQuiz() {
                 <br></br>
 
                 <p>5. From the freebody diagram of BC, the magnitude of the reaction components at C are: C<sub>x</sub> = <input placeholder={'Enter answer'} name={'input5'} id={'Q5I1'} /> N and C<sub>y</sub> = <input placeholder={'Enter answer'} name={'input5'} id={'Q5I2'} /> N. The magnitude of the force of the spring is F<sub>s</sub> = <input placeholder={'Enter answer'} name={'input5'} id={'Q5I3'} />. </p>
-                <button type="button" onClick={handleClickEvent5}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent5}>Check Answer</button>
                 <p id="result5"> Input an answer - this line will update depending on your answer. </p>
                 <img class="center" src="../../../images/quiz3_1_5.png" width="40%"></img>
 
@@ -523,7 +523,7 @@ export default function UnderstandingQuiz() {
                 </select>
 
                 <br></br>
-                <button type="button" onClick={handleClickEvent6}>Check Answer</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent6}>Check Answer</button>
                 <p id="result6"> Input an answer - this line will update depending on your answer. </p>
             </form>
         </div>
