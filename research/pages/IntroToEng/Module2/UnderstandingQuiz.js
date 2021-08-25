@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { render } from 'react-dom'
 import React, { Component, useRef, useState, useEffect, Suspense } from 'react';
 import XAPI from "@xapi/xapi";
-import { sendXAPIStatement } from "../xapiFunctions"
+import { sendXAPIStatement } from "../../../xapiFunctions"
 
 export default function UnderstandingQuiz() {
     const nameForm = useRef(null);
