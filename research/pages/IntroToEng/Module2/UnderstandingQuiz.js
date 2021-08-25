@@ -13,6 +13,8 @@ export default function UnderstandingQuiz() {
     const handleClickEvent0 = () => {
 
         const xform = xapiform.current;
+        console.log("Name" + localStorage.getItem("name"));
+        console.log("Email" + localStorage.getItem("id"));
         if (xform['name'].value == "" || xform['email'].value == "") {
             document.getElementById("result0").innerHTML = "Status: Unsubmitted! Please fill out fields correctly!";
         }
