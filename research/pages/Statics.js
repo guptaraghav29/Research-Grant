@@ -14,14 +14,17 @@ export default function Statics() {
      const xapi = new XAPI(endpoint, auth);
 
      const handleClickEvent0 = () => {
+        const queryString = window.location.search;
+        console.log(queryString);
+        const urlParams = new URLSearchParams(queryString);
         const xform = xapiform.current;
-        const name = xform['name'].value;
+        const name = urlParams.has('name') ? urlParams.get('name') : "";
         console.log(name);
-        const email = xform['email'].value;
+        const email = urlParams.has('email') ? urlParams.get('email') : "";
         console.log(email);
 
         if (xform['name'].value == "" || xform['email'].value == "") {
-            document.getElementById("result0").innerHTML = "Status: Unsubmitted! Please fill out fields correctly!";
+            document.getElementById("result0").innerHTML = "Name: " + name + " Email: " + email;
         }
         else {
             document.getElementById("result0").innerHTML = "Status: Submitted!";
