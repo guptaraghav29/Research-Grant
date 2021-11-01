@@ -1,0 +1,30 @@
+[
+    {
+        "question": "What year is it?",
+        "choices": {
+            "a": "2001",
+            "b": "2016",
+            "c": "2021",
+            "d": "2035"
+        },
+        "answer": "c"
+    },
+    {
+        "question": "What is the capital of the United States?",
+        "choices": {
+            "a": "Washington DC",
+            "b": "San Jose",
+            "c": "Riverside",
+            "d": "San Diego"
+        },
+        "answer": "a"
+    },
+    {
+        "question": "Was Neil Armstrong the first Man on the Moon?",
+        "choices": {
+            "a": "True",
+            "b": "False"
+        },
+        "answer": "a"
+    }
+]

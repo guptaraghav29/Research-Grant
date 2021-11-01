@@ -1,0 +1,81 @@
+<section ident="root_section">
+  <item ident="g67b9366537b98e8a772a2ab694ab77d6" title="Question">
+    <itemmetadata>
+      <qtimetadata>
+        <qtimetadatafield>
+          <fieldlabel>question_type</fieldlabel>
+          <fieldentry>true_false_question</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>points_possible</fieldlabel>
+          <fieldentry>1.0</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>original_answer_ids</fieldlabel>
+          <fieldentry>8501,710</fieldentry>
+        </qtimetadatafield>
+        <qtimetadatafield>
+          <fieldlabel>assessment_question_identifierref</fieldlabel>
+          <fieldentry>gf8f602482198b2ee54359250e69b90be</fieldentry>
+        </qtimetadatafield>
+      </qtimetadata>
+    </itemmetadata>
+    <presentation>
+      <material>
+        <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;Did it rain in Riverside today?&lt;img src="https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?crop=entropy&amp;amp;cs=tinysrgb&amp;amp;fit=max&amp;amp;fm=jpg&amp;amp;ixid=Mnw3NjA3NHwwfDF8c2VhcmNofDF8fHJhaW58ZW58MXx8fHwxNjMzNjMzNTE2&amp;amp;ixlib=rb-1.2.1&amp;amp;q=80&amp;amp;w=1080" alt="water droplets on clear glass"&gt;&lt;/p&gt;&lt;/div&gt;</mattext>
+      </material>
+      <response_lid ident="response1" rcardinality="Single">
+        <render_choice>
+          <response_label ident="8501">
+            <material>
+              <mattext texttype="text/plain">True</mattext>
+            </material>
+          </response_label>
+          <response_label ident="710">
+            <material>
+              <mattext texttype="text/plain">False</mattext>
+            </material>
+          </response_label>
+        </render_choice>
+      </response_lid>
+    </presentation>
+    <resprocessing>
+      <outcomes>
+        <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+      </outcomes>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="response1">8501</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="8501_fb"/>
+      </respcondition>
+      <respcondition continue="Yes">
+        <conditionvar>
+          <varequal respident="response1">710</varequal>
+        </conditionvar>
+        <displayfeedback feedbacktype="Response" linkrefid="710_fb"/>
+      </respcondition>
+      <respcondition continue="No">
+        <conditionvar>
+          <varequal respident="response1">8501</varequal>
+        </conditionvar>
+        <setvar action="Set" varname="SCORE">100</setvar>
+      </respcondition>
+    </resprocessing>
+    <itemfeedback ident="8501_fb">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Correct!&lt;/p&gt;</mattext>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+    <itemfeedback ident="710_fb">
+      <flow_mat>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Incorrect!&lt;/p&gt;</mattext>
+        </material>
+      </flow_mat>
+    </itemfeedback>
+  </item>
+</section>
+

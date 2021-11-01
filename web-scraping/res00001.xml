@@ -1,0 +1,2339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop>
+    <assessment title="HW1">
+        <assessmentmetadata>
+            <bbmd_asi_object_id>_4441003_1</bbmd_asi_object_id>
+            <bbmd_asitype>Assessment</bbmd_asitype>
+            <bbmd_assessmenttype>Test</bbmd_assessmenttype>
+            <bbmd_sectiontype>Subsection</bbmd_sectiontype>
+            <bbmd_questiontype>Multiple Choice</bbmd_questiontype>
+            <bbmd_is_from_cartridge>false</bbmd_is_from_cartridge>
+            <bbmd_is_disabled>false</bbmd_is_disabled>
+            <bbmd_negative_points_ind>N</bbmd_negative_points_ind>
+            <bbmd_canvas_fullcrdt_ind>false</bbmd_canvas_fullcrdt_ind>
+            <bbmd_all_fullcredit_ind>false</bbmd_all_fullcredit_ind>
+            <bbmd_numbertype>none</bbmd_numbertype>
+            <bbmd_partialcredit></bbmd_partialcredit>
+            <bbmd_orientationtype>vertical</bbmd_orientationtype>
+            <bbmd_is_extracredit>false</bbmd_is_extracredit>
+            <qmd_absolutescore_max>110.000000000000000</qmd_absolutescore_max>
+            <qmd_weighting>0</qmd_weighting>
+            <qmd_instructornotes></qmd_instructornotes>
+        </assessmentmetadata>
+        <rubric view="All">
+            <flow_mat class="Block">
+                <material>
+                    <mat_extension>
+                        <mat_formattedtext type="HTML"/>
+                    </mat_extension>
+                </material>
+            </flow_mat>
+        </rubric>
+        <presentation_material>
+            <flow_mat class="Block">
+                <material>
+                    <mat_extension>
+                        <mat_formattedtext type="HTML"/>
+                    </mat_extension>
+                </material>
+            </flow_mat>
+        </presentation_material>
+        <section>
+            <sectionmetadata>
+                <bbmd_asi_object_id>_4441004_1</bbmd_asi_object_id>
+                <bbmd_asitype>Section</bbmd_asitype>
+                <bbmd_assessmenttype>Test</bbmd_assessmenttype>
+                <bbmd_sectiontype>Subsection</bbmd_sectiontype>
+                <bbmd_questiontype>Multiple Choice</bbmd_questiontype>
+                <bbmd_is_from_cartridge>false</bbmd_is_from_cartridge>
+                <bbmd_is_disabled>false</bbmd_is_disabled>
+                <bbmd_negative_points_ind>N</bbmd_negative_points_ind>
+                <bbmd_canvas_fullcrdt_ind>false</bbmd_canvas_fullcrdt_ind>
+                <bbmd_all_fullcredit_ind>false</bbmd_all_fullcredit_ind>
+                <bbmd_numbertype>none</bbmd_numbertype>
+                <bbmd_partialcredit></bbmd_partialcredit>
+                <bbmd_orientationtype>vertical</bbmd_orientationtype>
+                <bbmd_is_extracredit>false</bbmd_is_extracredit>
+                <qmd_absolutescore_max>110.000000000000000</qmd_absolutescore_max>
+                <qmd_weighting>0</qmd_weighting>
+                <qmd_instructornotes></qmd_instructornotes>
+            </sectionmetadata>
+            <item title="" maxattempts="0">
+                <itemmetadata>
+                    <bbmd_asi_object_id>_4441005_1</bbmd_asi_object_id>
+                    <bbmd_asitype>Item</bbmd_asitype>
+                    <bbmd_assessmenttype>Test</bbmd_assessmenttype>
+                    <bbmd_sectiontype>Subsection</bbmd_sectiontype>
+                    <bbmd_questiontype>Numeric</bbmd_questiontype>
+                    <bbmd_is_from_cartridge>false</bbmd_is_from_cartridge>
+                    <bbmd_is_disabled>false</bbmd_is_disabled>
+                    <bbmd_negative_points_ind>N</bbmd_negative_points_ind>
+                    <bbmd_canvas_fullcrdt_ind>false</bbmd_canvas_fullcrdt_ind>
+                    <bbmd_all_fullcredit_ind>false</bbmd_all_fullcredit_ind>
+                    <bbmd_numbertype>none</bbmd_numbertype>
+                    <bbmd_partialcredit>false</bbmd_partialcredit>
+                    <bbmd_orientationtype>vertical</bbmd_orientationtype>
+                    <bbmd_is_extracredit>false</bbmd_is_extracredit>
+                    <qmd_absolutescore_max>10.000000000000000</qmd_absolutescore_max>
+                    <qmd_weighting>0</qmd_weighting>
+                    <qmd_instructornotes></qmd_instructornotes>
+                </itemmetadata>
+                <presentation>
+                    <flow class="Block">
+                        <flow class="QUESTION_BLOCK">
+                            <flow class="FORMATTED_TEXT_BLOCK">
+                                <material>
+                                    <mat_extension>
+                                        <mat_formattedtext type="HTML">&lt;p&gt;The length of the vector shown is (enter a real number):&amp;nbsp;(Note that each tick mark on the grid represents unit distance i.e. distance of 1)&lt;/p&gt;  &lt;p&gt;&lt;img src="@X@EmbeddedFile.requestUrlStub@X@bbcswebdav/xid-49743862_1" width="267" height="193"&gt;&lt;/p&gt;</mat_formattedtext>
+                                    </mat_extension>
+                                </material>
+                            </flow>
+                        </flow>
+                        <flow class="RESPONSE_BLOCK">
+                            <response_num ident="response" rcardinality="Single" rtiming="No">
+                                <render_fib charset="us-ascii" encoding="UTF_8" rows="0" columns="0" maxchars="0" prompt="Box" fibtype="Decimal" minnumber="0" maxnumber="0"/>
+                            </response_num>
+                        </flow>
+                    </flow>
+                </presentation>
+                <resprocessing scoremodel="SumOfScores">
+                    <outcomes>
+                        <decvar varname="SCORE" vartype="Decimal" defaultval="0" minvalue="0" maxvalue="10.00000"/>
+                    </outcomes>
+                    <respcondition title="bb98dbd12a484b76b2f398ca720abc37">
+                        <conditionvar>
+                            <vargte respident="response">5.29</vargte>
+                            <varlte respident="response">5.49</varlte>
+                            <varequal respident="response" case="No">5.39</varequal>
+                        </conditionvar>
+                        <displayfeedback linkrefid="correct" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition title="incorrect">
+                        <conditionvar>
+                            <other/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="incorrect" feedbacktype="Response"/>
+                    </respcondition>
+                </resprocessing>
+                <itemfeedback ident="correct" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+                <itemfeedback ident="incorrect" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+            </item>
+            <item title="" maxattempts="0">
+                <itemmetadata>
+                    <bbmd_asi_object_id>_4441006_1</bbmd_asi_object_id>
+                    <bbmd_asitype>Item</bbmd_asitype>
+                    <bbmd_assessmenttype>Test</bbmd_assessmenttype>
+                    <bbmd_sectiontype>Subsection</bbmd_sectiontype>
+                    <bbmd_questiontype>Numeric</bbmd_questiontype>
+                    <bbmd_is_from_cartridge>false</bbmd_is_from_cartridge>
+                    <bbmd_is_disabled>false</bbmd_is_disabled>
+                    <bbmd_negative_points_ind>N</bbmd_negative_points_ind>
+                    <bbmd_canvas_fullcrdt_ind>false</bbmd_canvas_fullcrdt_ind>
+                    <bbmd_all_fullcredit_ind>false</bbmd_all_fullcredit_ind>
+                    <bbmd_numbertype>none</bbmd_numbertype>
+                    <bbmd_partialcredit>false</bbmd_partialcredit>
+                    <bbmd_orientationtype>vertical</bbmd_orientationtype>
+                    <bbmd_is_extracredit>false</bbmd_is_extracredit>
+                    <qmd_absolutescore_max>10.000000000000000</qmd_absolutescore_max>
+                    <qmd_weighting>0</qmd_weighting>
+                    <qmd_instructornotes></qmd_instructornotes>
+                </itemmetadata>
+                <presentation>
+                    <flow class="Block">
+                        <flow class="QUESTION_BLOCK">
+                            <flow class="FORMATTED_TEXT_BLOCK">
+                                <material>
+                                    <mat_extension>
+                                        <mat_formattedtext type="HTML">&lt;p&gt;The angle made by the vector with the x-axis in degrees is (enter real number):&lt;/p&gt;  &lt;p style="margin: 0px 0px 1em; padding: 0px; border: 0px; outline: 0px; font-weight: 400; font-style: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: small; color: #000000; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"&gt;(Note that each tick mark on the grid represents unit distance i.e.&amp;nbsp;distance of 1)&lt;/p&gt;  &lt;p&gt;&lt;br&gt;&lt;/p&gt;  &lt;p&gt;&lt;img src="@X@EmbeddedFile.requestUrlStub@X@bbcswebdav/xid-49743864_1" width="267" height="193"&gt;&lt;/p&gt;</mat_formattedtext>
+                                    </mat_extension>
+                                </material>
+                            </flow>
+                        </flow>
+                        <flow class="RESPONSE_BLOCK">
+                            <response_num ident="response" rcardinality="Single" rtiming="No">
+                                <render_fib charset="us-ascii" encoding="UTF_8" rows="0" columns="0" maxchars="0" prompt="Box" fibtype="Decimal" minnumber="0" maxnumber="0"/>
+                            </response_num>
+                        </flow>
+                    </flow>
+                </presentation>
+                <resprocessing scoremodel="SumOfScores">
+                    <outcomes>
+                        <decvar varname="SCORE" vartype="Decimal" defaultval="0" minvalue="0" maxvalue="10.00000"/>
+                    </outcomes>
+                    <respcondition title="e962198df79e41918cc0bf3dbd9c420f">
+                        <conditionvar>
+                            <vargte respident="response">21.7</vargte>
+                            <varlte respident="response">21.9</varlte>
+                            <varequal respident="response" case="No">21.8</varequal>
+                        </conditionvar>
+                        <displayfeedback linkrefid="correct" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition title="incorrect">
+                        <conditionvar>
+                            <other/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="incorrect" feedbacktype="Response"/>
+                    </respcondition>
+                </resprocessing>
+                <itemfeedback ident="correct" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+                <itemfeedback ident="incorrect" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+            </item>
+            <item title="" maxattempts="0">
+                <itemmetadata>
+                    <bbmd_asi_object_id>_4441007_1</bbmd_asi_object_id>
+                    <bbmd_asitype>Item</bbmd_asitype>
+                    <bbmd_assessmenttype>Test</bbmd_assessmenttype>
+                    <bbmd_sectiontype>Subsection</bbmd_sectiontype>
+                    <bbmd_questiontype>Multiple Choice</bbmd_questiontype>
+                    <bbmd_is_from_cartridge>false</bbmd_is_from_cartridge>
+                    <bbmd_is_disabled>false</bbmd_is_disabled>
+                    <bbmd_negative_points_ind>N</bbmd_negative_points_ind>
+                    <bbmd_canvas_fullcrdt_ind>false</bbmd_canvas_fullcrdt_ind>
+                    <bbmd_all_fullcredit_ind>false</bbmd_all_fullcredit_ind>
+                    <bbmd_numbertype>none</bbmd_numbertype>
+                    <bbmd_partialcredit>false</bbmd_partialcredit>
+                    <bbmd_orientationtype>vertical</bbmd_orientationtype>
+                    <bbmd_is_extracredit>false</bbmd_is_extracredit>
+                    <qmd_absolutescore_max>10.000000000000000</qmd_absolutescore_max>
+                    <qmd_weighting>0</qmd_weighting>
+                    <qmd_instructornotes></qmd_instructornotes>
+                </itemmetadata>
+                <presentation>
+                    <flow class="Block">
+                        <flow class="QUESTION_BLOCK">
+                            <flow class="FORMATTED_TEXT_BLOCK">
+                                <material>
+                                    <mat_extension>
+                                        <mat_formattedtext type="HTML">&lt;p&gt;In MATLAB, we would represent the vector in the figure below as:&lt;/p&gt;  &lt;p style="margin: 0px 0px 1em; padding: 0px; border: 0px; outline: 0px; font-weight: 400; font-style: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: small; color: #000000; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"&gt;(Note that each tick mark on the grid represents unit distance i.e.&amp;nbsp;distance of 1)&lt;/p&gt;  &lt;p&gt;&lt;br&gt;&lt;/p&gt;  &lt;p&gt;&lt;img src="@X@EmbeddedFile.requestUrlStub@X@bbcswebdav/xid-49745280_1" width="267" height="193"&gt;&lt;/p&gt;</mat_formattedtext>
+                                    </mat_extension>
+                                </material>
+                            </flow>
+                        </flow>
+                        <flow class="RESPONSE_BLOCK">
+                            <response_lid ident="response" rcardinality="Single" rtiming="No">
+                                <render_choice shuffle="Yes" minnumber="0" maxnumber="0">
+                                    <flow_label class="Block">
+                                        <response_label ident="751fb9e42e55439eb6cf73d4aab03cb6" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;[5 2]&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="2d6fd7a0650b4fd399a1b856824f8976" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;[2 5]&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="216d8f7d9abb401bada2bbb0cde3d234" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;(5 2)&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="bb015f8b8f1f4320bcc3ef29ea10f2bf" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;(2 5)&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="77cf76f3adf54b8e84436e0af964b3db" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;{5 2}&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="c5b651385a6a4ea68da256952f41d956" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;{2 5}&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                </render_choice>
+                            </response_lid>
+                        </flow>
+                    </flow>
+                </presentation>
+                <resprocessing scoremodel="SumOfScores">
+                    <outcomes>
+                        <decvar varname="SCORE" vartype="Decimal" defaultval="0" minvalue="0" maxvalue="10.00000"/>
+                    </outcomes>
+                    <respcondition title="correct">
+                        <conditionvar>
+                            <varequal respident="response" case="No">751fb9e42e55439eb6cf73d4aab03cb6</varequal>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">SCORE.max</setvar>
+                        <displayfeedback linkrefid="correct" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition title="incorrect">
+                        <conditionvar>
+                            <other/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="incorrect" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="751fb9e42e55439eb6cf73d4aab03cb6" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">100</setvar>
+                        <displayfeedback linkrefid="751fb9e42e55439eb6cf73d4aab03cb6" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="2d6fd7a0650b4fd399a1b856824f8976" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="2d6fd7a0650b4fd399a1b856824f8976" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="216d8f7d9abb401bada2bbb0cde3d234" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="216d8f7d9abb401bada2bbb0cde3d234" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="bb015f8b8f1f4320bcc3ef29ea10f2bf" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="bb015f8b8f1f4320bcc3ef29ea10f2bf" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="77cf76f3adf54b8e84436e0af964b3db" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="77cf76f3adf54b8e84436e0af964b3db" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="c5b651385a6a4ea68da256952f41d956" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="c5b651385a6a4ea68da256952f41d956" feedbacktype="Response"/>
+                    </respcondition>
+                </resprocessing>
+                <itemfeedback ident="correct" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+                <itemfeedback ident="incorrect" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+                <itemfeedback ident="751fb9e42e55439eb6cf73d4aab03cb6" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="2d6fd7a0650b4fd399a1b856824f8976" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="216d8f7d9abb401bada2bbb0cde3d234" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="bb015f8b8f1f4320bcc3ef29ea10f2bf" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="77cf76f3adf54b8e84436e0af964b3db" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="c5b651385a6a4ea68da256952f41d956" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+            </item>
+            <item title="" maxattempts="0">
+                <itemmetadata>
+                    <bbmd_asi_object_id>_4441008_1</bbmd_asi_object_id>
+                    <bbmd_asitype>Item</bbmd_asitype>
+                    <bbmd_assessmenttype>Test</bbmd_assessmenttype>
+                    <bbmd_sectiontype>Subsection</bbmd_sectiontype>
+                    <bbmd_questiontype>Multiple Answer</bbmd_questiontype>
+                    <bbmd_is_from_cartridge>false</bbmd_is_from_cartridge>
+                    <bbmd_is_disabled>false</bbmd_is_disabled>
+                    <bbmd_negative_points_ind>N</bbmd_negative_points_ind>
+                    <bbmd_canvas_fullcrdt_ind>false</bbmd_canvas_fullcrdt_ind>
+                    <bbmd_all_fullcredit_ind>false</bbmd_all_fullcredit_ind>
+                    <bbmd_numbertype>none</bbmd_numbertype>
+                    <bbmd_partialcredit>false</bbmd_partialcredit>
+                    <bbmd_orientationtype>vertical</bbmd_orientationtype>
+                    <bbmd_is_extracredit>false</bbmd_is_extracredit>
+                    <qmd_absolutescore_max>10.000000000000000</qmd_absolutescore_max>
+                    <qmd_weighting>0</qmd_weighting>
+                    <qmd_instructornotes></qmd_instructornotes>
+                </itemmetadata>
+                <presentation>
+                    <flow class="Block">
+                        <flow class="QUESTION_BLOCK">
+                            <flow class="FORMATTED_TEXT_BLOCK">
+                                <material>
+                                    <mat_extension>
+                                        <mat_formattedtext type="HTML">&lt;p&gt;Which of the following describes the matrix below: &lt;img align="middle" alt="open square brackets table row 1 3 2 row 0 2 1 row 0 0 3 end table close square brackets" class="Wirisformula" data-mathml="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«semantics» «mrow»«mfenced close=¨]¨ open=¨[¨»«mtable»«mtr»«mtd»«mn»1«/mn»«/mtd»«mtd»«mn»3«/mn»«/mtd»«mtd»«mn»2«/mn»«/mtd»«/mtr»«mtr»«mtd»«mn»0«/mn»«/mtd»«mtd»«mn»2«/mn»«/mtd»«mtd»«mn»1«/mn»«/mtd»«/mtr»«mtr»«mtd»«mn»0«/mn»«/mtd»«mtd»«mn»0«/mn»«/mtd»«mtd»«mn»3«/mn»«/mtd»«/mtr»«/mtable»«/mfenced»«/mrow» «annotation encoding=¨LaTeX¨»\begin{bmatrix} 1 §amp; 3 §amp; 2 \\ 0 §amp; 2 §amp; 1 \\ 0 §amp; 0 §amp; 3 \end{bmatrix} «/annotation» «/semantics»«/math»" src="@X@EmbeddedFile.requestUrlStub@X@bbcswebdav/xid-49743865_1"&gt;&lt;/p&gt;</mat_formattedtext>
+                                    </mat_extension>
+                                </material>
+                            </flow>
+                        </flow>
+                        <flow class="RESPONSE_BLOCK">
+                            <response_lid ident="response" rcardinality="Multiple" rtiming="No">
+                                <render_choice shuffle="Yes" minnumber="0" maxnumber="0">
+                                    <flow_label class="Block">
+                                        <response_label ident="366b74644eec4933afac65814068172d" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;Upper triangular&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="b875da37630b4bd1b5702c2a2d5e4f1c" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;Lower triangular&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="0908e37803014ad1be3a41c929439d00" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;Square&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="9f561f214bea4f5ab2b33ef3069df710" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;Symmetric&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="72b7143dea7a46a684be22927707cad3" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;Skew-symmetric&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                </render_choice>
+                            </response_lid>
+                        </flow>
+                    </flow>
+                </presentation>
+                <resprocessing scoremodel="SumOfScores">
+                    <outcomes>
+                        <decvar varname="SCORE" vartype="Decimal" defaultval="0" minvalue="0" maxvalue="10.00000"/>
+                    </outcomes>
+                    <respcondition title="correct">
+                        <conditionvar>
+                            <and>
+                                <varequal respident="response" case="No">366b74644eec4933afac65814068172d</varequal>
+                                <not>
+                                    <varequal respident="response" case="No">b875da37630b4bd1b5702c2a2d5e4f1c</varequal>
+                                </not>
+                                <varequal respident="response" case="No">0908e37803014ad1be3a41c929439d00</varequal>
+                                <not>
+                                    <varequal respident="response" case="No">9f561f214bea4f5ab2b33ef3069df710</varequal>
+                                </not>
+                                <not>
+                                    <varequal respident="response" case="No">72b7143dea7a46a684be22927707cad3</varequal>
+                                </not>
+                            </and>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">SCORE.max</setvar>
+                        <displayfeedback linkrefid="correct" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition title="incorrect">
+                        <conditionvar>
+                            <other/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="incorrect" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="366b74644eec4933afac65814068172d" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">50</setvar>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="b875da37630b4bd1b5702c2a2d5e4f1c" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="0908e37803014ad1be3a41c929439d00" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">50</setvar>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="9f561f214bea4f5ab2b33ef3069df710" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="72b7143dea7a46a684be22927707cad3" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                    </respcondition>
+                </resprocessing>
+                <itemfeedback ident="correct" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+                <itemfeedback ident="incorrect" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+                <itemfeedback ident="366b74644eec4933afac65814068172d" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="b875da37630b4bd1b5702c2a2d5e4f1c" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="0908e37803014ad1be3a41c929439d00" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="9f561f214bea4f5ab2b33ef3069df710" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="72b7143dea7a46a684be22927707cad3" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+            </item>
+            <item title="" maxattempts="0">
+                <itemmetadata>
+                    <bbmd_asi_object_id>_4441009_1</bbmd_asi_object_id>
+                    <bbmd_asitype>Item</bbmd_asitype>
+                    <bbmd_assessmenttype>Test</bbmd_assessmenttype>
+                    <bbmd_sectiontype>Subsection</bbmd_sectiontype>
+                    <bbmd_questiontype>Multiple Answer</bbmd_questiontype>
+                    <bbmd_is_from_cartridge>false</bbmd_is_from_cartridge>
+                    <bbmd_is_disabled>false</bbmd_is_disabled>
+                    <bbmd_negative_points_ind>N</bbmd_negative_points_ind>
+                    <bbmd_canvas_fullcrdt_ind>false</bbmd_canvas_fullcrdt_ind>
+                    <bbmd_all_fullcredit_ind>false</bbmd_all_fullcredit_ind>
+                    <bbmd_numbertype>none</bbmd_numbertype>
+                    <bbmd_partialcredit>false</bbmd_partialcredit>
+                    <bbmd_orientationtype>vertical</bbmd_orientationtype>
+                    <bbmd_is_extracredit>false</bbmd_is_extracredit>
+                    <qmd_absolutescore_max>10.000000000000000</qmd_absolutescore_max>
+                    <qmd_weighting>0</qmd_weighting>
+                    <qmd_instructornotes></qmd_instructornotes>
+                </itemmetadata>
+                <presentation>
+                    <flow class="Block">
+                        <flow class="QUESTION_BLOCK">
+                            <flow class="FORMATTED_TEXT_BLOCK">
+                                <material>
+                                    <mat_extension>
+                                        <mat_formattedtext type="HTML">&lt;p&gt;In the MATLAB code &lt;img align="middle" alt="y equals s i n left parenthesis x right parenthesis" class="Wirisformula" data-mathml="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«semantics» «mrow»«mi»y«/mi»«mo»=«/mo»«mi»s«/mi»«mi»i«/mi»«mi»n«/mi»«mo»(«/mo»«mi»x«/mi»«mo»)«/mo»«/mrow» «annotation encoding=¨LaTeX¨» y = sin(x) «/annotation» «/semantics»«/math»" src="@X@EmbeddedFile.requestUrlStub@X@bbcswebdav/xid-49745291_1"&gt;, which of the following is/are true?&lt;/p&gt;</mat_formattedtext>
+                                    </mat_extension>
+                                </material>
+                            </flow>
+                        </flow>
+                        <flow class="RESPONSE_BLOCK">
+                            <response_lid ident="response" rcardinality="Multiple" rtiming="No">
+                                <render_choice shuffle="Yes" minnumber="0" maxnumber="0">
+                                    <flow_label class="Block">
+                                        <response_label ident="475441fbcedc4bd7bb05056d30466d70" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;sin is called a command&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="b121089c58ee40c4962aa9fe8a05c620" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;sin is called a function&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="2e06ef7f8a73473fa59d5f9a0fbad0eb" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;sin is called a program&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="6ae3986aaeca4737b130de47425e2e80" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;x is called an&amp;nbsp;argument&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="77dca707b7744fb98a276c53b0d33453" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;y is called an argument&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="3a499a41a9e94caa9fa69d913e727976" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;y is called a return value&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                </render_choice>
+                            </response_lid>
+                        </flow>
+                    </flow>
+                </presentation>
+                <resprocessing scoremodel="SumOfScores">
+                    <outcomes>
+                        <decvar varname="SCORE" vartype="Decimal" defaultval="0" minvalue="0" maxvalue="10.00000"/>
+                    </outcomes>
+                    <respcondition title="correct">
+                        <conditionvar>
+                            <and>
+                                <not>
+                                    <varequal respident="response" case="No">475441fbcedc4bd7bb05056d30466d70</varequal>
+                                </not>
+                                <varequal respident="response" case="No">b121089c58ee40c4962aa9fe8a05c620</varequal>
+                                <not>
+                                    <varequal respident="response" case="No">2e06ef7f8a73473fa59d5f9a0fbad0eb</varequal>
+                                </not>
+                                <varequal respident="response" case="No">6ae3986aaeca4737b130de47425e2e80</varequal>
+                                <not>
+                                    <varequal respident="response" case="No">77dca707b7744fb98a276c53b0d33453</varequal>
+                                </not>
+                                <varequal respident="response" case="No">3a499a41a9e94caa9fa69d913e727976</varequal>
+                            </and>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">SCORE.max</setvar>
+                        <displayfeedback linkrefid="correct" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition title="incorrect">
+                        <conditionvar>
+                            <other/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="incorrect" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="475441fbcedc4bd7bb05056d30466d70" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="b121089c58ee40c4962aa9fe8a05c620" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">50</setvar>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="2e06ef7f8a73473fa59d5f9a0fbad0eb" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="6ae3986aaeca4737b130de47425e2e80" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">50</setvar>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="77dca707b7744fb98a276c53b0d33453" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="3a499a41a9e94caa9fa69d913e727976" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                    </respcondition>
+                </resprocessing>
+                <itemfeedback ident="correct" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+                <itemfeedback ident="incorrect" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+                <itemfeedback ident="475441fbcedc4bd7bb05056d30466d70" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="b121089c58ee40c4962aa9fe8a05c620" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="2e06ef7f8a73473fa59d5f9a0fbad0eb" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="6ae3986aaeca4737b130de47425e2e80" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="77dca707b7744fb98a276c53b0d33453" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="3a499a41a9e94caa9fa69d913e727976" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+            </item>
+            <item title="" maxattempts="0">
+                <itemmetadata>
+                    <bbmd_asi_object_id>_4441010_1</bbmd_asi_object_id>
+                    <bbmd_asitype>Item</bbmd_asitype>
+                    <bbmd_assessmenttype>Test</bbmd_assessmenttype>
+                    <bbmd_sectiontype>Subsection</bbmd_sectiontype>
+                    <bbmd_questiontype>Multiple Answer</bbmd_questiontype>
+                    <bbmd_is_from_cartridge>false</bbmd_is_from_cartridge>
+                    <bbmd_is_disabled>false</bbmd_is_disabled>
+                    <bbmd_negative_points_ind>N</bbmd_negative_points_ind>
+                    <bbmd_canvas_fullcrdt_ind>false</bbmd_canvas_fullcrdt_ind>
+                    <bbmd_all_fullcredit_ind>false</bbmd_all_fullcredit_ind>
+                    <bbmd_numbertype>none</bbmd_numbertype>
+                    <bbmd_partialcredit>false</bbmd_partialcredit>
+                    <bbmd_orientationtype>vertical</bbmd_orientationtype>
+                    <bbmd_is_extracredit>false</bbmd_is_extracredit>
+                    <qmd_absolutescore_max>10.000000000000000</qmd_absolutescore_max>
+                    <qmd_weighting>0</qmd_weighting>
+                    <qmd_instructornotes></qmd_instructornotes>
+                </itemmetadata>
+                <presentation>
+                    <flow class="Block">
+                        <flow class="QUESTION_BLOCK">
+                            <flow class="FORMATTED_TEXT_BLOCK">
+                                <material>
+                                    <mat_extension>
+                                        <mat_formattedtext type="HTML">&lt;p&gt;Which lines of the following code contains errors?&amp;nbsp;(The answers correspond to the line numbers)&lt;/p&gt;  &lt;p&gt;&lt;img src="@X@EmbeddedFile.requestUrlStub@X@bbcswebdav/xid-49745267_1" width="329" height="226"&gt;&lt;/p&gt;</mat_formattedtext>
+                                    </mat_extension>
+                                </material>
+                            </flow>
+                        </flow>
+                        <flow class="RESPONSE_BLOCK">
+                            <response_lid ident="response" rcardinality="Multiple" rtiming="No">
+                                <render_choice shuffle="No" minnumber="0" maxnumber="0">
+                                    <flow_label class="Block">
+                                        <response_label ident="d299781463a44e84a862254126da77c9" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;1&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="0e7a159bb8a94c5bade85071608fae3f" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;2&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="18ee3304ac8f46e188ae8c58cc69da8a" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;3&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="6399f5eb2a70433daac0f72f3d9a5bed" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;4&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="9fe320d989ad4dec8d4c73add685be70" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;5&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="65af801f846e4fcb9a49ec5ed75ba8cd" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;6&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="14c1de85efec4ae2802487c120c3a326" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;7&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                </render_choice>
+                            </response_lid>
+                        </flow>
+                    </flow>
+                </presentation>
+                <resprocessing scoremodel="SumOfScores">
+                    <outcomes>
+                        <decvar varname="SCORE" vartype="Decimal" defaultval="0" minvalue="0" maxvalue="10.00000"/>
+                    </outcomes>
+                    <respcondition title="correct">
+                        <conditionvar>
+                            <and>
+                                <not>
+                                    <varequal respident="response" case="No">d299781463a44e84a862254126da77c9</varequal>
+                                </not>
+                                <varequal respident="response" case="No">0e7a159bb8a94c5bade85071608fae3f</varequal>
+                                <varequal respident="response" case="No">18ee3304ac8f46e188ae8c58cc69da8a</varequal>
+                                <not>
+                                    <varequal respident="response" case="No">6399f5eb2a70433daac0f72f3d9a5bed</varequal>
+                                </not>
+                                <varequal respident="response" case="No">9fe320d989ad4dec8d4c73add685be70</varequal>
+                                <not>
+                                    <varequal respident="response" case="No">65af801f846e4fcb9a49ec5ed75ba8cd</varequal>
+                                </not>
+                                <not>
+                                    <varequal respident="response" case="No">14c1de85efec4ae2802487c120c3a326</varequal>
+                                </not>
+                            </and>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">SCORE.max</setvar>
+                        <displayfeedback linkrefid="correct" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition title="incorrect">
+                        <conditionvar>
+                            <other/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="incorrect" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="d299781463a44e84a862254126da77c9" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="0e7a159bb8a94c5bade85071608fae3f" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">33.33333</setvar>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="18ee3304ac8f46e188ae8c58cc69da8a" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">33.33333</setvar>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="6399f5eb2a70433daac0f72f3d9a5bed" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="9fe320d989ad4dec8d4c73add685be70" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">33.33333</setvar>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="65af801f846e4fcb9a49ec5ed75ba8cd" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="14c1de85efec4ae2802487c120c3a326" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                    </respcondition>
+                </resprocessing>
+                <itemfeedback ident="correct" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+                <itemfeedback ident="incorrect" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+                <itemfeedback ident="d299781463a44e84a862254126da77c9" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="0e7a159bb8a94c5bade85071608fae3f" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="18ee3304ac8f46e188ae8c58cc69da8a" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="6399f5eb2a70433daac0f72f3d9a5bed" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="9fe320d989ad4dec8d4c73add685be70" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="65af801f846e4fcb9a49ec5ed75ba8cd" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="14c1de85efec4ae2802487c120c3a326" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+            </item>
+            <item title="" maxattempts="0">
+                <itemmetadata>
+                    <bbmd_asi_object_id>_4441011_1</bbmd_asi_object_id>
+                    <bbmd_asitype>Item</bbmd_asitype>
+                    <bbmd_assessmenttype>Test</bbmd_assessmenttype>
+                    <bbmd_sectiontype>Subsection</bbmd_sectiontype>
+                    <bbmd_questiontype>Multiple Choice</bbmd_questiontype>
+                    <bbmd_is_from_cartridge>false</bbmd_is_from_cartridge>
+                    <bbmd_is_disabled>false</bbmd_is_disabled>
+                    <bbmd_negative_points_ind>N</bbmd_negative_points_ind>
+                    <bbmd_canvas_fullcrdt_ind>false</bbmd_canvas_fullcrdt_ind>
+                    <bbmd_all_fullcredit_ind>false</bbmd_all_fullcredit_ind>
+                    <bbmd_numbertype>none</bbmd_numbertype>
+                    <bbmd_partialcredit>false</bbmd_partialcredit>
+                    <bbmd_orientationtype>vertical</bbmd_orientationtype>
+                    <bbmd_is_extracredit>false</bbmd_is_extracredit>
+                    <qmd_absolutescore_max>10.000000000000000</qmd_absolutescore_max>
+                    <qmd_weighting>0</qmd_weighting>
+                    <qmd_instructornotes></qmd_instructornotes>
+                </itemmetadata>
+                <presentation>
+                    <flow class="Block">
+                        <flow class="QUESTION_BLOCK">
+                            <flow class="FORMATTED_TEXT_BLOCK">
+                                <material>
+                                    <mat_extension>
+                                        <mat_formattedtext type="HTML">&lt;p&gt;Which line of code can be used to determine the number of elements in the vector?&lt;/p&gt;  &lt;p&gt;&lt;img src="@X@EmbeddedFile.requestUrlStub@X@bbcswebdav/xid-49745269_1" width="329" height="226"&gt;&lt;/p&gt;</mat_formattedtext>
+                                    </mat_extension>
+                                </material>
+                            </flow>
+                        </flow>
+                        <flow class="RESPONSE_BLOCK">
+                            <response_lid ident="response" rcardinality="Single" rtiming="No">
+                                <render_choice shuffle="Yes" minnumber="0" maxnumber="0">
+                                    <flow_label class="Block">
+                                        <response_label ident="a4c6b2327ba7487cbc9bded5e4e7a129" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;4&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="77da4d1e725e4a8581a9ffddcd42b5e1" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;5&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="9f7fd84e79bb436a84b9898a92a68bf9" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;6&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="04986b696b6c4e7f8380276009132128" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;7&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                </render_choice>
+                            </response_lid>
+                        </flow>
+                    </flow>
+                </presentation>
+                <resprocessing scoremodel="SumOfScores">
+                    <outcomes>
+                        <decvar varname="SCORE" vartype="Decimal" defaultval="0" minvalue="0" maxvalue="10.00000"/>
+                    </outcomes>
+                    <respcondition title="correct">
+                        <conditionvar>
+                            <varequal respident="response" case="No">a4c6b2327ba7487cbc9bded5e4e7a129</varequal>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">SCORE.max</setvar>
+                        <displayfeedback linkrefid="correct" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition title="incorrect">
+                        <conditionvar>
+                            <other/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="incorrect" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="a4c6b2327ba7487cbc9bded5e4e7a129" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">100</setvar>
+                        <displayfeedback linkrefid="a4c6b2327ba7487cbc9bded5e4e7a129" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="77da4d1e725e4a8581a9ffddcd42b5e1" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="77da4d1e725e4a8581a9ffddcd42b5e1" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="9f7fd84e79bb436a84b9898a92a68bf9" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="9f7fd84e79bb436a84b9898a92a68bf9" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="04986b696b6c4e7f8380276009132128" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="04986b696b6c4e7f8380276009132128" feedbacktype="Response"/>
+                    </respcondition>
+                </resprocessing>
+                <itemfeedback ident="correct" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+                <itemfeedback ident="incorrect" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+                <itemfeedback ident="a4c6b2327ba7487cbc9bded5e4e7a129" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="77da4d1e725e4a8581a9ffddcd42b5e1" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="9f7fd84e79bb436a84b9898a92a68bf9" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="04986b696b6c4e7f8380276009132128" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+            </item>
+            <item title="" maxattempts="0">
+                <itemmetadata>
+                    <bbmd_asi_object_id>_4441012_1</bbmd_asi_object_id>
+                    <bbmd_asitype>Item</bbmd_asitype>
+                    <bbmd_assessmenttype>Test</bbmd_assessmenttype>
+                    <bbmd_sectiontype>Subsection</bbmd_sectiontype>
+                    <bbmd_questiontype>Multiple Choice</bbmd_questiontype>
+                    <bbmd_is_from_cartridge>false</bbmd_is_from_cartridge>
+                    <bbmd_is_disabled>false</bbmd_is_disabled>
+                    <bbmd_negative_points_ind>N</bbmd_negative_points_ind>
+                    <bbmd_canvas_fullcrdt_ind>false</bbmd_canvas_fullcrdt_ind>
+                    <bbmd_all_fullcredit_ind>false</bbmd_all_fullcredit_ind>
+                    <bbmd_numbertype>none</bbmd_numbertype>
+                    <bbmd_partialcredit>false</bbmd_partialcredit>
+                    <bbmd_orientationtype>vertical</bbmd_orientationtype>
+                    <bbmd_is_extracredit>false</bbmd_is_extracredit>
+                    <qmd_absolutescore_max>10.000000000000000</qmd_absolutescore_max>
+                    <qmd_weighting>0</qmd_weighting>
+                    <qmd_instructornotes></qmd_instructornotes>
+                </itemmetadata>
+                <presentation>
+                    <flow class="Block">
+                        <flow class="QUESTION_BLOCK">
+                            <flow class="FORMATTED_TEXT_BLOCK">
+                                <material>
+                                    <mat_extension>
+                                        <mat_formattedtext type="HTML">&lt;p&gt;Which lines of code can be used to determine the length of the vector? (Answer choice correspond to line numbers)&lt;/p&gt;  &lt;p&gt;&lt;img src="@X@EmbeddedFile.requestUrlStub@X@bbcswebdav/xid-49745271_1" width="329" height="226"&gt;&lt;/p&gt;</mat_formattedtext>
+                                    </mat_extension>
+                                </material>
+                            </flow>
+                        </flow>
+                        <flow class="RESPONSE_BLOCK">
+                            <response_lid ident="response" rcardinality="Single" rtiming="No">
+                                <render_choice shuffle="No" minnumber="0" maxnumber="0">
+                                    <flow_label class="Block">
+                                        <response_label ident="efa4a339941a4c93b80cdcf4aff4b23d" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;4&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="7584f81ff3864483a84975b87f241e5c" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;5&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="afce093d32e44819b60c09bf7e778a04" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;6&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="77646c45890e40eb89ce4001559d63ad" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;7&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                </render_choice>
+                            </response_lid>
+                        </flow>
+                    </flow>
+                </presentation>
+                <resprocessing scoremodel="SumOfScores">
+                    <outcomes>
+                        <decvar varname="SCORE" vartype="Decimal" defaultval="0" minvalue="0" maxvalue="10.00000"/>
+                    </outcomes>
+                    <respcondition title="correct">
+                        <conditionvar>
+                            <varequal respident="response" case="No">afce093d32e44819b60c09bf7e778a04</varequal>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">SCORE.max</setvar>
+                        <displayfeedback linkrefid="correct" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition title="incorrect">
+                        <conditionvar>
+                            <other/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="incorrect" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="efa4a339941a4c93b80cdcf4aff4b23d" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="efa4a339941a4c93b80cdcf4aff4b23d" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="7584f81ff3864483a84975b87f241e5c" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="7584f81ff3864483a84975b87f241e5c" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="afce093d32e44819b60c09bf7e778a04" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">100</setvar>
+                        <displayfeedback linkrefid="afce093d32e44819b60c09bf7e778a04" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="77646c45890e40eb89ce4001559d63ad" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="77646c45890e40eb89ce4001559d63ad" feedbacktype="Response"/>
+                    </respcondition>
+                </resprocessing>
+                <itemfeedback ident="correct" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+                <itemfeedback ident="incorrect" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+                <itemfeedback ident="efa4a339941a4c93b80cdcf4aff4b23d" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="7584f81ff3864483a84975b87f241e5c" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="afce093d32e44819b60c09bf7e778a04" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="77646c45890e40eb89ce4001559d63ad" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+            </item>
+            <item title="" maxattempts="0">
+                <itemmetadata>
+                    <bbmd_asi_object_id>_4441013_1</bbmd_asi_object_id>
+                    <bbmd_asitype>Item</bbmd_asitype>
+                    <bbmd_assessmenttype>Test</bbmd_assessmenttype>
+                    <bbmd_sectiontype>Subsection</bbmd_sectiontype>
+                    <bbmd_questiontype>Multiple Answer</bbmd_questiontype>
+                    <bbmd_is_from_cartridge>false</bbmd_is_from_cartridge>
+                    <bbmd_is_disabled>false</bbmd_is_disabled>
+                    <bbmd_negative_points_ind>N</bbmd_negative_points_ind>
+                    <bbmd_canvas_fullcrdt_ind>false</bbmd_canvas_fullcrdt_ind>
+                    <bbmd_all_fullcredit_ind>false</bbmd_all_fullcredit_ind>
+                    <bbmd_numbertype>none</bbmd_numbertype>
+                    <bbmd_partialcredit>false</bbmd_partialcredit>
+                    <bbmd_orientationtype>vertical</bbmd_orientationtype>
+                    <bbmd_is_extracredit>false</bbmd_is_extracredit>
+                    <qmd_absolutescore_max>10.000000000000000</qmd_absolutescore_max>
+                    <qmd_weighting>0</qmd_weighting>
+                    <qmd_instructornotes></qmd_instructornotes>
+                </itemmetadata>
+                <presentation>
+                    <flow class="Block">
+                        <flow class="QUESTION_BLOCK">
+                            <flow class="FORMATTED_TEXT_BLOCK">
+                                <material>
+                                    <mat_extension>
+                                        <mat_formattedtext type="HTML">&lt;p&gt;&lt;span style="font-size: 12.0pt; font-family: 'Times New Roman','serif';"&gt;Which of the following describes the matrix below:&amp;nbsp; &lt;img align="middle" alt="open square brackets table row 1 3 2 row cell negative 3 end cell 1 cell negative 1 end cell row cell negative 2 end cell 1 1 end table close square brackets" class="Wirisformula" data-mathml="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«semantics» «mrow»«mfenced close=¨]¨ open=¨[¨»«mtable»«mtr»«mtd»«mn»1«/mn»«/mtd»«mtd»«mn»3«/mn»«/mtd»«mtd»«mn»2«/mn»«/mtd»«/mtr»«mtr»«mtd»«mo»-«/mo»«mn»3«/mn»«/mtd»«mtd»«mn»1«/mn»«/mtd»«mtd»«mo»-«/mo»«mn»1«/mn»«/mtd»«/mtr»«mtr»«mtd»«mo»-«/mo»«mn»2«/mn»«/mtd»«mtd»«mn»1«/mn»«/mtd»«mtd»«mn»1«/mn»«/mtd»«/mtr»«/mtable»«/mfenced»«/mrow» «annotation encoding=¨LaTeX¨»\begin{bmatrix} 1 §amp; 3 §amp; 2 \\ - 3§amp; 1 §amp;-1\\ -2 §amp; 1 §amp; 1 \end{bmatrix} «/annotation» «/semantics»«/math»" src="@X@EmbeddedFile.requestUrlStub@X@bbcswebdav/xid-49745292_1"&gt;&lt;/span&gt;&lt;/p&gt;</mat_formattedtext>
+                                    </mat_extension>
+                                </material>
+                            </flow>
+                        </flow>
+                        <flow class="RESPONSE_BLOCK">
+                            <response_lid ident="response" rcardinality="Multiple" rtiming="No">
+                                <render_choice shuffle="Yes" minnumber="0" maxnumber="0">
+                                    <flow_label class="Block">
+                                        <response_label ident="10f93fd851c640d981fe34a2fdcebdd2" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;&lt;span style="font-size: 12.0pt; font-family: 'Times New Roman','serif';"&gt;Upper triangular&lt;/span&gt;&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="4a42b5ee20b2409dad7b690eb5a96d4c" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;&lt;span style="font-size: 12.0pt; font-family: 'Times New Roman','serif';"&gt;Lower triangular&lt;/span&gt;&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="53b7d03875114152ae6cf982c30100cd" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;&lt;span style="font-size: 12.0pt; font-family: 'Times New Roman','serif';"&gt;Square&lt;/span&gt;&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="dfc7f1ddf6b446709e99cb81748255e7" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;&lt;span style="font-size: 12.0pt; font-family: 'Times New Roman','serif';"&gt;Symmetric&lt;/span&gt;&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="609b8da002f546418159e3097dd4c646" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;&lt;span style="font-size: 12.0pt; font-family: 'Times New Roman','serif';"&gt;Skew-symmetric&lt;/span&gt;&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                </render_choice>
+                            </response_lid>
+                        </flow>
+                    </flow>
+                </presentation>
+                <resprocessing scoremodel="SumOfScores">
+                    <outcomes>
+                        <decvar varname="SCORE" vartype="Decimal" defaultval="0" minvalue="0" maxvalue="10.00000"/>
+                    </outcomes>
+                    <respcondition title="correct">
+                        <conditionvar>
+                            <and>
+                                <not>
+                                    <varequal respident="response" case="No">10f93fd851c640d981fe34a2fdcebdd2</varequal>
+                                </not>
+                                <not>
+                                    <varequal respident="response" case="No">4a42b5ee20b2409dad7b690eb5a96d4c</varequal>
+                                </not>
+                                <varequal respident="response" case="No">53b7d03875114152ae6cf982c30100cd</varequal>
+                                <not>
+                                    <varequal respident="response" case="No">dfc7f1ddf6b446709e99cb81748255e7</varequal>
+                                </not>
+                                <not>
+                                    <varequal respident="response" case="No">609b8da002f546418159e3097dd4c646</varequal>
+                                </not>
+                            </and>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">SCORE.max</setvar>
+                        <displayfeedback linkrefid="correct" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition title="incorrect">
+                        <conditionvar>
+                            <other/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="incorrect" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="10f93fd851c640d981fe34a2fdcebdd2" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="4a42b5ee20b2409dad7b690eb5a96d4c" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="53b7d03875114152ae6cf982c30100cd" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">100</setvar>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="dfc7f1ddf6b446709e99cb81748255e7" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="609b8da002f546418159e3097dd4c646" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                    </respcondition>
+                </resprocessing>
+                <itemfeedback ident="correct" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+                <itemfeedback ident="incorrect" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+                <itemfeedback ident="10f93fd851c640d981fe34a2fdcebdd2" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="4a42b5ee20b2409dad7b690eb5a96d4c" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="53b7d03875114152ae6cf982c30100cd" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="dfc7f1ddf6b446709e99cb81748255e7" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="609b8da002f546418159e3097dd4c646" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+            </item>
+            <item title="=" maxattempts="0">
+                <itemmetadata>
+                    <bbmd_asi_object_id>_4441014_1</bbmd_asi_object_id>
+                    <bbmd_asitype>Item</bbmd_asitype>
+                    <bbmd_assessmenttype>Test</bbmd_assessmenttype>
+                    <bbmd_sectiontype>Subsection</bbmd_sectiontype>
+                    <bbmd_questiontype>Numeric</bbmd_questiontype>
+                    <bbmd_is_from_cartridge>false</bbmd_is_from_cartridge>
+                    <bbmd_is_disabled>false</bbmd_is_disabled>
+                    <bbmd_negative_points_ind>N</bbmd_negative_points_ind>
+                    <bbmd_canvas_fullcrdt_ind>false</bbmd_canvas_fullcrdt_ind>
+                    <bbmd_all_fullcredit_ind>false</bbmd_all_fullcredit_ind>
+                    <bbmd_numbertype>none</bbmd_numbertype>
+                    <bbmd_partialcredit>false</bbmd_partialcredit>
+                    <bbmd_orientationtype>vertical</bbmd_orientationtype>
+                    <bbmd_is_extracredit>false</bbmd_is_extracredit>
+                    <qmd_absolutescore_max>10.000000000000000</qmd_absolutescore_max>
+                    <qmd_weighting>0</qmd_weighting>
+                    <qmd_instructornotes></qmd_instructornotes>
+                </itemmetadata>
+                <presentation>
+                    <flow class="Block">
+                        <flow class="QUESTION_BLOCK">
+                            <flow class="FORMATTED_TEXT_BLOCK">
+                                <material>
+                                    <mat_extension>
+                                        <mat_formattedtext type="HTML">&lt;p&gt;The dot product of the vectors &lt;img align="middle" alt="space u subscript 1 equals space open square brackets table row 2 3 1 end table close square brackets" class="Wirisformula" data-mathml="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«semantics» «mrow»«mo»§#xA0;«/mo»«msub»«mi»u«/mi»«mn»1«/mn»«/msub»«mo»=«/mo»«mo»§#xA0;«/mo»«mfenced close=¨]¨ open=¨[¨»«mtable»«mtr»«mtd»«mn»2«/mn»«/mtd»«mtd»«mn»3«/mn»«/mtd»«mtd»«mn»1«/mn»«/mtd»«/mtr»«/mtable»«/mfenced»«/mrow» «annotation encoding=¨LaTeX¨»&amp;nbsp;u_1 =&amp;nbsp;\begin{bmatrix} 2 §amp; 3 §amp; 1 \end{bmatrix} «/annotation» «/semantics»«/math»" src="@X@EmbeddedFile.requestUrlStub@X@bbcswebdav/xid-49745286_1"&gt; and &lt;img align="middle" alt="u subscript 2 equals open square brackets table row cell negative 1 end cell 2 1 end table close square brackets" class="Wirisformula" data-mathml="«math xmlns=¨http://www.w3.org/1998/Math/MathML¨»«semantics» «mrow»«msub»«mi»u«/mi»«mn»2«/mn»«/msub»«mo»=«/mo»«mfenced close=¨]¨ open=¨[¨»«mtable»«mtr»«mtd»«mo»-«/mo»«mn»1«/mn»«/mtd»«mtd»«mn»2«/mn»«/mtd»«mtd»«mn»1«/mn»«/mtd»«/mtr»«/mtable»«/mfenced»«/mrow» «annotation encoding=¨LaTeX¨» u_2 = \begin{bmatrix} -1 §amp; 2 §amp; 1 \end{bmatrix} «/annotation» «/semantics»«/math»" src="@X@EmbeddedFile.requestUrlStub@X@bbcswebdav/xid-49745287_1"&gt; is:&lt;/p&gt;</mat_formattedtext>
+                                    </mat_extension>
+                                </material>
+                            </flow>
+                        </flow>
+                        <flow class="RESPONSE_BLOCK">
+                            <response_num ident="response" rcardinality="Single" rtiming="No">
+                                <render_fib charset="us-ascii" encoding="UTF_8" rows="0" columns="0" maxchars="0" prompt="Box" fibtype="Decimal" minnumber="0" maxnumber="0"/>
+                            </response_num>
+                        </flow>
+                    </flow>
+                </presentation>
+                <resprocessing scoremodel="SumOfScores">
+                    <outcomes>
+                        <decvar varname="SCORE" vartype="Decimal" defaultval="0" minvalue="0" maxvalue="10.00000"/>
+                    </outcomes>
+                    <respcondition title="84ead03bd4864fb58eac05fe912bc859">
+                        <conditionvar>
+                            <vargte respident="response">5</vargte>
+                            <varlte respident="response">5</varlte>
+                            <varequal respident="response" case="No">5</varequal>
+                        </conditionvar>
+                        <displayfeedback linkrefid="correct" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition title="incorrect">
+                        <conditionvar>
+                            <other/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="incorrect" feedbacktype="Response"/>
+                    </respcondition>
+                </resprocessing>
+                <itemfeedback ident="correct" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+                <itemfeedback ident="incorrect" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+            </item>
+            <item title="" maxattempts="0">
+                <itemmetadata>
+                    <bbmd_asi_object_id>_4441029_1</bbmd_asi_object_id>
+                    <bbmd_asitype>Item</bbmd_asitype>
+                    <bbmd_assessmenttype>Test</bbmd_assessmenttype>
+                    <bbmd_sectiontype>Subsection</bbmd_sectiontype>
+                    <bbmd_questiontype>Multiple Choice</bbmd_questiontype>
+                    <bbmd_is_from_cartridge>false</bbmd_is_from_cartridge>
+                    <bbmd_is_disabled>false</bbmd_is_disabled>
+                    <bbmd_negative_points_ind>N</bbmd_negative_points_ind>
+                    <bbmd_canvas_fullcrdt_ind>false</bbmd_canvas_fullcrdt_ind>
+                    <bbmd_all_fullcredit_ind>false</bbmd_all_fullcredit_ind>
+                    <bbmd_numbertype>none</bbmd_numbertype>
+                    <bbmd_partialcredit>false</bbmd_partialcredit>
+                    <bbmd_orientationtype>vertical</bbmd_orientationtype>
+                    <bbmd_is_extracredit>false</bbmd_is_extracredit>
+                    <qmd_absolutescore_max>10.000000000000000</qmd_absolutescore_max>
+                    <qmd_weighting>0</qmd_weighting>
+                    <qmd_instructornotes></qmd_instructornotes>
+                </itemmetadata>
+                <presentation>
+                    <flow class="Block">
+                        <flow class="QUESTION_BLOCK">
+                            <flow class="FORMATTED_TEXT_BLOCK">
+                                <material>
+                                    <mat_extension>
+                                        <mat_formattedtext type="HTML">&lt;p&gt;For the code snippet, which of the following is true:&lt;/p&gt;  &lt;p&gt;&lt;img src="@X@EmbeddedFile.requestUrlStub@X@bbcswebdav/xid-49745289_1" width="193" height="89"&gt;&lt;/p&gt;</mat_formattedtext>
+                                    </mat_extension>
+                                </material>
+                            </flow>
+                        </flow>
+                        <flow class="RESPONSE_BLOCK">
+                            <response_lid ident="response" rcardinality="Single" rtiming="No">
+                                <render_choice shuffle="Yes" minnumber="0" maxnumber="0">
+                                    <flow_label class="Block">
+                                        <response_label ident="e6e9b5286319447e8be7e3adbe5ebc0c" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;The code will run without errors&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="ebcaca7ae7cb4ff4a4cb70f441560b95" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;The code will run once we put a dot in front of the multiplication symbol i.e. if we change the third line to "q = p1.*p2"&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="462dfd80d7a74b3996ec7355f7496e5a" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;The code will run once we have put semi-colons at the end of each line&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                    <flow_label class="Block">
+                                        <response_label ident="53c0ce34dea74f03ba88318f218bbf8f" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                                            <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                                <material>
+                                                    <mat_extension>
+                                                        <mat_formattedtext type="HTML">&lt;p&gt;The code won't run because the attempted multiplication is not possible&lt;/p&gt;</mat_formattedtext>
+                                                    </mat_extension>
+                                                </material>
+                                            </flow_mat>
+                                        </response_label>
+                                    </flow_label>
+                                </render_choice>
+                            </response_lid>
+                        </flow>
+                    </flow>
+                </presentation>
+                <resprocessing scoremodel="SumOfScores">
+                    <outcomes>
+                        <decvar varname="SCORE" vartype="Decimal" defaultval="0" minvalue="0" maxvalue="10.00000"/>
+                    </outcomes>
+                    <respcondition title="correct">
+                        <conditionvar>
+                            <varequal respident="response" case="No">53c0ce34dea74f03ba88318f218bbf8f</varequal>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">SCORE.max</setvar>
+                        <displayfeedback linkrefid="correct" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition title="incorrect">
+                        <conditionvar>
+                            <other/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="incorrect" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="e6e9b5286319447e8be7e3adbe5ebc0c" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="e6e9b5286319447e8be7e3adbe5ebc0c" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="ebcaca7ae7cb4ff4a4cb70f441560b95" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="ebcaca7ae7cb4ff4a4cb70f441560b95" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="462dfd80d7a74b3996ec7355f7496e5a" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">0</setvar>
+                        <displayfeedback linkrefid="462dfd80d7a74b3996ec7355f7496e5a" feedbacktype="Response"/>
+                    </respcondition>
+                    <respcondition>
+                        <conditionvar>
+                            <varequal respident="53c0ce34dea74f03ba88318f218bbf8f" case="No"/>
+                        </conditionvar>
+                        <setvar variablename="SCORE" action="Set">100</setvar>
+                        <displayfeedback linkrefid="53c0ce34dea74f03ba88318f218bbf8f" feedbacktype="Response"/>
+                    </respcondition>
+                </resprocessing>
+                <itemfeedback ident="correct" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+                <itemfeedback ident="incorrect" view="All">
+                    <flow_mat class="Block">
+                        <flow_mat class="FORMATTED_TEXT_BLOCK">
+                            <material>
+                                <mat_extension>
+                                    <mat_formattedtext type="HTML"/>
+                                </mat_extension>
+                            </material>
+                        </flow_mat>
+                    </flow_mat>
+                </itemfeedback>
+                <itemfeedback ident="e6e9b5286319447e8be7e3adbe5ebc0c" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="ebcaca7ae7cb4ff4a4cb70f441560b95" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="462dfd80d7a74b3996ec7355f7496e5a" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+                <itemfeedback ident="53c0ce34dea74f03ba88318f218bbf8f" view="All">
+                    <solution view="All" feedbackstyle="Complete">
+                        <solutionmaterial>
+                            <flow_mat class="Block">
+                                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                                    <material>
+                                        <mat_extension>
+                                            <mat_formattedtext type="HTML"/>
+                                        </mat_extension>
+                                    </material>
+                                </flow_mat>
+                            </flow_mat>
+                        </solutionmaterial>
+                    </solution>
+                </itemfeedback>
+            </item>
+        </section>
+    </assessment>
+</questestinterop>

@@ -3,18 +3,19 @@ import { render } from 'react-dom'
 import React, { Component, useRef, useState, useEffect, Suspense } from 'react';
 import XAPI from "@xapi/xapi";
 import { sendXAPIStatement } from "../../../xapiFunctions"
+import data from "./questions.json"
 
 export default function UnderstandingQuiz() {
     const nameForm = useRef(null);
     const xapiform = useRef(null);
-    const xform = xapiform.current;
-    const form = nameForm.current;
-
+    
     const handleClickEvent0 = () => {
 
         const xform = xapiform.current;
-        console.log("Name" + localStorage.getItem("name"));
-        console.log("Email" + localStorage.getItem("id"));
+
+        console.log(localStorage.setItem("name", "nicoleeeeeeeeeeeeeeeee"));
+        console.log(localStorage.setItem("id", "5632266"));
+
         if (xform['name'].value == "" || xform['email'].value == "") {
             document.getElementById("result0").innerHTML = "Status: Unsubmitted! Please fill out fields correctly!";
         }
@@ -49,6 +50,7 @@ export default function UnderstandingQuiz() {
     const handleClickEvent2 = () => {
         const xform = xapiform.current;
         const form = nameForm.current;
+
         var answer1 = '2';
         var answer2 = '3';
         var answer3 = '4';
@@ -70,6 +72,7 @@ export default function UnderstandingQuiz() {
     const handleClickEvent3 = () => {
         const xform = xapiform.current;
         const form = nameForm.current;
+
         console.log("value" + form['input3'].value);
         if (form["input3"].value.length >= 1) {
             document.getElementById("result3").innerHTML = "Correct answer!";
@@ -135,7 +138,7 @@ export default function UnderstandingQuiz() {
                 <br></br>
                 <br></br>
                 <p>3. Describe an example of something the might begin moving forward through the use of a computer program (open-ended) question. </p>
-
+                
                 <textarea style={{ "height": "100px", "width": "700px" }} name={'input3'} placeholder="Enter response here: "></textarea>
 
                 <br></br>

@@ -1,0 +1,289 @@
+<section ident="root_section">
+    <item ident="g1db6c3b3f5f6d8dd7bff56283da75df2" title="Question">
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield>
+                    <fieldlabel>question_type</fieldlabel>
+                    <fieldentry>multiple_choice_question</fieldentry>
+                </qtimetadatafield>
+                <qtimetadatafield>
+                    <fieldlabel>points_possible</fieldlabel>
+                    <fieldentry>0.0</fieldentry>
+                </qtimetadatafield>
+                <qtimetadatafield>
+                    <fieldlabel>original_answer_ids</fieldlabel>
+                    <fieldentry>7468</fieldentry>
+                </qtimetadatafield>
+                <qtimetadatafield>
+                    <fieldlabel>assessment_question_identifierref</fieldlabel>
+                    <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+                </qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <material>
+                <mattext texttype="text/html">&lt;div&gt;&lt;span style="color: #000000;"&gt;I understand &lt;strong&gt;academic integrity&lt;/strong&gt; is my responsibility and I agree to uphold the principles of &lt;strong&gt;academic integrity&lt;/strong&gt; when completing and submitting individual or group academic work, in accordance with my instructors’ specifications.&lt;/span&gt;&lt;/div&gt;</mattext>
+            </material>
+            <response_lid ident="response1" rcardinality="Single">
+                <render_choice>
+                    <response_label ident="7468">
+                        <material>
+                            <mattext texttype="text/plain">I acknowledge I have read and understand that academic integrity is my responsibility and I agree to uphold the principles of academic integrity when completing and submitting individual or group academic work, in accordance with my instructors’ specifications.</mattext>
+                        </material>
+                    </response_label>
+                </render_choice>
+            </response_lid>
+        </presentation>
+        <resprocessing>
+            <outcomes>
+                <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+            </outcomes>
+            <respcondition continue="No">
+                <conditionvar>
+                    <varequal respident="response1">7468</varequal>
+                </conditionvar>
+                <setvar action="Set" varname="SCORE">100</setvar>
+            </respcondition>
+        </resprocessing>
+    </item>
+    <item ident="gc01b45a1905432967caa52e4b1e91d6f" title="Question">
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield>
+                    <fieldlabel>question_type</fieldlabel>
+                    <fieldentry>multiple_choice_question</fieldentry>
+                </qtimetadatafield>
+                <qtimetadatafield>
+                    <fieldlabel>points_possible</fieldlabel>
+                    <fieldentry>0.0</fieldentry>
+                </qtimetadatafield>
+                <qtimetadatafield>
+                    <fieldlabel>original_answer_ids</fieldlabel>
+                    <fieldentry>4211</fieldentry>
+                </qtimetadatafield>
+                <qtimetadatafield>
+                    <fieldlabel>assessment_question_identifierref</fieldlabel>
+                    <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+                </qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <material>
+                <mattext texttype="text/html">&lt;div&gt;&lt;span style="color: #000000;"&gt;I understand if I have any doubts about what is permitted in a course, I must ask for clarification in advance.&lt;/span&gt;&lt;/div&gt;</mattext>
+            </material>
+            <response_lid ident="response1" rcardinality="Single">
+                <render_choice>
+                    <response_label ident="4211">
+                        <material>
+                            <mattext texttype="text/plain">I acknowledge I have read and understand that if I have any doubts about what is permitted in a course, I must ask for clarification in advance.</mattext>
+                        </material>
+                    </response_label>
+                </render_choice>
+            </response_lid>
+        </presentation>
+        <resprocessing>
+            <outcomes>
+                <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+            </outcomes>
+            <respcondition continue="No">
+                <conditionvar>
+                    <varequal respident="response1">4211</varequal>
+                </conditionvar>
+                <setvar action="Set" varname="SCORE">100</setvar>
+            </respcondition>
+        </resprocessing>
+    </item>
+    <item ident="gfe18e1beeff20a2df3df8b02838fc5c5" title="Question">
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield>
+                    <fieldlabel>question_type</fieldlabel>
+                    <fieldentry>multiple_choice_question</fieldentry>
+                </qtimetadatafield>
+                <qtimetadatafield>
+                    <fieldlabel>points_possible</fieldlabel>
+                    <fieldentry>0.0</fieldentry>
+                </qtimetadatafield>
+                <qtimetadatafield>
+                    <fieldlabel>original_answer_ids</fieldlabel>
+                    <fieldentry>5616</fieldentry>
+                </qtimetadatafield>
+                <qtimetadatafield>
+                    <fieldlabel>assessment_question_identifierref</fieldlabel>
+                    <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+                </qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <material>
+                <mattext texttype="text/html">&lt;div&gt;&lt;span style="color: #000000;"&gt;I understand that multiple violations may lead to Disciplinary Suspension or Disciplinary Dismissal from the University of California, Riverside. As a result, I would not be able to attend another UC campus.&lt;/span&gt;&lt;/div&gt;</mattext>
+            </material>
+            <response_lid ident="response1" rcardinality="Single">
+                <render_choice>
+                    <response_label ident="5616">
+                        <material>
+                            <mattext texttype="text/plain">I acknowledge I have read and understand that multiple violations may lead to Disciplinary Suspension or Disciplinary Dismissal from the University of California, Riverside. As a result, I would not be able to attend another UC campus.</mattext>
+                        </material>
+                    </response_label>
+                </render_choice>
+            </response_lid>
+        </presentation>
+        <resprocessing>
+            <outcomes>
+                <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+            </outcomes>
+            <respcondition continue="No">
+                <conditionvar>
+                    <varequal respident="response1">5616</varequal>
+                </conditionvar>
+                <setvar action="Set" varname="SCORE">100</setvar>
+            </respcondition>
+        </resprocessing>
+    </item>
+    <item ident="g3c737497ed5e8d12ffd3351acc566c0d" title="Question">
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield>
+                    <fieldlabel>question_type</fieldlabel>
+                    <fieldentry>multiple_choice_question</fieldentry>
+                </qtimetadatafield>
+                <qtimetadatafield>
+                    <fieldlabel>points_possible</fieldlabel>
+                    <fieldentry>0.0</fieldentry>
+                </qtimetadatafield>
+                <qtimetadatafield>
+                    <fieldlabel>original_answer_ids</fieldlabel>
+                    <fieldentry>4192</fieldentry>
+                </qtimetadatafield>
+                <qtimetadatafield>
+                    <fieldlabel>assessment_question_identifierref</fieldlabel>
+                    <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+                </qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <material>
+                <mattext texttype="text/html">&lt;div&gt;&lt;span style="color: #000000;"&gt;I pledge to maintain my &lt;strong&gt;academic integrity&lt;/strong&gt; and the &lt;strong&gt;academic integrity&lt;/strong&gt; of UC Riverside.&lt;/span&gt;&lt;/div&gt;</mattext>
+            </material>
+            <response_lid ident="response1" rcardinality="Single">
+                <render_choice>
+                    <response_label ident="4192">
+                        <material>
+                            <mattext texttype="text/plain">I pledge to maintain my academic integrity and the academic integrity of UC Riverside.</mattext>
+                        </material>
+                    </response_label>
+                </render_choice>
+            </response_lid>
+        </presentation>
+        <resprocessing>
+            <outcomes>
+                <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+            </outcomes>
+            <respcondition continue="No">
+                <conditionvar>
+                    <varequal respident="response1">4192</varequal>
+                </conditionvar>
+                <setvar action="Set" varname="SCORE">100</setvar>
+            </respcondition>
+        </resprocessing>
+    </item>
+    <item ident="g9957fab0f17a519fb25c7f16a5206494" title="Question">
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield>
+                    <fieldlabel>question_type</fieldlabel>
+                    <fieldentry>multiple_choice_question</fieldentry>
+                </qtimetadatafield>
+                <qtimetadatafield>
+                    <fieldlabel>points_possible</fieldlabel>
+                    <fieldentry>0.0</fieldentry>
+                </qtimetadatafield>
+                <qtimetadatafield>
+                    <fieldlabel>original_answer_ids</fieldlabel>
+                    <fieldentry>6333</fieldentry>
+                </qtimetadatafield>
+                <qtimetadatafield>
+                    <fieldlabel>assessment_question_identifierref</fieldlabel>
+                    <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+                </qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <material>
+                <mattext texttype="text/html">&lt;div&gt;I also accept I have had an opportunity at the signing of this agreement to ask a SCAIP staff member any remaining questions I have about &lt;strong&gt;academic integrity&lt;/strong&gt;.&lt;/div&gt;</mattext>
+            </material>
+            <response_lid ident="response1" rcardinality="Single">
+                <render_choice>
+                    <response_label ident="6333">
+                        <material>
+                            <mattext texttype="text/plain">I also accept I have had an opportunity at the signing of this agreement to ask a SCAIP staff member any remaining questions I have about academic integrity.</mattext>
+                        </material>
+                    </response_label>
+                </render_choice>
+            </response_lid>
+        </presentation>
+        <resprocessing>
+            <outcomes>
+                <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+            </outcomes>
+            <respcondition continue="No">
+                <conditionvar>
+                    <varequal respident="response1">6333</varequal>
+                </conditionvar>
+                <setvar action="Set" varname="SCORE">100</setvar>
+            </respcondition>
+        </resprocessing>
+    </item>
+    <item ident="g13cc5fad7e53be5f29860ac378f1b016" title="Question">
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield>
+                    <fieldlabel>question_type</fieldlabel>
+                    <fieldentry>multiple_choice_question</fieldentry>
+                </qtimetadatafield>
+                <qtimetadatafield>
+                    <fieldlabel>points_possible</fieldlabel>
+                    <fieldentry>0.0</fieldentry>
+                </qtimetadatafield>
+                <qtimetadatafield>
+                    <fieldlabel>original_answer_ids</fieldlabel>
+                    <fieldentry>2548</fieldentry>
+                </qtimetadatafield>
+                <qtimetadatafield>
+                    <fieldlabel>assessment_question_identifierref</fieldlabel>
+                    <fieldentry>gf47b767d37e06559ff801f2d253307ba</fieldentry>
+                </qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <material>
+                <mattext texttype="text/html">&lt;div&gt;
+&lt;h2&gt;Downloading Digital Media Content and Recordings&lt;/h2&gt;
+&lt;p&gt;&lt;span&gt;Please read the following statement regarding downloading Digital Media Content and Recordings from this course. After reading the statement acknowledge&amp;nbsp;that you have read it by selecting the response below.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Students MAY NOT download digital media content or record the professor’s lectures without permission. &lt;/strong&gt;Unless otherwise expressly allowed by the professor, students may not download digital media content or record a class session. Permission to download digital media content or record a class applies exclusively to the student who received permission from the professor. The downloaded digital media content or recording may not be accessed or utilized by any other individual. No replication of the downloaded digital media content or recording may be made without the express permission of the professor. Downloaded digital media content or recordings must not be posted to any form of digital media. Students who violate this policy are subject to disciplinary action under the UCR Standards of Conduct, &lt;a href="http://conduct.ucr.edu/policies/standards.html"&gt;http://conduct.ucr.edu/policies/standards.html&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;</mattext>
+            </material>
+            <response_lid ident="response1" rcardinality="Single">
+                <render_choice>
+                    <response_label ident="2548">
+                        <material>
+                            <mattext texttype="text/plain">I acknowledge I have read and understand this course's policy regarding downloading digital media content and recording of class sessions.</mattext>
+                        </material>
+                    </response_label>
+                </render_choice>
+            </response_lid>
+        </presentation>
+        <resprocessing>
+            <outcomes>
+                <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+            </outcomes>
+            <respcondition continue="No">
+                <conditionvar>
+                    <varequal respident="response1">2548</varequal>
+                </conditionvar>
+                <setvar action="Set" varname="SCORE">100</setvar>
+            </respcondition>
+        </resprocessing>
+    </item>
+</section>
+
