@@ -10,9 +10,9 @@ export default function UnderstandingQuiz() {
 	const xapiform = useRef(null);
 
 	//xAPI data
-	const endpoint = "https://xcite-testing.lrs.io/xapi/";
-	const username = process.env.LRS_USERNAME || "telfur";
-	const password = process.env.LRS_PASSWORD || "kikuev";
+	const endpoint = "https://ucrstaticsw22.lrs.io/xapi/";
+	const username = process.env.LRS_USERNAME || "gilrah";
+	const password = process.env.LRS_PASSWORD || "wocraj";
 	const auth = XAPI.toBasicAuth(username, password);
 	const xapi = new XAPI(endpoint, auth);
 
@@ -62,12 +62,14 @@ export default function UnderstandingQuiz() {
 			document.getElementById("result0").style.color = "green";
 		}
 
-		sendXAPIStatement(xform['name'].value, xform['email'].value, "viewed", "Week 5 Module 1 Quiz")
+		sendXAPIStatement(xform['name'].value, xform['email'].value, "viewed", "Statics Week 2 Module 3 Quiz 2")
 	}
 
 	const handleClickEvent1 = () => {
 
 		const form = nameForm.current;
+		const xform = xapiform.current;
+
 		var answer = '2';
 		console.log("value" + form['input1'].value);
 		if (form['input1'].value == answer)
@@ -76,9 +78,8 @@ export default function UnderstandingQuiz() {
 			document.getElementById("result1").innerHTML = "Incorrect answer! Please try again."
 
 
-		sendXAPIStatement(name, email, "answered", "Week 5 Module 1 Quiz Question 1");
+		sendXAPIStatement(xform['name'].value, xform['email'].value, "answered", "Statics Week 2 Module 3 Quiz 2 Question 1");
 	}
-
 
 	return (
 		<div style={{ paddingLeft: "2cm", paddingRight: "2cm", textAlign: "left" }}>
