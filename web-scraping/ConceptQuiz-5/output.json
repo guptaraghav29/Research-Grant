@@ -1,0 +1,84 @@
+[
+  {
+    "question_type": "tf",
+    "question": "True or false: If $A \\cdot B$ is the dot product of vectors A and B, then $A \\cdot B$.",
+    "answer_choices": [
+      "true",
+      "false"
+    ],
+    "answer": [
+      "true"
+    ],
+    "explanation": "Dot product of two vectors is commutative",
+    "topics": [
+      "math",
+      "v2",
+      "v3",
+      "dot"
+    ],
+    "images": []
+  },
+  {
+    "question_type": "tf",
+    "question": "True or False: If $A \\times B$ is the cross product of vectors A and B, then $A \\times B = B \\times A$",
+    "answer_choices": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      "False"
+    ],
+    "explanation": "Cross product is not commutative. $A \\times B = -A \\times B$",
+    "topics": [
+      "Math",
+      "V2",
+      "V3",
+      "dot"
+    ],
+    "images": []
+  },
+  {
+    "question_type": "mc",
+    "question": "Multiple choice: Consider two vectors $A = 5\\hat{i} + 6\\hat{j}$ and $B = 2\\hat{i} -3\\hat{j}$. Then $A\\cdot B =$",
+    "answer_choices": [
+      "-8",
+      "8",
+      "-27",
+      "3"
+    ],
+    "answer": [
+      "8"
+    ],
+    "explanation": "Computing the vector by multiplication.",
+    "topics": [
+      "Math",
+      "V2",
+      "V3",
+      "dot"
+    ],
+    "images": []
+  },
+  {
+    "question_type": "mc",
+    "question": "Multiple choice: The coordinates of point A in the figure below is $(\\sqrt{3}, 1)$ while the coordinates of point B is $2\\sqrt{3}, 2$. The magnitude of the force F is 500 N. The y-coordinate\n\u00a0of this force is:",
+    "answer_choices": [
+      "250 N ",
+      "$250\\sqrt{3}$",
+      "$250\\sqrt{2}$",
+      "$500\\sqrt{2}$"
+    ],
+    "answer": [
+      "250"
+    ],
+    "explanation": "Computing the vector by multiplication.",
+    "topics": [
+      "Math",
+      "V2",
+      "V3",
+      "dot"
+    ],
+    "images": [
+      "images/image1.png"
+    ]
+  }
+]

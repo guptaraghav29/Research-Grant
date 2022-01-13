@@ -107,10 +107,11 @@ export default function UnderstandingQuiz() {
 
 				<br></br>
 				<select name={'input1'} size={'4'}>
-					<option value="1"> TAB = -0.34 N, TAC = 0.25 N, TAD = 0.22 N </option>
-					<option value="2"> TAB = 0.34 N, TAC = -0.25 N, TAD = -0.22 N </option>
-					<option value="3"> TAB = -0.23 N, TAC = -0.46 N, TAD = 0.51 N </option>
-					<option value="4"> TAB = 0.23 N, TAC = 0.46 N, TAD = -0.51 N </option>
+					<option value="1"> TAB = -508.16 N, TAC = 336.18 N, TAD = -458.63 N </option>
+					<option value="2"> TAB = 508.16 N, TAC = 336.18 N, TAD = 458.63 N </option>
+					<option value="3"> TAB = 455 N, TAC = -543.24 N, TAD = -324.78 N </option>
+					<option value="4"> TAB = -455 N, TAC = -543.24 N, TAD = 324.78 N
+ </option>
 				</select>
 				<br></br>
 				<button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent1}>Check Answer</button>
