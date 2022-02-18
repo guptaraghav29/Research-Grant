@@ -1,0 +1,156 @@
+{
+    "questestinterop": {
+        "@xmlns": "http://www.imsglobal.org/xsd/ims_qtiasiv1p2",
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:schemaLocation": "http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd",
+        "assessment": {
+            "@ident": "ge2bafb6b2a92fee44a27c99c1cbf6f4a",
+            "@title": "Quiz Demo",
+            "qtimetadata": {
+                "qtimetadatafield": {
+                    "fieldlabel": "cc_maxattempts",
+                    "fieldentry": "1"
+                }
+            },
+            "section": {
+                "@ident": "root_section",
+                "item": {
+                    "@ident": "g67b9366537b98e8a772a2ab694ab77d6",
+                    "@title": "Question",
+                    "itemmetadata": {
+                        "qtimetadata": {
+                            "qtimetadatafield": [
+                                {
+                                    "fieldlabel": "question_type",
+                                    "fieldentry": "true_false_question"
+                                },
+                                {
+                                    "fieldlabel": "points_possible",
+                                    "fieldentry": "1.0"
+                                },
+                                {
+                                    "fieldlabel": "original_answer_ids",
+                                    "fieldentry": "8501,710"
+                                },
+                                {
+                                    "fieldlabel": "assessment_question_identifierref",
+                                    "fieldentry": "gf8f602482198b2ee54359250e69b90be"
+                                }
+                            ]
+                        }
+                    },
+                    "presentation": {
+                        "material": {
+                            "mattext": {
+                                "@texttype": "text/html",
+                                "#text": "<div><p>Did it rain in Riverside today?<img src=\"https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=Mnw3NjA3NHwwfDF8c2VhcmNofDF8fHJhaW58ZW58MXx8fHwxNjMzNjMzNTE2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080\" alt=\"water droplets on clear glass\"></p></div>"
+                            }
+                        },
+                        "response_lid": {
+                            "@ident": "response1",
+                            "@rcardinality": "Single",
+                            "render_choice": {
+                                "response_label": [
+                                    {
+                                        "@ident": "8501",
+                                        "material": {
+                                            "mattext": {
+                                                "@texttype": "text/plain",
+                                                "#text": "True"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "@ident": "710",
+                                        "material": {
+                                            "mattext": {
+                                                "@texttype": "text/plain",
+                                                "#text": "False"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "resprocessing": {
+                        "outcomes": {
+                            "decvar": {
+                                "@maxvalue": "100",
+                                "@minvalue": "0",
+                                "@varname": "SCORE",
+                                "@vartype": "Decimal"
+                            }
+                        },
+                        "respcondition": [
+                            {
+                                "@continue": "Yes",
+                                "conditionvar": {
+                                    "varequal": {
+                                        "@respident": "response1",
+                                        "#text": "8501"
+                                    }
+                                },
+                                "displayfeedback": {
+                                    "@feedbacktype": "Response",
+                                    "@linkrefid": "8501_fb"
+                                }
+                            },
+                            {
+                                "@continue": "Yes",
+                                "conditionvar": {
+                                    "varequal": {
+                                        "@respident": "response1",
+                                        "#text": "710"
+                                    }
+                                },
+                                "displayfeedback": {
+                                    "@feedbacktype": "Response",
+                                    "@linkrefid": "710_fb"
+                                }
+                            },
+                            {
+                                "@continue": "No",
+                                "conditionvar": {
+                                    "varequal": {
+                                        "@respident": "response1",
+                                        "#text": "8501"
+                                    }
+                                },
+                                "setvar": {
+                                    "@action": "Set",
+                                    "@varname": "SCORE",
+                                    "#text": "100"
+                                }
+                            }
+                        ]
+                    },
+                    "itemfeedback": [
+                        {
+                            "@ident": "8501_fb",
+                            "flow_mat": {
+                                "material": {
+                                    "mattext": {
+                                        "@texttype": "text/html",
+                                        "#text": "<p>Correct!</p>"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@ident": "710_fb",
+                            "flow_mat": {
+                                "material": {
+                                    "mattext": {
+                                        "@texttype": "text/html",
+                                        "#text": "<p>Incorrect!</p>"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,473 @@
+[
+    {
+        "answer": [
+            "true"
+        ],
+        "answer_choices": [
+            "true",
+            "false"
+        ],
+        "explanation": "Dot product of two vectors is commutative",
+        "images": [],
+        "question": "True or false: If \\(A \\cdot B\\) is the dot product of vectors A and B, then \\(A \\cdot B\\).",
+        "question_type": "tf",
+        "section": "Concept Quiz",
+        "topics": [
+            "v2",
+            "v3",
+            "dot"
+        ]
+    },
+    {
+        "answer": [
+            "False"
+        ],
+        "answer_choices": [
+            "True",
+            "False"
+        ],
+        "explanation": "Cross product is not commutative. \\(A \\times B = -A \\times B\\)",
+        "images": [],
+        "question": "True or False: If \\(A \\times B\\) is the cross product of vectors A and B, then \\(A \\times B = B \\times A\\)",
+        "question_type": "tf",
+        "section": "Concept Quiz",
+        "topics": [
+            "v2",
+            "v3",
+            "cro"
+        ]
+    },
+    {
+        "answer": [
+            "8"
+        ],
+        "answer_choices": [
+            "-8",
+            "8",
+            "-27",
+            "3"
+        ],
+        "explanation": "Computing the vector by multiplication.",
+        "images": [],
+        "question": "Multiple choice: Consider two vectors \\(A = 5\\hat{i} + 6\\hat{j}\\) and \\(B = 2\\hat{i} -3\\hat{j}\\). Then \\(A\\cdot B =\\)",
+        "question_type": "mc",
+        "section": "Concept Quiz",
+        "topics": [
+            "v2",
+            "dot"
+        ]
+    },
+    {
+        "answer": [
+            "250 N"
+        ],
+        "answer_choices": [
+            "250 N ",
+            "\\(250\\sqrt{3}\\)",
+            "\\(250\\sqrt{2}\\)",
+            "\\(500\\sqrt{2}\\)"
+        ],
+        "explanation": "Computing the vector by multiplication.",
+        "images": [
+            "images/image10.png"
+        ],
+        "question": "Multiple choice: The coordinates of point A in the figure below is (\\sqrt{3}, 1) while the coordinates of point B is \\(2\\sqrt{3}, 2\\). The magnitude of the force F is 500 N. The y-coordinate of this force is:",
+        "question_type": "mc",
+        "section": "Concept Quiz",
+        "topics": [
+            "v2",
+            "for2",
+            "dot"
+        ]
+    },
+    {
+        "answer": [
+            "\\(120\\hat{i} - 160\\hat{j}\\)"
+        ],
+        "answer_choices": [
+            "\\(120\\hat{i} - 160\\hat{j}\\)",
+            "\\(-120\\hat{i} + 160\\hat{j}\\)",
+            "\\(-160\\hat{i} + 120\\hat{j}\\)",
+            "\\(160\\hat{i} - 120\\hat{j}\\)"
+        ],
+        "explanation": "Use the cross product.",
+        "images": [],
+        "question": "A force of magnitude 200 N is acting at point A (0,2). The force is directed from point A towards point B (3,-2). The vector expression of the force F is:",
+        "question_type": "mc",
+        "section": "Concept Quiz",
+        "topics": [
+            "v2",
+            "for2",
+            "cro"
+        ]
+    },
+    {
+        "answer": [
+            "\\( 1 N\\cdot m \\)"
+        ],
+        "answer_choices": [
+            "[ Fill in the Blank ]"
+        ],
+        "explanation": "Moment = \\(F \\cdot l \\)",
+        "images": [
+            "images/image7.png"
+        ],
+        "question": "In the figure below, what’s the magnitude of the moment of the force F = 10 N about point A? The length l of the rod is 0.1m. Specify your answer in \\( N\\cdot m \\)",
+        "question_type": "fb",
+        "section": "Test Your Understanding 1",
+        "topics": [
+            "mom2",
+            "v2",
+            "for2"
+        ]
+    },
+    {
+        "answer": [
+            "False"
+        ],
+        "answer_choices": [
+            "True",
+            "False"
+        ],
+        "explanation": "No explanation.",
+        "images": [
+            "images/image7.png"
+        ],
+        "question": "True or false: The moment of the force about point A is counter-clockwise.",
+        "question_type": "tf",
+        "section": "Test Your Understanding 1",
+        "topics": [
+            "v2",
+            "mom2",
+            "for2"
+        ]
+    },
+    {
+        "answer": [
+            "0"
+        ],
+        "answer_choices": [
+            "[ Fill in the Blank ]"
+        ],
+        "explanation": "Since the force passes through the point A, the perpendicular distance of F to point A is zero.",
+        "images": [
+            "images/image6.png"
+        ],
+        "question": "In the figure below, what’s the moment of the force F about point A? Specify your answer in \\( N \\cdot m \\)",
+        "question_type": "fb",
+        "section": "Test Your Understanding 1",
+        "topics": [
+            "mom2",
+            "v2",
+            "for2"
+        ]
+    },
+    {
+        "answer": [
+            "-1000"
+        ],
+        "answer_choices": [
+            "[ Fill in the Blank ]"
+        ],
+        "explanation": "The perpendicular distance is 2 m. The moment is clockwise.",
+        "images": [
+            "images/image1.png"
+        ],
+        "question": "In the figure shown, what’s the moment of force \\(F_1\\) about point O? \\( F_1 = 500 \\)N, \\( F_2 = 300 \\)N.   \\( d_1 = 2m, d_2=6m \\). Specify your answer in \\( N \\cdot m \\) and use the sign convention that counterclockwise moments are positive.",
+        "question_type": "fb",
+        "section": "Test Your Understanding 1",
+        "topics": [
+            "mom2",
+            "v2",
+            "for2"
+        ]
+    },
+    {
+        "answer": [
+            "1800"
+        ],
+        "answer_choices": [
+            "[ Fill in the Blank ]"
+        ],
+        "explanation": "The perpendicular distance is 6 m. The moment is counter-clockwise.",
+        "images": [
+            "images/image1.png"
+        ],
+        "question": "In the figure shown, what’s the moment of force \\(F_2\\) about point O? \\( F_1 = 500 \\)N, \\( F_2 = 300 \\)N.   \\( d_1 = 2m, d_2=6m \\). Specify your answer in \\( N \\cdot m \\) and use the sign convention that counterclockwise moments are positive.",
+        "question_type": "fb",
+        "section": "Test Your Understanding 1",
+        "topics": [
+            "mom2",
+            "v2",
+            "for2"
+        ]
+    },
+    {
+        "answer": [
+            "634"
+        ],
+        "answer_choices": [
+            "[ Fill in the Blank ]"
+        ],
+        "explanation": "No explanation.",
+        "images": [
+            "images/image4.png"
+        ],
+        "question": "Determine the moment of the force \\(F\\) about point O by taking moments of the x- and y-components of F. Express your answer in \\(N\\cdot m\\) and use counterclockwise positive convention.",
+        "question_type": "fb",
+        "section": "Test Your Understanding 2",
+        "topics": [
+            "mom2",
+            "for2",
+            "T",
+            "dot"
+        ]
+    },
+    {
+        "answer": [
+            "1.27 m",
+            "\\( + 634 N\\cdot m\\)"
+        ],
+        "answer_choices": [
+            "[ Fill in the Blank ]"
+        ],
+        "explanation": "No explanation.",
+        "images": [
+            "images/image4.png"
+        ],
+        "question": "The perpendicular distance of the line of action of the force F to the point O is __________ m. Using this perpendicular distance to determine the moment of force F about point O gives ______ \\( N\\cdot m \\).",
+        "question_type": "fb",
+        "section": "Test Your Understanding 2",
+        "topics": [
+            "mom2",
+            "for2",
+            "v2",
+            "T",
+            "dot"
+        ]
+    },
+    {
+        "answer": [
+            "1.464",
+            "634"
+        ],
+        "answer_choices": [
+            "[ Fill in the Blank ]"
+        ],
+        "explanation": "No explanation.",
+        "images": [
+            "images/image4.png"
+        ],
+        "question": "Use the principle of transmissibility to slide the force to a point, say C, vertically below point O. The distance OC is _________ m. The moment of the force F about point O gives ____________ N-m",
+        "question_type": "fb",
+        "section": "Test Your Understanding 2",
+        "topics": [
+            "mom2",
+            "v2",
+            "for2",
+            "T",
+            "dot"
+        ]
+    },
+    {
+        "answer": [
+            "2.54",
+            "634"
+        ],
+        "answer_choices": [
+            "[ Fill in the Blank ]"
+        ],
+        "explanation": "No explanation.",
+        "images": [
+            "images/image4.png"
+        ],
+        "question": "Use the principle of transmissibility to slide the force to a point, say D, horizontally to the right of point O. The distance OD is ________ m. The moment of the force F about point O gives ____________ N-m",
+        "question_type": "fb",
+        "section": "Test Your Understanding 2",
+        "topics": [
+            "mom2",
+            "v2",
+            "for2",
+            "T",
+            "dot"
+        ]
+    },
+    {
+        "answer": [
+            "\\( 6\\hat{i} + 2\\hat{j} \\)"
+        ],
+        "answer_choices": [
+            "\\( 6\\hat{i} + 2\\hat{j} \\)",
+            "\\( 2\\hat{i} + 6\\hat{j} \\)",
+            "\\( -6\\hat{i} + 2\\hat{j} \\)",
+            "\\( 6\\hat{i} - 2\\hat{j} \\)"
+        ],
+        "explanation": "No explanation.",
+        "images": [
+            "images/image4.png"
+        ],
+        "question": "Multiple choice: Let’s use the vector method to determine the moment of point F about point O. In the formula \\(\\overrightarrow{M} = \\overrightarrow{r} \\times \\overrightarrow{F}, \\overrightarrow{r}  \\)  is:",
+        "question_type": "mc",
+        "section": "Test Your Understanding 2",
+        "topics": [
+            "mom2",
+            "v2",
+            "T",
+            "for2",
+            "dot"
+        ]
+    },
+    {
+        "answer": [
+            "\\( 634\\hat{k} \\)"
+        ],
+        "answer_choices": [
+            "\\( 634\\hat{k} \\)",
+            "\\( -634\\hat{k} \\)",
+            "\\( -634\\hat{i} \\)",
+            "\\( 634\\hat{i} \\)",
+            "\\( 634\\hat{j} \\)"
+        ],
+        "explanation": "No explanation.",
+        "images": [
+            "images/image4.png"
+        ],
+        "question": "Multiple choice: Let’s use the vector method to determine the moment of point F about point O. The vector expression for \\( \\overrightarrow{M} \\)  is:",
+        "question_type": "mc",
+        "section": "Test Your Understanding 2",
+        "topics": [
+            "for2",
+            "v2",
+            "T"
+        ]
+    },
+    {
+        "answer": [
+            "\\(kN/m^2\\)"
+        ],
+        "answer_choices": [
+            "\\(kN-m\\)",
+            "\\(N-mm\\)",
+            "\\(lbf-in\\)",
+            "\\(lbf-ft\\)",
+            "\\(kN/m^2\\)"
+        ],
+        "explanation": "[ No explanation ]",
+        "images": [],
+        "question": "Which of the following is not a unit of moment?",
+        "question_type": "mc",
+        "section": "Final Quiz",
+        "topics": [
+            "mom2",
+            "mom3",
+            "for2"
+        ]
+    },
+    {
+        "answer": [
+            "-80"
+        ],
+        "answer_choices": [
+            "[ Fill in the Blank ]"
+        ],
+        "explanation": "[ No explanation ]",
+        "images": [
+            "images/image9.png"
+        ],
+        "question": "The person in the figure is carrying a grocery bag weighing 200 N. Determine the moment in N-m of the weight of the grocery bag about point A (the person’s shoulder joint). Use counterclockwise positive sign convention.",
+        "question_type": "fb",
+        "section": "Final Quiz",
+        "topics": [
+            "mom2",
+            "v2",
+            "for2",
+            "T",
+            "ang"
+        ]
+    },
+    {
+        "answer": [
+            "-90"
+        ],
+        "answer_choices": [
+            "[ Fill in the Blank ]"
+        ],
+        "explanation": "[ No explanation ]",
+        "images": [
+            "images/image8.png"
+        ],
+        "question": "The person in the figure is carrying a grocery bag weighing 200 N. In addition, the weight of the person’s hand is 50 N and acts through the center of the arm (i.e. through the midpoint of AB. Determine the moment in N-m of both weights of the grocery bag about point M (the person’s foot). Use counterclockwise positive sign convention.",
+        "question_type": "fb",
+        "section": "Final Quiz",
+        "topics": [
+            "mom2",
+            "v2",
+            "for2",
+            "T",
+            "ang"
+        ]
+    },
+    {
+        "answer": [
+            "650"
+        ],
+        "answer_choices": [
+            "[ Fill in the Blank ]"
+        ],
+        "explanation": "[ No explanation ]",
+        "images": [
+            "images/image5.png"
+        ],
+        "question": "Determine the moment in kN-m of the two external forces at B and D about point E. Use counterclockwise positive sign convention.",
+        "question_type": "fb",
+        "section": "Final Quiz",
+        "topics": [
+            "mom2",
+            "v2",
+            "for2",
+            "T"
+        ]
+    },
+    {
+        "answer": [
+            "-50"
+        ],
+        "answer_choices": [
+            "[ Fill in the Blank ]"
+        ],
+        "explanation": "[ No explanation ]",
+        "images": [
+            "images/image2.png"
+        ],
+        "question": "Determine the moment in kN-m of the two external forces at B and D about point C. Use counterclockwise positive sign convention",
+        "question_type": "fb",
+        "section": "Final Quiz",
+        "topics": [
+            "mom2",
+            "v2",
+            "for2",
+            "T"
+        ]
+    },
+    {
+        "answer": [
+            "40"
+        ],
+        "answer_choices": [
+            "[ Fill in the Blank ]"
+        ],
+        "explanation": "[ No explanation ]",
+        "images": [
+            "images/image3.png"
+        ],
+        "question": "Determine the total moment in kN-m of the 10 kN at F and the 40 kN at E about point C.  Use positive counterclockwise convention",
+        "question_type": "fb",
+        "section": "Final Quiz",
+        "topics": [
+            "mom2",
+            "v2",
+            "for2",
+            "T"
+        ]
+    }
+]
