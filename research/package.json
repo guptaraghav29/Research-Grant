@@ -27,6 +27,7 @@
     "minimist": "^0.2.1",
     "next": "^12.0.8",
     "node-geogebra": "^1.2.1",
+    "plotly.js": "^2.9.0",
     "postscribe": "^2.0.8",
     "react": "17.0.1",
     "react-dom": "17.0.1",
