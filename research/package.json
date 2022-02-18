@@ -41,6 +41,7 @@
     "react-mathlive": "^3.0.5-preview.1",
     "react-modal": "^3.14.3",
     "react-native-latex": "^0.5.0",
+    "react-plotlyjs": "^0.4.4",
     "react-portal": "^4.2.1",
     "react-router-dom": "^5.2.0",
     "react-to-pdf": "0.0.14",
