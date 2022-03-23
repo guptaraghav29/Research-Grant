@@ -65,14 +65,42 @@ export default function PracticeQuiz() {
 		sendXAPIStatement(xform['name'].value, xform['email'].value, "viewed", "Statics Week 2 Module 3 Quiz 1")
 	}
 
+    var a = Math.floor(Math.random() * 5) + 1;
+    var b = Math.floor(Math.random() * 9) + 1;
+    var c = Math.floor(Math.random() * 20) + 10;
+	
+	let text = "<a>x + <b> = <c>";
+	var regex = /<(.+?)>/g ;
+	var array = text.match(regex);
+	
+    const a1 = array[0];
+    const b1 = array[1];
+    const c1 = array[2];
+
+	// let newText = text;
+	// console.log(newText)
+
+	let newText = text.replace(/<a>/, a).replace(/<b>/, b).replace(/<c>/, c);
+	// newText = text.replace(/<b>/, b)
+	// newText = text.replace(/<c>/, c)
+	// newText.replace(/<b>/, b);
+	// newText.replace(/<c>/, c);
+
+	console.log("New string: " + newText)
+
+    const equationSolver = (a, b, c) => {
+        var x = (c-b)/a;
+        return x;
+    }
+
 	const handleClickEvent1 = () => {
 
 		const form = nameForm.current;
 		const xform = xapiform.current;
 
-		var answer = '5';
+		var answer = (equationSolver(a,b,c));
 		console.log("value" + form['input1'].value);
-		if (form['input1'].value == answer)
+		if (form['input1'].value == Math.round(answer * 100) / 100)
 			document.getElementById("result1").innerHTML = "Correct answer!";
 		else
 			document.getElementById("result1").innerHTML = "Incorrect answer! Please try again."
@@ -80,6 +108,28 @@ export default function PracticeQuiz() {
 
 		sendXAPIStatement(xform['name'].value, xform['email'].value, "answered", "Statics Week 2 Module 3 Quiz 1 Question 1");
 	}
+
+    const equationSolver2 = (a, b, c) => {
+        var x = (a*b*c)*100
+        return x;
+    }
+
+    const handleClickEvent2 = () => {
+
+		const form = nameForm.current;
+		const xform = xapiform.current;
+
+		var answer = equationSolver2(a,b,c);
+		console.log("value" + form['input2'].value);
+		if (form['input2'].value == answer)
+			document.getElementById("result2").innerHTML = "Correct answer!";
+		else
+			document.getElementById("result2").innerHTML = "Incorrect answer! Please try again."
+
+
+		sendXAPIStatement(xform['name'].value, xform['email'].value, "answered", "Statics Week 2 Module 3 Quiz 1 Question 1");
+	}
+
 
 	return (
 		<div style={{ paddingLeft: "2cm", paddingRight: "2cm", textAlign: "left" }}>
@@ -100,31 +150,36 @@ export default function PracticeQuiz() {
 			</Head>
 			<h1 style={{ paddingBottom: "1cm" }}> Practice Quiz </h1>
 			<form ref={nameForm}>
-				<br></br>
-				<p> 1. The figure displays a rod resting on a frictionless wall. Point S is a ball and socket whilst point R is a wheel support with lateral constraint. What is wrong with the following free body diagram? </p>
-				<div class="row" style={{ display: "flex" }}>
-					<div class="column" style={{ flex: "50%" }}>
-						<img class="center" src="../../../images/quiz50.png" width="80%" padding="5px" height="100%"></img>
-					</div>
-					<div class="column" style={{ flex: "50%" }}>
-						<img class="center" src="../../../images/quiz51.png" width="80%" padding="5px"></img>
-					</div>
-				</div>
-				<p></p>
+			<br></br>
 
-				<br></br>
-				<select name={'input1'} size={'5'}>
-					<option value="1"> There should be an x component force at point R. </option>
-					<option value="2"> The free body diagram is correct and complete.</option>
-					<option value="3"> There should be a downward z component force at point S. </option>
-					<option value="4"> There should be a downward force at the rod’s center of mass due to gravity </option>
-					<option value="5"> Both c and d </option>
-				</select>
+			<p> Parsing using regex for ax + b = c </p>
+			<p> Var A: {a1} </p>
+            <p> Var B: {b1} </p>
+            <p> Var C: {c1} </p>
+            <p> {newText} </p>
+
+			<br></br>
+				<p> 1. Solve for x. </p>
+				<p> {a}x + {b} = {c} </p>
+				
+                <input placeholder={'Enter answer'} name={'input1'} />
 				<br></br>
 				<button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent1}>Check Answer</button>
 				<p id="result1"> Input an answer - this line will update depending on your answer. </p>
 
 				<br></br>
+				<br></br>
+				<br></br>
+
+                <p> 2. An rectangular prism has length {a} m, {b} m, and {c} m. </p>
+				<p> What is the volume of the rectangular prism in cm³? </p>
+
+                <input placeholder={'Enter answer'} name={'input2'} />
+				<br></br>
+				<button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-1 px-3 rounded-full" type="button" onClick={handleClickEvent2}>Check Answer</button>
+				<p id="result2"> Input an answer - this line will update depending on your answer. </p>
+
+                <br></br>
 				<br></br>
 				<br></br>
 

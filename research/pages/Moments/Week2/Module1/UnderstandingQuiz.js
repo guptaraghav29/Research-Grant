@@ -7,9 +7,9 @@ export default function UnderstandingQuiz() {
     const xapiform = useRef(null);
 
     //xAPI data
-    const endpoint = "https://xcite-testing.lrs.io/xapi/";
-    const username = process.env.LRS_USERNAME || "telfur";
-    const password = process.env.LRS_PASSWORD || "kikuev";
+	const endpoint = "https://ucrstaticsw22.lrs.io/xapi/";
+	const username = process.env.LRS_USERNAME || "gilrah";
+	const password = process.env.LRS_PASSWORD || "wocraj";
     const auth = XAPI.toBasicAuth(username, password);
     const xapi = new XAPI(endpoint, auth);
 
